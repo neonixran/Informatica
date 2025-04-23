@@ -9,4 +9,4 @@ num2 = int(input("Ingrese el segundo número: "))
 sum = 0
 
 sum = num1 + num2
-print(f"El resultado de la suma es {sum}")
+print(f"El resultado de {num1} + {num2} es {sum}")
