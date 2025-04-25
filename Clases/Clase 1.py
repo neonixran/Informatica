@@ -2,12 +2,12 @@
 
 print("Este programa calcula la suma de dos números")
 # Declaración de variables
-a = 5
-b = 5
+num1 = 5
+num2 = 5
 
 # Calcular
-c = a + b
-print(f"El resultado de {a} + {b} es {c}")
+sum = num1 + num2
+print(f"El resultado de {num1} + {num2} es {sum}")
 print("-------------------")
 # Declarar variables y preguntar al usuario los números a sumar
 num1 = int(input("Ingrese el primer número: "))
