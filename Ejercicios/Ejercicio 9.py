@@ -4,7 +4,7 @@ bolsa de pan que contiene N kg. El
 precio de 1 kg es ingresado por el
 usuario.
 '''
-print
+print("Este programa calcula el costo en pesos (CLP) de una bolsa de pan que contiene N kg.")
 precio = int(input("Ingrese el precio del kilo de pan: "))
 kg = int(input("Ingrese la cantidad de kg: "))
 

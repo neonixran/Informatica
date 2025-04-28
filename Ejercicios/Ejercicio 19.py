@@ -5,6 +5,7 @@ sueldo neto de un vendedor sabiendo que hizo tres ventas en el
 mes. Las ventas son ingresadas por el usuario.
 '''
 
+print("Este programa calcula el sueldo neto de un vendedor.")
 sueldo_base = int(input("Ingrese el sueldo base del vendedor: "))
 while sueldo_base <= 0:
     print("[!] El sueldo base debe ser mayor a 0")
