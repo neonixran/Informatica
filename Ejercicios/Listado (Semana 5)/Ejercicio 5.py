@@ -18,4 +18,4 @@ total = hom + muj # Total de alumnos
 p_muj = (muj / total) * 100 # Porcentaje de mujeres
 p_hom = (hom / total) * 100 # Porcentaje de hombres
 
-print(f"De un total de {total} alumnos hay {p_muj:.2f}% de mujeres y {p_hom:.2f}% de hombres en el salón.") ## .2f para redondear a 2 decimales
+print(f"\De un total de {total} alumnos hay {p_muj:.2f}% de mujeres y {p_hom:.2f}% de hombres en el salón.") ## .2f para redondear a 2 decimales
