@@ -1,4 +1,4 @@
-## Clase 2 (29 de abril 2025)
+# 29 de abril 2025
 
 # Calcular la nota de presentación y nota final de un alumno
 print("Este programa calcula la nota de presentación y nota final")

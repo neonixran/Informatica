@@ -1,4 +1,4 @@
-## Clase 1 (23 de abril 2025)
+## 23 de abril 2025
 
 print("Este programa calcula la suma de dos números")
 # Declaración de variables
