@@ -8,7 +8,7 @@ while rep.lower() == "s":
     estatura = input("Ingrese su estatura (cm): ")
 
     # Comprobar que el peso (masa) y estatura estén dentro del rango permitido y no estén vacios
-    while (masa == "" or estatura == "") or (float(masa) <= 0 or float(masa) > 500) or (float(estatura) <= 0 or float(estatura) > 250):
+    while (not masa.isnumeric() or not estatura.isnumeric()) or (float(masa) <= 0 or float(masa) > 500) or (float(estatura) <= 0 or float(estatura) > 250):
         print("[!] Debe ingresar valores válidos.")
         masa = input("Ingrese su peso (kg): ")
         estatura = input("Ingrese su estatura (cm): ")
