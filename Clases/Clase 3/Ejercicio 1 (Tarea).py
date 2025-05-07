@@ -37,4 +37,3 @@ while rep.lower() == "s":
     print(f"Su IMC es: {imc:.1f}")
 
     rep = input("\n¿Quiere calcular de nuevo? (s/n): ")
-    print("¡Hasta luego!")
