@@ -4,17 +4,17 @@ rep = "s" # "s": Continua ejecutandose, "n": Termina el programa (puede ocurrir 
 
 # Comprueba que mientras la variable rep sea igual a "s" se siga ejecutando
 while rep.lower() == "s":
-    masa = float(input("Ingrese su peso (kg): "))
-    estatura = float(input("Ingrese su estatura (cm): "))
+    masa = input("Ingrese su peso (kg): ")
+    estatura = input("Ingrese su estatura (cm): ")
 
-    # Comprobar que el peso (masa) y estatura estén dentro del rango permitido
-    while (masa <= 0 or masa > 500) or (estatura <= 0 or estatura > 250):
+    # Comprobar que el peso (masa) y estatura estén dentro del rango permitido y no estén vacios
+    while (masa == "" or estatura == "") or (float(masa) <= 0 or float(masa) > 500) or (float(estatura) <= 0 or float(estatura) > 250):
         print("[!] Debe ingresar valores válidos.")
-        masa = float(input("Ingrese su peso (kg): "))
-        estatura = float(input("Ingrese su estatura (cm): "))
+        masa = input("Ingrese su peso (kg): ")
+        estatura = input("Ingrese su estatura (cm): ")
 
     # Cálculo del imc, conversión de centímetros a metros
-    imc = masa / ((estatura / 100) ** 2)
+    imc = float(masa) / ((float(estatura) / 100) ** 2)
 
     # Tipos de peso
     if imc < 18:
