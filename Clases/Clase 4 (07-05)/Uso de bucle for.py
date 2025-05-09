@@ -1,5 +1,5 @@
-for i in range(1, 6): # Primeros 5 números
+for i in range(1, 6): # Imprimirá los primeros 5 números
     print(i)
 print("------------")
-for i in range(-10, 1): # De -10 a 0
+for i in range(-10, 1): # Imprimirá los números desde el -10 al 0
     print(i)
