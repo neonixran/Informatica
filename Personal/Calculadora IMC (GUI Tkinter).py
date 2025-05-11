@@ -50,6 +50,6 @@ def calc_imc():
     elif imc > 50:
       type = "Obesidad grado IV (extrema)"
 
-    text.config(text=f"Su IMC es: {imc:.2f}\nSu categoría es: {type}")
+    text.config(text=f"Su IMC es: {imc:.1f}\nSu categoría es: {type}")
 
 ventana.mainloop()
