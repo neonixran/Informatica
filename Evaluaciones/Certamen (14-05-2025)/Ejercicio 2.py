@@ -1,5 +1,5 @@
 '''
-Hacer un programa que lea la estatura de un alumno le diga:
+Hacer un programa que lea la estatura de un alumno y le diga:
     a) "Alto" si su estatura es mayor o igual a 1,85
     b) "Regular" si su estatura es mayor o igual a 1,65, pero menor que 1,85
     c) "Bajo" si su estatura es menor que 1,65

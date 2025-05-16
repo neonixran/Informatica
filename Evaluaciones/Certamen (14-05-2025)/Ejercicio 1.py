@@ -1,6 +1,6 @@
 '''
 Hacer un programa en Python que lea el porcentaje de asistencia de un alumno y
-diga si es válido o no (no dee ser menor a 0, ni mayor a 100),
+diga si es válido o no (no debe ser menor a 0, ni mayor a 100),
 el programa debe repetirse hasta que el usuario indique lo contrario.
 '''
 
