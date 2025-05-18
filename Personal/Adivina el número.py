@@ -7,8 +7,9 @@ levels = {
     3: {"attempts": 3}
 }
 
+print("Bienvenido al juego de \"Adivina el número\", debes adivinar un número random del 1 al 100")
 while repeat == "s":
-    level = int(input("Nivel de dificultad\n\t1: fácil (10 intentos)\n\t2: medio (5 intentos)\n\t3: díficil (3 intentos)\nIngrese el nivel: "))
+    level = int(input("Niveles de dificultad\n\t1: fácil (10 intentos)\n\t2: medio (5 intentos)\n\t3: díficil (3 intentos)\nIngrese el nivel: "))
     
     attempt = 0
     nrandom = random.randint(1, 100)
