@@ -10,7 +10,7 @@ while r == "s":
 
     r = input("Otra vez (s/n): ").lower()
 
-    # Comprueba si la variable "r" es distinta de "s" o "n", útil para que solo pueda ingresar esos dos valores y no otros.
+    # Comprueba si la variable "r" es distinta de "s" y "n", útil para que solo pueda ingresar esos dos valores y no otros.
     while r != "n" and r != "s":
         print("Ingrese un valor válido")
         r = input("Otra vez (s/n): ").lower()

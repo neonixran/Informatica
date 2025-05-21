@@ -1,7 +1,7 @@
 for i in range(1, 11):
     estatura = float(input(f"Ingrese la estutura del alumno {i}: "))
 
-    if estatura < 0:
+    if estatura <= 0:
         print("Estatura inválida")
     elif estatura < 1.65:
         print("Estatura baja")
