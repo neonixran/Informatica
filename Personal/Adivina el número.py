@@ -1,4 +1,5 @@
 import random
+from os import system
 
 repeat = "s"
 levels = {
@@ -7,10 +8,16 @@ levels = {
     3: {"attempts": 3}
 }
 
-print("Bienvenido al juego de \"Adivina el número\", debes adivinar un número random del 1 al 100")
 while repeat == "s":
-    level = int(input("Niveles de dificultad\n\t1: fácil (10 intentos)\n\t2: medio (5 intentos)\n\t3: díficil (3 intentos)\nIngrese el nivel: "))
-    
+    print("Bienvenido al juego de \"Adivina el número\", debes adivinar un número random del 1 al 100")
+    while True:
+        level = int(input("Niveles de dificultad\n\t1: fácil (10 intentos)\n\t2: medio (5 intentos)\n\t3: díficil (3 intentos)\nIngrese el nivel: "))
+
+        if not level in levels:
+            print("\t[!] Ingrese un nivel válido")
+        else:
+            break
+
     attempt = 0
     nrandom = random.randint(1, 100)
 
@@ -39,4 +46,13 @@ while repeat == "s":
             print("\t[!]Ingrese un número válido")
             continue
 
+    while True:
         repeat = input("¿Quiere volver a jugar? (s/n): ").lower()
+
+        if repeat != "s" and repeat != "n":
+            print("\t[!] Valor inválido, ingrese solo \"s\" y \"n\"")
+        else:
+            break
+
+    system("cls")
+    
