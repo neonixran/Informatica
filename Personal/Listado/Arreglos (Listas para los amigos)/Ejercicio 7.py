@@ -9,8 +9,11 @@ notas = []
 for i in range(0, 5):
     notas.append(float(input(f"Ingrese nota {i+1}: ")))
 
-promedio = 0
+suma = 0
 for i in range(0, 5):
-    promedio += notas[i]
+    suma += notas[i]
 
-print(f"Su nota mínima es {min(notas)}, su promedio es {promedio/len(notas):.1f} y su nota máxima es {max(notas)}")
+minimo = min(notas)
+maximo = max(notas)
+promedio = suma / len(notas)
+print(f"Su nota mínima es {minimo}, su promedio es {promedio:.1f} y su nota máxima es {maximo}")

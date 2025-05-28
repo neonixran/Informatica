@@ -7,7 +7,7 @@ en pantalla cada elemento del vector junto con su cuadrado y su cubo.
 import random
 vector_numeros = []
 
-for i in range(0, 10):
+for i in range(0, 5):
     vector_numeros.append(random.randint(1, 10))
 
 for i in range(0, len(vector_numeros)):

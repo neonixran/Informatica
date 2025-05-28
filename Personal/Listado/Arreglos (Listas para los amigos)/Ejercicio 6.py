@@ -8,7 +8,7 @@ vector1 = []
 vector2 = []
 
 # Pregunta al usuario por 10 datos
-for i in range(0, 10):
+for i in range(0, 5):
     vector1.append(input(f"Ingrese dato {i+1}: "))
 
 # Crea una copia del arreglo "vector1" en "vector2" y luego invierte esa copia
@@ -16,5 +16,5 @@ vector2 = vector1.copy()
 vector2.reverse()
 
 # Imprime la copia inversa
-for i in range(0, 10):
+for i in range(0, 5):
     print(vector2[i])

@@ -22,7 +22,7 @@ for asignatura in range(0, len(asignaturas)):
             break
         except ValueError:
             print("Ingrese solo valores válidos")
-print("\n")
+print()
 
 # Imprime la nota de todas las asignaturas
 for asignatura in range(0, len(asignaturas)):
