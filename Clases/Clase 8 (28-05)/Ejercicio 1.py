@@ -9,7 +9,7 @@ for i in range(0, n):
     A.append(int(input(f"Ingrese número {i+1}: ")))
     B.append(random.randint(1, 100))
 
-#Calcular promedio, sacar minimo y máximo del arreglo
+#Calcular promedio, sacar minimo y máximo del arreglo (u = Datos ingresados por el usuario, r = Datos aleatorios usando "random")
 u_suma = 0
 r_suma = 0
 
