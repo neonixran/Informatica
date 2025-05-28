@@ -2,9 +2,9 @@ import random
 
 A = []
 B = []
-n = 5 # Longitud del arreglo
+n = 15 # Longitud del arreglo
 
-# Preguntar al usuario por los números
+# Preguntar al usuario por los números en el arreglo A y asignar datos aleatoriamente en el arreglo B
 for i in range(0, n):
     A.append(int(input(f"Ingrese número {i+1}: ")))
     B.append(random.randint(1, 100))
@@ -26,5 +26,5 @@ r_maximo = max(B)
 r_promedio = r_suma / n
 
 # Imprimir los resultados
-print(f"\n[Usuario] El menor número es {u_minimo}, el promedio es {u_promedio} y el mayor número es {u_maximo}")
-print(f"[Random] De la lista {B}. El menor número es {r_minimo}, el promedio es {r_promedio} y el mayor número es {r_maximo}")
+print(f"\n[Usuario] El menor número es {u_minimo}, el promedio es {u_promedio:.1f} y el mayor número es {u_maximo}")
+print(f"[Random] De la lista {B}. El menor número es {r_minimo}, el promedio es {r_promedio:.1f} y el mayor número es {r_maximo}")
