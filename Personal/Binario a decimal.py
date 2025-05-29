@@ -4,12 +4,12 @@ respuesta = "s"
 
 while True:
     os.system("cls")
-    binario = input("Ingrese un número binario: ")
+    binario = list(input("Ingrese un número binario: "))[::-1]
     decimal = 0
 
-    for i,v in enumerate(binario[::-1]):
-        if int(v) == 1:
-            decimal += i*2**i
+    for i in range(len(binario)):
+        if int(binario[i]) == 1:
+            decimal += 2**i
 
     print(decimal)
 
