@@ -16,4 +16,5 @@ for i in range(0, 5):
 minimo = min(notas)
 maximo = max(notas)
 promedio = suma / len(notas)
+
 print(f"Su nota mínima es {minimo}, su promedio es {promedio:.1f} y su nota máxima es {maximo}")
