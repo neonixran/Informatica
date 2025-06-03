@@ -2,7 +2,7 @@ import random
 
 A = []
 B = []
-n = 15 # Longitud del arreglo
+n = 3 # Longitud del arreglo
 
 # Preguntar al usuario por los números en el arreglo A y asignar datos aleatoriamente en el arreglo B
 for i in range(0, n):

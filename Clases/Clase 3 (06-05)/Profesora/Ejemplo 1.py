@@ -1,5 +1,3 @@
-# 06 de Mayo 2025
-
 cont_13 = 0
 suma_13 = 0
 cont_17 = 0
