@@ -7,7 +7,6 @@ longitud, sub_longitud = input("Ingrese el tamaño de la matriz (ej. 3x3): ").sp
 print("Ingresa los números para la matriz nº1")
 for fila in range(int(longitud)):
     matriz1.append([])
-    print(len(matriz1))
     for columna in range(int(sub_longitud)):
         dato = int(input(f"Ingrese número {fila+1}.{columna+1}: "))
         matriz1[fila].append(dato)
