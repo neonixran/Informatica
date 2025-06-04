@@ -5,9 +5,11 @@ Crear un arreglo (lista) de 10 números, imprimiendo los multiplos de 7 partiend
 longitud = 10
 multiplos = []
 
-n = 700 # Número de partida
+n = 700 # Número de 
+multiplo = 7
+
 for i in range(longitud):
     multiplos.append(n)
-    n += 7 # n = n + 7 | Múltiplos de 7
+    n += multiplo # n = n + multiplo
 
 print(f"Los multiplos son :{", ".join([str(i) for i in multiplos])}")
