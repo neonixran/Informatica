@@ -4,13 +4,13 @@ matriz1 = [] # Nums 1
 matriz2 = [] # Nums 2
 sumas = [] # Resultados de la suma
 
-# El usuario ingresa el tamaño de las matrices (cantidad de filas y columnas) y se valida que est
+# El usuario ingresa el tamaño de las matrices (cantidad de filas y columnas), se valida que sean números mayores a 0 y enteros.
 while True:
     try:
         longitud_filas = int(input("Ingrese la cantidad de filas: "))
 
         if longitud_filas <= 0:
-            print("\t[!] No puede ingresar números menores o igual a 0")
+            print("\t[!] No puede ingresar números menores o iguales a 0")
             continue
         break
     except ValueError:
@@ -20,7 +20,7 @@ while True:
     try:
         longitud_columnas = int(input("Ingrese la cantidad de columnas: "))
         if longitud_columnas <= 0:
-            print("\t[!] No puede ingresar números menores o igual a 0")
+            print("\t[!] No puede ingresar números menores o iguales a 0")
             continue
         break
     except ValueError:
