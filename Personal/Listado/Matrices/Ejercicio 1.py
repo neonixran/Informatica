@@ -4,27 +4,35 @@ matriz1 = [] # Nums 1
 matriz2 = [] # Nums 2
 sumas = [] # Resultados de la suma
 
+# El usuario ingresa el tamaño de las matrices (cantidad de filas y columnas) y se valida que est
 while True:
     try:
-        longitud_filas, longitud_columnas = input("Ingrese el tamaño de la matriz (ej. 3x3): ").split("x")
-        
-        if longitud_filas == "" or longitud_columnas == "": # Valida si las dimensiones están vacias
-            print("\t[!] Debe ingresar un número para el tamaño")
-            continue
-        elif int(longitud_filas) <= 0 or int(longitud_columnas) <= 0: # Valida si las dimensiones son menores o igual a cero
-            print("\t[!] Debe ingresar números positivos.")
+        longitud_filas = int(input("Ingrese la cantidad de filas: "))
+
+        if longitud_filas <= 0:
+            print("\t[!] No puede ingresar números menores o igual a 0")
             continue
         break
-    except ValueError: # Valida si el separador es válido
-        print("\t[!] El separador que está usando es incorrecto, debe usar x (ej. 3x3)")
-        continue
+    except ValueError:
+        print("\t[!] Ingrese un número de filas válido")
+
+while True:
+    try:
+        longitud_columnas = int(input("Ingrese la cantidad de columnas: "))
+        if longitud_columnas <= 0:
+            print("\t[!] No puede ingresar números menores o igual a 0")
+            continue
+        break
+    except ValueError:
+        print("\t[!] Ingrese un número de columnas válido")
+        continue     
 
 # Lectura y calculo de las matrices
 os.system("cls")
 print("Ingresa los números para la matriz nº1")
-for fila in range(int(longitud_filas)):
+for fila in range(longitud_filas):
     matriz1.append([])
-    for columna in range(int(longitud_columnas)):
+    for columna in range(longitud_columnas):
         while True:
             try:
                 dato = int(input(f"Ingrese número {fila+1}.{columna+1}: "))
@@ -35,9 +43,9 @@ for fila in range(int(longitud_filas)):
                 continue
 
 print("\nIngresa los números para la matriz nº2")
-for fila in range(int(longitud_filas)):
+for fila in range(longitud_filas):
     matriz2.append([])
-    for columna in range(int(longitud_columnas)):
+    for columna in range(longitud_columnas):
         while True:
             try:
                 dato = int(input(f"Ingrese número {fila+1}.{columna+1}: "))
@@ -47,11 +55,10 @@ for fila in range(int(longitud_filas)):
                 print("\t[!] Ingrese sólo números enteros.")
                 continue
 
-print("\nLos resultados son")
-for fila in range(int(longitud_filas)):
+for fila in range(longitud_filas):
     sumas.append([])
-    for columna in range(int(longitud_columnas)):
+    for columna in range(longitud_columnas):
         suma = matriz1[fila][columna] + matriz2[fila][columna]
         sumas[fila].append(suma)
 
-print(sumas)
+print(f"Los resultados son: {sumas}")
