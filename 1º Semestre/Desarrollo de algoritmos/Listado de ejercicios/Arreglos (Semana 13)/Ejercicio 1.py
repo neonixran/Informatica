@@ -1,6 +1,12 @@
 '''
 Hacer un programa que lea 10 elementos, los guarde en un arreglo, luego duplique los
 elementos del arreglo (que queden guardados) e imprima los elementos duplicados
+
+Pasos:
+    1. Crear un arreglo vacio.
+    2. Leer 10 números y guardarlos en el arreglo creado en el paso 1.
+    3. Duplicar los números del arreglo.
+    4. Imprimir el arreglo con los números duplicados.
 '''
 
 longitud = 2
