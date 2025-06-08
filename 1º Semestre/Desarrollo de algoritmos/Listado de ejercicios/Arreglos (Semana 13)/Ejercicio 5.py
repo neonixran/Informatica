@@ -5,12 +5,10 @@ los 3 arreglos.
 
 Pasos:
     1. Crear 3 arreglos
-    2. En los primeros 2 arreglos usar un bucle for que itere hasta el 10 de forma independiente.
-        2-1. En cada arreglo crear una variable de paso para preguntar al usuario por un número.
-        2-2. Agregar el número del paso 2.1 al arreglo correspondiente.
+    2. En los primeros 2 arreglos usar un bucle for que lea 10 números de forma independiente y guardarlos en el arreglo correspondiente.
     3. En el último arreglo, usar un bucle for.
-        3-1. Crear una variable de paso (temporal) que almacene la suma de los números de ambos arreglos.
-        3-2. Agregar el resultado de cada suma al último arreglo.
+        3-1. Crear una variable que almacene la suma de los números de ambos arreglos.
+        3-2. guardar el resultado de cada suma al último arreglo.
     4. Imprimir los arreglos (num1, num2 y resultados)
 '''
 
