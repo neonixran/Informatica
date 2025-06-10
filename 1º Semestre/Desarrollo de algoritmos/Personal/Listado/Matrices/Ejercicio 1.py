@@ -60,3 +60,5 @@ for fila in range(longitud_filas):
     for columna in range(longitud_columnas):
         suma = matriz1[fila][columna] + matriz2[fila][columna]
         sumas[fila].append(suma)
+
+print("\n".join(map(str, sumas))) # Imprime la matriz como matriz :O
