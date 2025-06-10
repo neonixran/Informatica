@@ -60,3 +60,9 @@ for fila in range(longitud_filas):
     for columna in range(longitud_columnas):
         suma = matriz1[fila][columna] + matriz2[fila][columna]
         sumas[fila].append(suma)
+
+print("Los resultados son: ")
+for f in range(len(sumas)):
+    print()
+    for c in range(len(sumas[f])):
+        print(sumas[f][c], end=" ")
