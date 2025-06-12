@@ -16,4 +16,4 @@ longitud = len(objetivo.split(" ")) # Cantidad de palabras
 if frase == objetivo:
     print(f"Tardaste {duracion:.2f} segundos en escribir {longitud} palabras")
 else:
-    print(f"Has perdido!")
+    print(f"Has perdido!") 
