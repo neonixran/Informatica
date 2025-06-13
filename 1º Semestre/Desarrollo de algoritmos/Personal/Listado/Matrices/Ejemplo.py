@@ -16,9 +16,11 @@ print()
 
 # Imprimir la matriz como matriz
 print(f"Matriz (Forma 1): \n{"\n".join(map(str, matriz)).replace(",", "")}")
+
 print("\nMatriz (Forma 2):")
 for f in range(len(matriz)):
     print(" ".join([str(matriz[f][c]) for c in range(len(matriz[f]))]))
+
 print("\nMatriz (Forma 3):")
 for f in range(len(matriz)):
     for c in range(len(matriz[f])):

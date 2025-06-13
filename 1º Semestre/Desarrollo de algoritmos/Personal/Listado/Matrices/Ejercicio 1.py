@@ -1,5 +1,5 @@
 import os
-
+import random
 matriz1 = [] # Nums 1
 matriz2 = [] # Nums 2
 sumas = [] # Resultados de la suma
