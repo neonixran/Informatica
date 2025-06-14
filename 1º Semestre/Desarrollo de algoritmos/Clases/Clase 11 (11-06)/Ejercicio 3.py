@@ -10,8 +10,10 @@ for f in range(longitud):
         dato = int(input(f"Ingrese un número {f}.{c}: "))
         matriz[f].append(dato)
 
-for c in range(len(matriz)):
-    print(matriz[c])
+for f in range(len(matriz)):
+    for c in range(len(matriz[f])):
+        print(matriz[c][f], end=" ")
+    print()
 
 print()
 print(matriz)
