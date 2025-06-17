@@ -1,6 +1,4 @@
 # Imprimir las columas verticalmente
-import random
-
 matriz = []
 longitud = 2
 
