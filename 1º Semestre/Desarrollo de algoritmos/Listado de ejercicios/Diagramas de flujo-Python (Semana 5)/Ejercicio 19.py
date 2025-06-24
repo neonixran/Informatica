@@ -1,8 +1,8 @@
 '''
-19. El sueldo neto de un vendedor se calcula como la suma de un
-sueldo básico más el 12% del monto total vendido. determinar el
-sueldo neto de un vendedor sabiendo que hizo tres ventas en el
-mes. Las ventas son ingresadas por el usuario.
+El sueldo neto de un vendedor se calcula como la suma de un sueldo básico más el 12% del monto total vendido.
+Determinar el sueldo neto de un vendedor sabiendo que hizo tres ventas en el mes.
+
+Las ventas son ingresadas por el usuario.
 '''
 
 print("Este programa calcula el sueldo neto de un vendedor.")

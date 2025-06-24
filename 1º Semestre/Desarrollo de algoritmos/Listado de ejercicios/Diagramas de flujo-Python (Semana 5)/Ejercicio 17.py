@@ -1,12 +1,17 @@
 '''
-17. Una institución benéfica europea
-ha recibido tres donaciones en soles, dólares y
-marcos. La donación será repartida en tres rubros: 60% para la
-implementación de un centro de salud, 30% para un comedor de
-niños y el resto para gastos administrativos. Determinar el
-monto en euros que le corresponde a cada rubro.
-Considere que: 1 dólar = 3.52 soles, 1 dólar = 2.08 marcos, 1
-dólar = 1.07 euros. Las donaciones son ingresadas por el usuario.
+Una institución benéfica europea ha recibido tres donaciones en soles, dólares y marcos.
+La donación será repartida en tres rubros:
+    - 60% para la implementación de un centro de salud
+    - 30% para un comedor deniños
+    - el resto para gastos administrativos.
+
+Determinar el monto en euros que le corresponde a cada rubro.
+Considere que:
+    - 1 dólar = 3.52 soles
+    - 1 dólar = 2.08 marcos
+    - 1 dólar = 1.07 euros.
+
+Las donaciones son ingresadas por el usuario.
 '''
 
 print("Este programa calcula el monto en euros que le corresponde a cada rubro de una donación.")

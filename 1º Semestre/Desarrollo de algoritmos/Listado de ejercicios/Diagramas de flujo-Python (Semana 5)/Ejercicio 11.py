@@ -1,11 +1,11 @@
 '''
-11. Obtener el promedio de notas de un
-alumno. Las evaluaciones a tomar en
-cuenta son: certamen1 con un 40%,
-certamen 2 con un 40% y un test de
-20%. Las notas son ingresadas por
-el usuario y el promedio debe
-expresarse con decimales.
+Obtener el promedio de notas de un alumno.
+Las evaluaciones a tomar en cuenta son:
+    - certamen 1 con un 40%
+    - certamen 2 con un 40%
+    - un test de 20%
+
+Las notas son ingresadas por el usuario y el promedio debe expresarse con decimales.
 '''
 
 print("Este programa calcula el promedio ponderado de notas de un alumno")

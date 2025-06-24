@@ -1,7 +1,7 @@
 '''
-13. Calcular el IMC. (Índice de Masa Corporal)
-= Masa / (estatura^2). Masa y estatura
-son ingresados por el usuario
+Calcular el IMC (Índice de Masa Corporal).
+    - Usando la fórmula: IMC = Masa / (estatura²)
+Masa y estatura son ingresados por el usuario
 '''
 
 print("Este programa calcula el IMC (Índice de Masa Corporal)")

@@ -1,10 +1,10 @@
 '''
-12. Calcular el sueldo líquido de un
-trabajador. Los elementos a considerar
-son: sueldo base, fondo de
-pensión (20%) y fondo de salud (7%).
-Estos tres valores son ingresados
-por el usuario.
+Calcular el sueldo líquido de un trabajador.
+Los elementos a considerar son:
+    - sueldo base
+    - fondo de pensión (20%)
+    - fondo de salud (7%)
+Estos tres valores son ingresados por el usuario.
 '''
 
 print("Este programa calcula el sueldo líquido de un trabajador.")

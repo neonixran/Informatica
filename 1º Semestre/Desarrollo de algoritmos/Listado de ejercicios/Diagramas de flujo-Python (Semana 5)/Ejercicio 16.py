@@ -1,14 +1,9 @@
 '''
-16. Usted se debe estacionar
-frente a un parquímetro, el cual
-tiene la siguiente
-tarifa: de 0 a 20 minutos = $366. El
-valor del minuto adicional es de
-$18.28. Calcular la cantidad de
-pesos (CLP) que debe cancelar al
-parquímetro por estar estacionado
-por N minutos. N debe ser ingresado por
-el usuario.
+Usted se debe estacionar frente a un parquímetro, el cual tiene la siguiente tarifa:
+    - 0 a 20 minutos = $366
+    - Minuto adicional es de $18.28
+Calcular la cantidad de pesos (CLP) que debe cancelar al parquímetro por estar estacionado por N minutos.
+N debe ser ingresado por el usuario.
 '''
 
 print("Este programa calcula el costo de estacionamiento en un parquímetro.")

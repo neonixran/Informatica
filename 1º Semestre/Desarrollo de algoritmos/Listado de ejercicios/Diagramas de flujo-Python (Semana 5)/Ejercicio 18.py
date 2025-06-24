@@ -1,12 +1,13 @@
 '''
-18. En una competencia atlética de velocidad
-el tiempo se mide en minutos, segundos y
-centésimas de segundo y, el espacio recorrido
-se mide en metros. Determinar la velocidad promedio de
-un atleta en km/hr. Considere que: 1 hora = 60 minutos,
-1 minuto = 60 segundos, 1 segundo = 100 centésimas de
-segundo, 1 kilómetro = 1000 metros. Todos los datos requeridos
-son ingresados por el usuario.
+En una competencia atlética de velocidad el tiempo se mide en minutos, segundos y centésimas de segundo y, el espacio recorrido se mide en metros.
+Determinar la velocidad promedio de un atleta en km/hr.
+Considere que:
+    - 1 hora = 60 minutos
+    - 1 minuto = 60 segundos
+    - 1 segundo = 100 centésimas de segundo
+    - 1 kilómetro = 1000 metros
+    
+Todos los datos requeridos son ingresados por el usuario.
 '''
 
 print("Este programa calcula la velocidad promedio de un atleta en km/h")
@@ -38,4 +39,4 @@ horas = minutos / 60
 
 velocidad = km / horas  # Velocidad en km/h
 
-print(f"La velocidad promedio del atleta es de: {velocidad:.2f} km/h")
+print(f"La velocidad promedio del atleta es de {velocidad:.2f} km/h")
