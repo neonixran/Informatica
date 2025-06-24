@@ -1,8 +1,6 @@
 '''
-6. Transforme pesos (CPL) a dólares
-(USD), imprimiendo el resultado en
-pantalla. La cantidad de pesos (CLP) es
-ingresada por el usuario.
+Transforme pesos (CPL) a dólares (USD), imprimiendo el resultado en pantalla.
+La cantidad de pesos (CLP) es ingresada por el usuario.
 '''
 
 usd = float(input("Ingrese el valor del dólar actual: "))

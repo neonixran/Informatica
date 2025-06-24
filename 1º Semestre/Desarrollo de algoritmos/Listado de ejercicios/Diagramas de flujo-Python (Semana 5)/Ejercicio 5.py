@@ -1,8 +1,6 @@
 '''
-5. Determinar el porcentaje de varones y de
-mujeres que hay en un salón de clases.
-Todo número requerido para realizar
-el cálculo es ingresado por el usuario.
+Determinar el porcentaje de varones y de mujeres que hay en un salón de clases.
+Todo número requerido para realizar el cálculo es ingresado por el usuario.
 '''
 
 print("Este programa calcula el porcentaje de hombres y mujeres en un salón de clases.")
@@ -18,4 +16,4 @@ total = hom + muj # Total de alumnos
 p_muj = (muj / total) * 100 # Porcentaje de mujeres
 p_hom = (hom / total) * 100 # Porcentaje de hombres
 
-print(f"\De un total de {total} alumnos hay {p_muj:.2f}% de mujeres y {p_hom:.2f}% de hombres en el salón.") ## .2f para redondear a 2 decimales
+print(f"\nDe un total de {total} alumnos hay {p_muj:.2f}% de mujeres y {p_hom:.2f}% de hombres en el salón.") ## .2f para redondear a 2 decimales

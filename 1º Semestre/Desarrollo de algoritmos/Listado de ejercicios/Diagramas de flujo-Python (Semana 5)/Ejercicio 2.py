@@ -1,9 +1,7 @@
 '''
-2. Conversión de una longitud dada
-en centímetros a pies. Los
-centímetros son ingresados por el
-usuario. Considere que: 1 pie
-= 30.48 centímetros.
+a) Conversión de una longitud dada en centímetros a pies.
+b) Los centímetros son ingresados por el usuario.
+    Considere que: 1 pie = 30.48 centímetros.
 '''
 
 print("Este programa convierte centímetros a pies.")

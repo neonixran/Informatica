@@ -1,7 +1,5 @@
-'''
-1. Suma de 2 números e imprimir el
-resultado
-'''
+# Suma de 2 números e imprimir el resultado
+
 
 print("Este programa suma 2 números")
 num1 = int(input("Ingrese el primer número: "))

@@ -1,11 +1,11 @@
 '''
-4. Calculo del área y perímetro de un
-rectángulo. Considere las siguientes
-formulas: área = base x altura,
-perímetro = 2 x (base + altura). Tanto
-base como altura son ingresados por el
-usuario.
+Calculo del área y perímetro de un rectángulo.
 
+Considere las siguientes formulas:
+    a) área = base x altura
+    b) perímetro = 2 x (base + altura)
+
+Tanto base como altura son ingresados por el usuario.
 '''
 
 print("Este programa calcula el área y perímetro de un rectángulo.")

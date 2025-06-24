@@ -1,8 +1,6 @@
 '''
-10. Calcular e imprimir el valor de un
-dividendo en pesos (CLP) para un
-crédito de 2500 UF a 30 años. El
-valor de la UF es el valor del día.
+Calcular e imprimir el valor de un dividendo en pesos (CLP) para un crédito de 2500 UF a 30 años.
+El valor de la UF es el valor del día.
 '''
 
 print("Este programa calcula el valor de un dividendo en pesos (CLP) para un crédito de 2500 UF a 30 años.")

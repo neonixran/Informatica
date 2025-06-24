@@ -1,10 +1,7 @@
 '''
-8. Calcular la cantidad de tazas de té que
-pueden ser servidas con N litros de agua
-y donde cada taza tiene una capacidad
-de 200 cc. Debe tener en cuenta que 1
-litro = 1000 cc y que N debe ser
-ingresado por el usuario.
+Calcular la cantidad de tazas de té que pueden ser servidas con N litros de agua y donde cada taza tiene una capacidad de 200 cc.
+Debe tener en cuenta que 1 litro = 1000 cc.
+N debe ser ingresado por el usuario.
 '''
 
 print("Este programa calcula cuantas tazas de té se pueden servir con N litros de agua")

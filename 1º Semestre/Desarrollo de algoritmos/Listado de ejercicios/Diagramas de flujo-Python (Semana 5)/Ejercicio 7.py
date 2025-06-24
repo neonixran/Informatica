@@ -1,9 +1,7 @@
 '''
-7. Calcular e imprimir el valor de una cuota
-en pesos (CLP) de un crédito hipotecario
-expresado en UF. El valor de la UF es el
-valor del día. El valor del crédito debe
-ser ingresado por el usuario.
+Calcular e imprimir el valor de una cuota en pesos (CLP) de un crédito hipotecario expresado en UF.
+    a) El valor de la UF es el valor del día.
+    b) El valor del crédito debe ser ingresado por el usuario.
 '''
 
 print("Este programa calcula el valor de una cuota en pesos (CLP) de un crédito hipotecario expresado en UF.")
