@@ -13,7 +13,7 @@ longitud = 2
 A = []
 
 for i in range(longitud): # El usuario ingresa la cantidad de números definidos por la variable longitud
-    dato = int(input(f"Ingrese el elemento 1.{i+1}: ")) # Variable de paso para ingresar los números
+    dato = int(input(f"Ingrese el elemento #{i+1}: ")) # Variable de paso para ingresar los números
     A.append(dato)
 
 for i in range(longitud):
