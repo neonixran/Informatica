@@ -1,0 +1,16 @@
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\bin\Debug\net8.0-windows\uwu.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\bin\Debug\net8.0-windows\uwu.deps.json
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\bin\Debug\net8.0-windows\uwu.runtimeconfig.json
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\bin\Debug\net8.0-windows\uwu.dll
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\bin\Debug\net8.0-windows\uwu.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\obj\Debug\net8.0-windows\uwu.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\obj\Debug\net8.0-windows\uwu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\obj\Debug\net8.0-windows\uwu.AssemblyInfoInputs.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\obj\Debug\net8.0-windows\uwu.AssemblyInfo.cs
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\obj\Debug\net8.0-windows\uwu.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\obj\Debug\net8.0-windows\uwu.dll
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\obj\Debug\net8.0-windows\refint\uwu.dll
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\obj\Debug\net8.0-windows\uwu.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\obj\Debug\net8.0-windows\uwu.genruntimeconfig.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\obj\Debug\net8.0-windows\ref\uwu.dll
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\uwu\uwu\obj\Debug\net8.0-windows\uwu.Calculadora.resources
