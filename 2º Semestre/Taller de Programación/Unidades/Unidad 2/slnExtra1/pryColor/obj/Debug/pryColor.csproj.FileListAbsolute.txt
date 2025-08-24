@@ -1,0 +1,11 @@
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnExtra1\pryColor\bin\Debug\pryColor.exe.config
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnExtra1\pryColor\bin\Debug\pryColor.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnExtra1\pryColor\bin\Debug\pryColor.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnExtra1\pryColor\obj\Debug\pryColor.csproj.AssemblyReference.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnExtra1\pryColor\obj\Debug\pryColor.Form1.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnExtra1\pryColor\obj\Debug\pryColor.Properties.Resources.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnExtra1\pryColor\obj\Debug\pryColor.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnExtra1\pryColor\obj\Debug\pryColor.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnExtra1\pryColor\obj\Debug\pryColor.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnExtra1\pryColor\obj\Debug\pryColor.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnExtra1\pryColor\obj\Debug\pryColor.exe.config

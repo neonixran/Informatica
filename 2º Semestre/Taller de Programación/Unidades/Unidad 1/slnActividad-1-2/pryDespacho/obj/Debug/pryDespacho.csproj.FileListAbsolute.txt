@@ -1,0 +1,11 @@
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnActividad-1-2\pryDespacho\bin\Debug\pryDespacho.exe.config
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnActividad-1-2\pryDespacho\bin\Debug\pryDespacho.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnActividad-1-2\pryDespacho\bin\Debug\pryDespacho.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnActividad-1-2\pryDespacho\obj\Debug\pryDespacho.csproj.AssemblyReference.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnActividad-1-2\pryDespacho\obj\Debug\pryDespacho.Form1.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnActividad-1-2\pryDespacho\obj\Debug\pryDespacho.Properties.Resources.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnActividad-1-2\pryDespacho\obj\Debug\pryDespacho.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnActividad-1-2\pryDespacho\obj\Debug\pryDespacho.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnActividad-1-2\pryDespacho\obj\Debug\pryDespacho.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnActividad-1-2\pryDespacho\obj\Debug\pryDespacho.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnActividad-1-2\pryDespacho\obj\Debug\pryDespacho.exe.config

@@ -1,0 +1,11 @@
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico6\bin\Debug\pryPractico6.exe.config
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico6\bin\Debug\pryPractico6.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico6\bin\Debug\pryPractico6.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico6\obj\Debug\pryPractico6.csproj.AssemblyReference.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico6\obj\Debug\pryPractico6.frmPractico6.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico6\obj\Debug\pryPractico6.Properties.Resources.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico6\obj\Debug\pryPractico6.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico6\obj\Debug\pryPractico6.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico6\obj\Debug\pryPractico6.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico6\obj\Debug\pryPractico6.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico6\obj\Debug\pryPractico6.exe.config

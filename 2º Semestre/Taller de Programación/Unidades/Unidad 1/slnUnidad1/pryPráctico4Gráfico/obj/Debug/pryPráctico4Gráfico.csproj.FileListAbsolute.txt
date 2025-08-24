@@ -1,0 +1,11 @@
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad1\pryPráctico4Gráfico\bin\Debug\pryPráctico4Gráfico.exe.config
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad1\pryPráctico4Gráfico\bin\Debug\pryPráctico4Gráfico.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad1\pryPráctico4Gráfico\bin\Debug\pryPráctico4Gráfico.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad1\pryPráctico4Gráfico\obj\Debug\pryPráctico4Gráfico.csproj.AssemblyReference.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad1\pryPráctico4Gráfico\obj\Debug\pryPráctico4Gráfico.Form1.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad1\pryPráctico4Gráfico\obj\Debug\pryPráctico4Gráfico.Properties.Resources.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad1\pryPráctico4Gráfico\obj\Debug\pryPráctico4Gráfico.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad1\pryPráctico4Gráfico\obj\Debug\pryPráctico4Gráfico.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad1\pryPráctico4Gráfico\obj\Debug\pryPráctico4Gráfico.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad1\pryPráctico4Gráfico\obj\Debug\pryPráctico4Gráfico.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad1\pryPráctico4Gráfico\obj\Debug\pryPráctico4Gráfico.exe.config

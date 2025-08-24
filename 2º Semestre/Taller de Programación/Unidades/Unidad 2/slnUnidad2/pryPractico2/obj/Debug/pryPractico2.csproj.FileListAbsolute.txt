@@ -1,0 +1,11 @@
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico2\bin\Debug\pryMueveLabel.exe.config
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico2\bin\Debug\pryMueveLabel.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico2\bin\Debug\pryMueveLabel.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico2\obj\Debug\pryPractico2.csproj.AssemblyReference.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico2\obj\Debug\pryMueveLabel.frmPractico2.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico2\obj\Debug\pryMueveLabel.Properties.Resources.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico2\obj\Debug\pryPractico2.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico2\obj\Debug\pryPractico2.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico2\obj\Debug\pryMueveLabel.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico2\obj\Debug\pryMueveLabel.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico2\obj\Debug\pryMueveLabel.exe.config

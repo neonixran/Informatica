@@ -1,0 +1,11 @@
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico7v2\bin\Debug\pryPractico7v2.exe.config
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico7v2\bin\Debug\pryPractico7v2.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico7v2\bin\Debug\pryPractico7v2.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico7v2\obj\Debug\pryPractico7.csproj.AssemblyReference.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico7v2\obj\Debug\pryPractico7v2.Form1.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico7v2\obj\Debug\pryPractico7v2.Properties.Resources.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico7v2\obj\Debug\pryPractico7.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico7v2\obj\Debug\pryPractico7.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico7v2\obj\Debug\pryPractico7v2.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico7v2\obj\Debug\pryPractico7v2.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnUnidad2\pryPractico7v2\obj\Debug\pryPractico7v2.exe.config
