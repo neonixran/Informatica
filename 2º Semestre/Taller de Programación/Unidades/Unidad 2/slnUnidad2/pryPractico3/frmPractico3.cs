@@ -16,10 +16,10 @@ namespace pryPractico3
         {
             InitializeComponent();
         }
-
+        
         private void btnCapturar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(String.Format("Nombre: {0}\nEdad: {1}\nPeso: {2}", txtNombre.Text, txtEdad.Text, txtPeso.Text), "Datos obtenidos");
+            MessageBox.Show(String.Format("Nombre:\t{0}\nEdad:\t{1}\nPeso:\t{2}", txtNombre.Text, txtEdad.Text, txtPeso.Text), "Datos obtenidos");
         }
     }
 }

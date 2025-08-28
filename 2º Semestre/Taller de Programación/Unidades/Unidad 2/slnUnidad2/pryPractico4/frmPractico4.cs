@@ -51,7 +51,7 @@ namespace pryPractico4
 
         private void btnMultiplicar_Click(object sender, EventArgs e)
         {
-            try
+                try
             {
                 double num1 = double.Parse(txtNum1.Text);
                 double num2 = double.Parse(txtNum2.Text);

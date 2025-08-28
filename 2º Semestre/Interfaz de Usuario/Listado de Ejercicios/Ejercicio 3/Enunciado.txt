@@ -1,0 +1,14 @@
+Escribe el html de un formulario web según las especificaciones descritas al final del enunciado.
+
+ESPECIFICACIONES DEL FORMULARIO WEB
+
+El formulario debe preguntar:
+    - Nombre. El campo debe aceptar un máximo de 30 caracteres.
+    - Apellidos. El campo debe aceptar un máximo de 30 caracteres.
+    - Email. Campo de relleno obligado.
+    - Asunto a elegir una opción entre pedir presupuesto, solicitar cita previa, otros. Deben mostrarse
+    las 3 opciones en un cajetín según la imagen (usa el atributo size).
+    - Cómo nos a escogido a elegir una o más opciones entre un amigo, googleando, buzoneo, otros.
+    Siendo la elección simple o múltiple.
+    - Un mensaje. Debe tener una longitud máxima de 300 caracteres
+    - Aceptación de cláusula rgpd. De obligada selección antes de enviar el currículum.

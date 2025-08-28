@@ -1,0 +1,19 @@
+Crea una página web que contenga un formulario con los siguientes campos de información:
+    - Nombre, con un control de tipo texto obligatorio y con autofoco.
+    - Correo electrónico, con un control de tipo email obligatorio.
+    - URL, con un control de tipo url que muestre la ayuda "Escribe la URL de tu página web personal".
+    - Fecha, con un control de tipo date.
+    - Tiempo, con un control de tipo time.
+    - Fecha y hora, con un control de tipo datetime.
+    - Mes, con un control de tipo month.
+    - Semana, con un control de tipo week.
+    - Número, con un control de tipo number que limite la entrada a un valor entre -10 y 10.
+    - Teléfono, con un control de tipo tel.
+    - Término de búsqueda, con un control de tipo search.
+    - Color favorito, con un control de tipo color.
+    - Un botón de envío.
+
+Además, tienes que tener en cuenta los siguientes requisitos:
+    - El título de la página debe ser Formulario de prueba de HTML5.
+    - El método de envío del formulario debe ser POST.
+    - El destino del envío del formulario debe ser "".

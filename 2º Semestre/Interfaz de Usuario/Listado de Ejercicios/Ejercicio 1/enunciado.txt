@@ -1,0 +1,38 @@
+La empresa tecnologia_ipvg recibió un requerimiento de una pyme, la cual está lanzando una
+campaña para recopilar información de sus clientes, se le pide a ud como programador, que
+programe el front, en paralelo el programador backend está desarrollando la inteligencia para
+guardar los datos y generar una base para explotar y clasificar clientes, para futuras campañas de
+marketing.
+
+La página debe contar con lo siguiente:
+    - nombres, con un control de tipo texto, máximo 40 caracteres, campo requerido.
+    - apellidos, con un control de tipo texto, máximo 40 caracteres, campo requerido
+    - sexo, con dos opciones excluyentes hombre o mujer.
+    - El correo electrónico, con un control de tipo email campo requerido, máximo 40
+    caracteres.
+    - Una casilla de verificación con el texto "Deseo recibir información sobre novedades y
+    ofertas".
+    - Solicitud de celular solo parte numérica es decir 9 números (sin el +569), valide que solo
+    ingrese 9 numeros, ayude al usuario con un ejemplo de ingreso.
+    - Una casilla de verificación con el texto "Declaro haber leido y aceptar las condiciones
+    generales del programa y la normativa sobre protección de datos".
+    - Un botón de envío.
+
+Además, tienes que tener en cuenta los siguientes requisitos:
+    - El título de la página debe ser Formulario de registro “PYME SA”
+    - El método de envío del formulario debe ser GET.
+    - El destino del envío del formulario debe ser "#".
+    - La casilla de verificación con el texto "Deseo recibir información sobre novedades y ofertas" debe
+    estar activada por defecto.
+    - Debe contener un encabezado nivel 1: con el nombre de la página.
+
+Requerimientos mínimos de diseño:
+    - Debe contener fondo (elija ud, color o fotografía)
+    - Debe estar alineado el formulario en medio de la página.
+    - Debe contener un pie de página, con los derechos de programador es decir ud.
+    - Debe contener un logo encima de la página. (puede ser cualquier que ud encuentre)
+    - el encabezado también debe estar alineando al medio.
+    - la letra debe ser ARIAL, tamaño 12, en negrita.
+
+Recuerde utilizar las reglas de CSS y no atributos deprecados para eso revise nuestro torpedo
+oficial.

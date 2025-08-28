@@ -20,10 +20,18 @@ namespace pryPractico7v2
         int contador = 0;
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            double Nota;
 
-            if (!double.TryParse(txtNota.Text, out double Nota)) // Validar que la nota sea numérica
+            if (!double.TryParse(txtNota.Text, out Nota)) // Validar que la nota sea numérica
             {
                 MessageBox.Show("Ingrese una nota válida.", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtNota.Clear();
+                return;
+            }
+
+            if (Nota < 1 || Nota > 7)
+            {
+                MessageBox.Show("Ingrese una nota de 1.0 a 7.0 ", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txtNota.Clear();
                 return;
             }

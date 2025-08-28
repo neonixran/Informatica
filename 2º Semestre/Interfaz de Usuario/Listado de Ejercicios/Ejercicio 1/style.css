@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(255, 251, 250);
+    font-family: Arial;
+    font-size: 12;
+    font-weight: bold;
+}
+
+section, header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
