@@ -25,7 +25,7 @@ namespace pryPractico4
                 double num2 = double.Parse(txtNum2.Text);
                 double resultado = num1 + num2;
 
-                txtSuma.Text = resultado.ToString();
+                txtResultado.Text = resultado.ToString();
             }
             catch (Exception)
             {
@@ -41,7 +41,7 @@ namespace pryPractico4
                 double num2 = double.Parse(txtNum2.Text);
                 double resultado = num1 - num2;
 
-                txtSuma.Text = resultado.ToString();
+                txtResultado.Text = resultado.ToString();
             }
             catch (Exception)
             {
@@ -57,7 +57,7 @@ namespace pryPractico4
                 double num2 = double.Parse(txtNum2.Text);
                 double resultado = num1 * num2;
 
-                txtSuma.Text = resultado.ToString();
+                txtResultado.Text = resultado.ToString();
             }
             catch (Exception)
             {
@@ -73,12 +73,33 @@ namespace pryPractico4
                 double num2 = double.Parse(txtNum2.Text);
                 double resultado = num1 / num2;
 
-                txtSuma.Text = resultado.ToString();
+                txtResultado.Text = resultado.ToString("N2"); // Formateo a 2 decimales
             }
             catch (Exception)
             {
                 MessageBox.Show("Error en el ingreso de datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnMódulo_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double num1 = double.Parse(txtNum1.Text);
+                double num2 = double.Parse(txtNum2.Text);
+                double resultado = num1 % num2;
+
+                txtResultado.Text = resultado.ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error en el ingreso de datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnBorrarRes_Click(object sender, EventArgs e)
+        {
+            txtResultado.Clear();
         }
     }
 }

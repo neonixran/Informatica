@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="./logo.png">
+        <img src="./Logo_VG.png" id="logo" alt="logo IPVG">
         <h1>Formulario de registro</h1>
     </header>
     <section>
@@ -38,7 +38,7 @@
                 <input type="email" name="email" id="email" placeholder="ej. juan.perez@gmail.com" maxlength="40" size="19" required>
             </p>
             <p>
-                <label>Deseo recibir información sobre novedades y ofertas</label>
+                <label class="inline">Deseo recibir información sobre novedades y ofertas</label>
                 <input type="checkbox" name="novedades" id="novedades" checked>
             </p>
             <p>
@@ -46,11 +46,11 @@
                 <input type="tel" name="tel" id="tel" placeholder="ej. 912345678" maxlength="9" pattern="[1-9]{9}" required>
             </p>
             <p>
-                <label>Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+                <label class="inline">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
                 <input type="checkbox" name="condiciones" id="condiciones">
             </p>
 
-            <input type="submit" name="enviar" title="Enviar">
+            <input type="submit" name="enviar" title="Enviar" id="btnSend">
         </form>
     </section>
     <footer>

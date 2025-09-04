@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 2\\slnUnidad2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A74ACAB-78D9-49DE-8200-63E422854442}|pryPractico4\\pryPractico4.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\2\u00BA semestre\\taller de programaci\u00F3n\\unidades\\unidad 2\\slnunidad2\\prypractico4\\frmpractico4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A74ACAB-78D9-49DE-8200-63E422854442}|pryPractico4\\pryPractico4.csproj|solutionrelative:prypractico4\\frmpractico4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F4ABAD0-E3D5-45B4-A99B-45381E60AFA8}|pryPractico6\\pryPractico6.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\2\u00BA semestre\\taller de programaci\u00F3n\\unidades\\unidad 2\\slnunidad2\\prypractico6\\frmpractico6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4ABAD0-E3D5-45B4-A99B-45381E60AFA8}|pryPractico6\\pryPractico6.csproj|solutionrelative:prypractico6\\frmpractico6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A74ACAB-78D9-49DE-8200-63E422854442}|pryPractico4\\pryPractico4.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\2\u00BA semestre\\taller de programaci\u00F3n\\unidades\\unidad 2\\slnunidad2\\prypractico4\\frmpractico4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5A74ACAB-78D9-49DE-8200-63E422854442}|pryPractico4\\pryPractico4.csproj|solutionrelative:prypractico4\\frmpractico4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8F4ABAD0-E3D5-45B4-A99B-45381E60AFA8}|pryPractico6\\pryPractico6.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\2\u00BA semestre\\taller de programaci\u00F3n\\unidades\\unidad 2\\slnunidad2\\prypractico6\\frmpractico6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8F4ABAD0-E3D5-45B4-A99B-45381E60AFA8}|pryPractico6\\pryPractico6.csproj|solutionrelative:prypractico6\\frmpractico6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,26 +31,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmPractico4.cs",
-              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 2\\slnUnidad2\\pryPractico4\\frmPractico4.cs",
-              "RelativeDocumentMoniker": "pryPractico4\\frmPractico4.cs",
-              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 2\\slnUnidad2\\pryPractico4\\frmPractico4.cs",
-              "RelativeToolTip": "pryPractico4\\frmPractico4.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAkwCcAAAA3AAAAAAAAAA==",
+              "Title": "frmPractico6.cs",
+              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 2\\slnUnidad2\\pryPractico6\\frmPractico6.cs",
+              "RelativeDocumentMoniker": "pryPractico6\\frmPractico6.cs",
+              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 2\\slnUnidad2\\pryPractico6\\frmPractico6.cs",
+              "RelativeToolTip": "pryPractico6\\frmPractico6.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAhwDIAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T17:56:47.295Z",
+              "WhenOpened": "2025-08-28T18:15:56.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmPractico4.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 2\\slnUnidad2\\pryPractico4\\frmPractico4.cs",
-              "RelativeDocumentMoniker": "pryPractico4\\frmPractico4.cs",
-              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 2\\slnUnidad2\\pryPractico4\\frmPractico4.cs [Dise\u00F1o]",
-              "RelativeToolTip": "pryPractico4\\frmPractico4.cs [Dise\u00F1o]",
+              "Title": "frmPractico6.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 2\\slnUnidad2\\pryPractico6\\frmPractico6.cs",
+              "RelativeDocumentMoniker": "pryPractico6\\frmPractico6.cs",
+              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 2\\slnUnidad2\\pryPractico6\\frmPractico6.cs [Dise\u00F1o]",
+              "RelativeToolTip": "pryPractico6\\frmPractico6.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T17:55:37.597Z",
+              "WhenOpened": "2025-08-28T18:15:53.043Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

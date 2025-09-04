@@ -37,40 +37,45 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(102, 19);
+            this.label1.Location = new System.Drawing.Point(136, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 18);
+            this.label1.Size = new System.Drawing.Size(153, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ingrese su Edad:";
             // 
             // txbEdad
             // 
             this.txbEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbEdad.Location = new System.Drawing.Point(128, 60);
+            this.txbEdad.Location = new System.Drawing.Point(171, 74);
+            this.txbEdad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbEdad.Name = "txbEdad";
-            this.txbEdad.Size = new System.Drawing.Size(66, 24);
+            this.txbEdad.Size = new System.Drawing.Size(87, 29);
             this.txbEdad.TabIndex = 1;
+            this.txbEdad.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnVerificar
             // 
             this.btnVerificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerificar.Location = new System.Drawing.Point(124, 109);
+            this.btnVerificar.Location = new System.Drawing.Point(165, 134);
+            this.btnVerificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVerificar.Name = "btnVerificar";
-            this.btnVerificar.Size = new System.Drawing.Size(75, 26);
+            this.btnVerificar.Size = new System.Drawing.Size(100, 32);
             this.btnVerificar.TabIndex = 2;
             this.btnVerificar.Text = "Verificar";
             this.btnVerificar.UseVisualStyleBackColor = true;
             this.btnVerificar.Click += new System.EventHandler(this.btnVerificar_Click);
             // 
-            // Form1
+            // frmPractico5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(323, 168);
+            this.ClientSize = new System.Drawing.Size(431, 207);
             this.Controls.Add(this.btnVerificar);
             this.Controls.Add(this.txbEdad);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "frmPractico5";
             this.Text = "Control de Edad";
             this.ResumeLayout(false);
             this.PerformLayout();

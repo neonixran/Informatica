@@ -19,30 +19,36 @@ namespace pryPractico6
 
         private void btnGenerar_Click(object sender, EventArgs e)
         {
-            if (txtInicial.Text != "" && txtFinal.Text != "" && txtSalto.Text != "")
+            try
             {
-                lstSalida.Items.Clear();
-
-                int Inicial = int.Parse(txtInicial.Text);
-                int Final = int.Parse(txtFinal.Text);
-                int Salto = int.Parse(txtSalto.Text);
-
-                if (Inicial > Final)
+                if (txtInicial.Text != "" && txtFinal.Text != "" && txtSalto.Text != "")
                 {
-                    MessageBox.Show("El valor inicial no puede ser mayor al valor final", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+                    lstSalida.Items.Clear();
 
-                if (Salto < 0)
-                {
-                    MessageBox.Show("El salto no puede ser menor que 0", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+                    int Inicial = int.Parse(txtInicial.Text);
+                    int Final = int.Parse(txtFinal.Text);
+                    int Salto = int.Parse(txtSalto.Text);
 
-                for (int i = Inicial; i <= Final; i = i + Salto)
-                {
-                    lstSalida.Items.Add(i);
+                    if (Inicial > Final)
+                    {
+                        MessageBox.Show("El valor inicial no puede ser mayor al valor final", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    if (Salto < 0)
+                    {
+                        MessageBox.Show("El salto no puede ser menor que 0", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    for (int i = Inicial; i <= Final; i = i + Salto)
+                    {
+                        lstSalida.Items.Add(i);
+                    }
                 }
+            } catch
+            {
+                MessageBox.Show("Ingrese un dato valido");
             }
         }
     }

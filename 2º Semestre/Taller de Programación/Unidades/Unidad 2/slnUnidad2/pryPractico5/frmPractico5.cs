@@ -22,8 +22,12 @@ namespace pryPractico5
             try
             {
                 int edad = int.Parse(txbEdad.Text);
-
-                if (edad < 18)
+                
+                if (edad < 0 || edad > 123)
+                {
+                    throw new Exception(); // Lanza una excepción si la edad es negativa
+                }
+                else if (edad < 18)
                 {
                     MessageBox.Show("Usted es menor de edad", "Atención");
                 }
@@ -43,6 +47,8 @@ namespace pryPractico5
             catch (Exception)
             {
                 MessageBox.Show("Ingrese edad válida", "ERROR");
+                txbEdad.Clear();
+                txbEdad.Focus();
             }
         }
     }

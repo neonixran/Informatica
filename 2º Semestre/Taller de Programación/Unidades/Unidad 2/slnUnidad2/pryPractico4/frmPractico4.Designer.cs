@@ -33,17 +33,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtNum1 = new System.Windows.Forms.TextBox();
             this.txtNum2 = new System.Windows.Forms.TextBox();
-            this.txtSuma = new System.Windows.Forms.TextBox();
+            this.txtResultado = new System.Windows.Forms.TextBox();
             this.btnSumar = new System.Windows.Forms.Button();
             this.btnRestar = new System.Windows.Forms.Button();
             this.btnMultiplicar = new System.Windows.Forms.Button();
             this.btnDividir = new System.Windows.Forms.Button();
+            this.btnMódulo = new System.Windows.Forms.Button();
+            this.btnBorrarRes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(94, 49);
+            this.label1.Location = new System.Drawing.Point(117, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 24);
             this.label1.TabIndex = 0;
@@ -52,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(242, 49);
+            this.label2.Location = new System.Drawing.Point(265, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 24);
             this.label2.TabIndex = 0;
@@ -61,7 +63,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(394, 49);
+            this.label3.Location = new System.Drawing.Point(417, 49);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 24);
             this.label3.TabIndex = 0;
@@ -69,29 +71,33 @@
             // 
             // txtNum1
             // 
-            this.txtNum1.Location = new System.Drawing.Point(106, 90);
+            this.txtNum1.Location = new System.Drawing.Point(129, 90);
             this.txtNum1.Name = "txtNum1";
             this.txtNum1.Size = new System.Drawing.Size(71, 29);
             this.txtNum1.TabIndex = 1;
+            this.txtNum1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNum2
             // 
-            this.txtNum2.Location = new System.Drawing.Point(254, 90);
+            this.txtNum2.Location = new System.Drawing.Point(277, 90);
             this.txtNum2.Name = "txtNum2";
             this.txtNum2.Size = new System.Drawing.Size(71, 29);
             this.txtNum2.TabIndex = 2;
+            this.txtNum2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtSuma
+            // txtResultado
             // 
-            this.txtSuma.Location = new System.Drawing.Point(406, 90);
-            this.txtSuma.Name = "txtSuma";
-            this.txtSuma.Size = new System.Drawing.Size(71, 29);
-            this.txtSuma.TabIndex = 1;
-            this.txtSuma.TabStop = false;
+            this.txtResultado.Location = new System.Drawing.Point(429, 90);
+            this.txtResultado.Name = "txtResultado";
+            this.txtResultado.ReadOnly = true;
+            this.txtResultado.Size = new System.Drawing.Size(71, 29);
+            this.txtResultado.TabIndex = 1;
+            this.txtResultado.TabStop = false;
+            this.txtResultado.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnSumar
             // 
-            this.btnSumar.Location = new System.Drawing.Point(44, 162);
+            this.btnSumar.Location = new System.Drawing.Point(14, 162);
             this.btnSumar.Name = "btnSumar";
             this.btnSumar.Size = new System.Drawing.Size(101, 32);
             this.btnSumar.TabIndex = 3;
@@ -101,7 +107,7 @@
             // 
             // btnRestar
             // 
-            this.btnRestar.Location = new System.Drawing.Point(173, 162);
+            this.btnRestar.Location = new System.Drawing.Point(137, 162);
             this.btnRestar.Name = "btnRestar";
             this.btnRestar.Size = new System.Drawing.Size(101, 32);
             this.btnRestar.TabIndex = 3;
@@ -111,7 +117,7 @@
             // 
             // btnMultiplicar
             // 
-            this.btnMultiplicar.Location = new System.Drawing.Point(302, 162);
+            this.btnMultiplicar.Location = new System.Drawing.Point(260, 162);
             this.btnMultiplicar.Name = "btnMultiplicar";
             this.btnMultiplicar.Size = new System.Drawing.Size(108, 32);
             this.btnMultiplicar.TabIndex = 3;
@@ -121,7 +127,7 @@
             // 
             // btnDividir
             // 
-            this.btnDividir.Location = new System.Drawing.Point(438, 162);
+            this.btnDividir.Location = new System.Drawing.Point(390, 162);
             this.btnDividir.Name = "btnDividir";
             this.btnDividir.Size = new System.Drawing.Size(101, 32);
             this.btnDividir.TabIndex = 3;
@@ -129,16 +135,38 @@
             this.btnDividir.UseVisualStyleBackColor = true;
             this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
             // 
+            // btnMódulo
+            // 
+            this.btnMódulo.Location = new System.Drawing.Point(513, 162);
+            this.btnMódulo.Name = "btnMódulo";
+            this.btnMódulo.Size = new System.Drawing.Size(101, 32);
+            this.btnMódulo.TabIndex = 4;
+            this.btnMódulo.Text = "Módulo";
+            this.btnMódulo.UseVisualStyleBackColor = true;
+            this.btnMódulo.Click += new System.EventHandler(this.btnMódulo_Click);
+            // 
+            // btnBorrarRes
+            // 
+            this.btnBorrarRes.Location = new System.Drawing.Point(191, 211);
+            this.btnBorrarRes.Name = "btnBorrarRes";
+            this.btnBorrarRes.Size = new System.Drawing.Size(250, 32);
+            this.btnBorrarRes.TabIndex = 5;
+            this.btnBorrarRes.Text = "Borrar resultado";
+            this.btnBorrarRes.UseVisualStyleBackColor = true;
+            this.btnBorrarRes.Click += new System.EventHandler(this.btnBorrarRes_Click);
+            // 
             // frmPractico4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 219);
+            this.ClientSize = new System.Drawing.Size(629, 255);
+            this.Controls.Add(this.btnBorrarRes);
+            this.Controls.Add(this.btnMódulo);
             this.Controls.Add(this.btnDividir);
             this.Controls.Add(this.btnMultiplicar);
             this.Controls.Add(this.btnRestar);
             this.Controls.Add(this.btnSumar);
-            this.Controls.Add(this.txtSuma);
+            this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.txtNum2);
             this.Controls.Add(this.txtNum1);
             this.Controls.Add(this.label3);
@@ -160,11 +188,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNum1;
         private System.Windows.Forms.TextBox txtNum2;
-        private System.Windows.Forms.TextBox txtSuma;
+        private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.Button btnSumar;
         private System.Windows.Forms.Button btnRestar;
         private System.Windows.Forms.Button btnMultiplicar;
         private System.Windows.Forms.Button btnDividir;
+        private System.Windows.Forms.Button btnMódulo;
+        private System.Windows.Forms.Button btnBorrarRes;
     }
 }
 
