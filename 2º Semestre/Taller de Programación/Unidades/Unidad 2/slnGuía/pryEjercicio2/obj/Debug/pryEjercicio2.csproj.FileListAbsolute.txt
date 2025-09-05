@@ -1,0 +1,11 @@
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 2\slnGuía\pryEjercicio2\bin\Debug\pryEjercicio2.exe.config
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 2\slnGuía\pryEjercicio2\bin\Debug\pryEjercicio2.exe
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 2\slnGuía\pryEjercicio2\bin\Debug\pryEjercicio2.pdb
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 2\slnGuía\pryEjercicio2\obj\Debug\pryEjercicio2.csproj.AssemblyReference.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 2\slnGuía\pryEjercicio2\obj\Debug\pryEjercicio2.Form1.resources
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 2\slnGuía\pryEjercicio2\obj\Debug\pryEjercicio2.Properties.Resources.resources
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 2\slnGuía\pryEjercicio2\obj\Debug\pryEjercicio2.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 2\slnGuía\pryEjercicio2\obj\Debug\pryEjercicio2.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 2\slnGuía\pryEjercicio2\obj\Debug\pryEjercicio2.exe
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 2\slnGuía\pryEjercicio2\obj\Debug\pryEjercicio2.pdb
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 2\slnGuía\pryEjercicio2\obj\Debug\pryEjercicio2.exe.config

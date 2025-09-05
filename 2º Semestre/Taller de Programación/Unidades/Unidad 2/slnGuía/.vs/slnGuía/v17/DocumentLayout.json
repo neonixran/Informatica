@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\iryde\\OneDrive\\Desktop\\Visual Studio uwu\\slnGu\u00EDa\\",
+  "WorkspaceRootPath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 2\\slnGu\u00EDa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4776116F-E42E-4E60-8DBD-4674C974ADE7}|pryGuia\\pryGuia.csproj|C:\\Users\\iryde\\OneDrive\\Desktop\\Visual Studio uwu\\slnGu\u00EDa\\pryguia\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4776116F-E42E-4E60-8DBD-4674C974ADE7}|pryGuia\\pryGuia.csproj|solutionrelative:pryguia\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7D2CE80-B3B9-4D21-8938-19C179C0C971}|pryEjercicio2\\pryEjercicio2.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\2\u00BA semestre\\taller de programaci\u00F3n\\unidades\\unidad 2\\slngu\u00EDa\\pryejercicio2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7D2CE80-B3B9-4D21-8938-19C179C0C971}|pryEjercicio2\\pryEjercicio2.csproj|solutionrelative:pryejercicio2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4776116F-E42E-4E60-8DBD-4674C974ADE7}|pryGuia\\pryGuia.csproj|c:\\users\\iryde\\onedrive\\desktop\\visual studio uwu\\slngu\u00EDa\\pryguia\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4776116F-E42E-4E60-8DBD-4674C974ADE7}|pryGuia\\pryGuia.csproj|solutionrelative:pryguia\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E7D2CE80-B3B9-4D21-8938-19C179C0C971}|pryEjercicio2\\pryEjercicio2.csproj|C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 2\\slnGu\u00EDa\\pryejercicio2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E7D2CE80-B3B9-4D21-8938-19C179C0C971}|pryEjercicio2\\pryEjercicio2.csproj|solutionrelative:pryejercicio2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,25 +32,25 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Desktop\\Visual Studio uwu\\slnGu\u00EDa\\pryGuia\\Form1.cs",
-              "RelativeDocumentMoniker": "pryGuia\\Form1.cs",
-              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Desktop\\Visual Studio uwu\\slnGu\u00EDa\\pryGuia\\Form1.cs",
-              "RelativeToolTip": "pryGuia\\Form1.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAcwDAAAAAkAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 2\\slnGu\u00EDa\\pryEjercicio2\\Form1.cs",
+              "RelativeDocumentMoniker": "pryEjercicio2\\Form1.cs",
+              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 2\\slnGu\u00EDa\\pryEjercicio2\\Form1.cs",
+              "RelativeToolTip": "pryEjercicio2\\Form1.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwDgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T17:47:33.243Z",
+              "WhenOpened": "2025-09-05T16:13:33.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Desktop\\Visual Studio uwu\\slnGu\u00EDa\\pryGuia\\Form1.cs",
-              "RelativeDocumentMoniker": "pryGuia\\Form1.cs",
-              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Desktop\\Visual Studio uwu\\slnGu\u00EDa\\pryGuia\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "pryGuia\\Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 2\\slnGu\u00EDa\\pryEjercicio2\\Form1.cs",
+              "RelativeDocumentMoniker": "pryEjercicio2\\Form1.cs",
+              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 2\\slnGu\u00EDa\\pryEjercicio2\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "pryEjercicio2\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T17:08:00.2Z",
+              "WhenOpened": "2025-09-05T16:08:44.165Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

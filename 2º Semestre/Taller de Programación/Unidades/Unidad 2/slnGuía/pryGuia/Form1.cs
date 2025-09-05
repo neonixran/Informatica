@@ -57,13 +57,13 @@ namespace pryGuia
                 {
                     txtTipo.Text = "La recta se inclina hacia abajo de izquierda a derecha.";
                 }
-                else if (Pendiente == 0)
-                {
-                    txtTipo.Text = "La recta es horizontal.";
-                }
                 else if (Pendiente > 0)
                 {
                     txtTipo.Text = "La recta se inclina hacia arriba de izquierda a derecha.";
+                }
+                else if (Pendiente == 0)
+                {
+                    txtTipo.Text = "La recta es horizontal.";
                 }
             }
             catch (Exception)
