@@ -1,0 +1,10 @@
+C:\Users\iryde\Downloads\slnC1-Bravo-Josué\slnC1-Bravo-Josué\pryCertamen\bin\Debug\pryCertamen.exe.config
+C:\Users\iryde\Downloads\slnC1-Bravo-Josué\slnC1-Bravo-Josué\pryCertamen\bin\Debug\pryCertamen.exe
+C:\Users\iryde\Downloads\slnC1-Bravo-Josué\slnC1-Bravo-Josué\pryCertamen\bin\Debug\pryCertamen.pdb
+C:\Users\iryde\Downloads\slnC1-Bravo-Josué\slnC1-Bravo-Josué\pryCertamen\obj\Debug\pryCertamen.csproj.AssemblyReference.cache
+C:\Users\iryde\Downloads\slnC1-Bravo-Josué\slnC1-Bravo-Josué\pryCertamen\obj\Debug\pryCertamen.Form1.resources
+C:\Users\iryde\Downloads\slnC1-Bravo-Josué\slnC1-Bravo-Josué\pryCertamen\obj\Debug\pryCertamen.Properties.Resources.resources
+C:\Users\iryde\Downloads\slnC1-Bravo-Josué\slnC1-Bravo-Josué\pryCertamen\obj\Debug\pryCertamen.csproj.GenerateResource.cache
+C:\Users\iryde\Downloads\slnC1-Bravo-Josué\slnC1-Bravo-Josué\pryCertamen\obj\Debug\pryCertamen.csproj.CoreCompileInputs.cache
+C:\Users\iryde\Downloads\slnC1-Bravo-Josué\slnC1-Bravo-Josué\pryCertamen\obj\Debug\pryCertamen.exe
+C:\Users\iryde\Downloads\slnC1-Bravo-Josué\slnC1-Bravo-Josué\pryCertamen\obj\Debug\pryCertamen.pdb

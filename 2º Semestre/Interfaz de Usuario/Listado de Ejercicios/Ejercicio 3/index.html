@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <section>
-        <label>Nombre:</label><br>
-        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" maxlength="30"><br>
+        <p class="container">
+            <label>Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" maxlength="30">
+        </p>
 
-        <label>Apellido:</label><br>
-        <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido" maxlength="30"><br>
+        <p class="container">
+            <label>Apellido:</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido" maxlength="30">
+        </p>
 
-        <label>Email:</label><br>
-        <input type="email" name="email" id="email" placeholder="correo@empresa.com" maxlength="30"><br>
+        <p class="container">
+            <label>Email:</label>
+            <input type="email" name="email" id="email" placeholder="correo@empresa.com" maxlength="30">
+        </p>
 
-        <label>Asunto</label><br>
-        <input type="" name="email" id="email" placeholder="correo@empresa.com" maxlength="30"><br>
-        <p> 
+        <label>Asunto</label>JABG
+        <input type="" name="email" id="email" placeholder="correo@empresa.com" maxlength="30">
+        <p class="container"> 
             <label>¿Cómo no ha conocido?</label><br>
             <input type="checkbox" name="amigo" id="amigo">
             <label>Un amigo</label>
@@ -29,8 +37,11 @@
             <input type="checkbox" name="otro" id="otro">
             <label>Otros</label>
         </p>
-        <label>Escribe tu mensaje</label><br>
-        <textarea></textarea><br>
+        <p class="container">
+            <label>Escribe tu mensaje</label>
+            <textarea></textarea><br>
+        </p>
+
         <label>He leído y acepto el <a href="https://gdpr.eu/">aviso legal y la política de privacidad</a></label>
         <input type="checkbox" required>
     </section>
