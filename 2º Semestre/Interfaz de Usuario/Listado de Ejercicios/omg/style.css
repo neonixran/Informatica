@@ -13,6 +13,10 @@ main {
   flex-grow: 1;
 }
 
+textarea {
+  resize: none;
+}
+
 #logo {
     width: 255px;
     height: 83px;
