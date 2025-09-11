@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario contacto</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img src="https://ipvg.s3.amazonaws.com/static_cdn/images/logo-vg.png" id="logo">
+        <h1>Sugerencia de Alumnos</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <p>Indique su nombre</p>
+            <input type="text" maxlength="40" required>
+
+            <p>Indique su teléfono</p>
+            <input type="tel" maxlength="9" pattern="[0-9]{9}" placeholder="Ej. 912345678">
+
+            <p>
+                <p>Escriba Sugerencia</p>
+                <textarea minlength="10" maxlength="300" required></textarea>
+            </p>
+
+            <input type="text" value="Alumnos IPVG CCP" disabled>
+
+            <p>Deseo que mis datos se muestren al receptor</p>
+            <div>
+                <input type="radio" name="checkbox" id="si" value="si">
+                <label for="si">SI</label>
+                <input type="radio" name="checkbox" id="no" value="no">
+                <label for="no">NO</label>
+            </div>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        Derechos Reservados Ingeniería Informática IPVG 2025-2
+    </footer>
+</body>
+</html>

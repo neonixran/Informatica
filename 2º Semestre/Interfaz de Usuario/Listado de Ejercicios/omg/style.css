@@ -1,0 +1,19 @@
+body {
+    background-color: #002f65;
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+#logo {
+    width: 255px;
+    height: 83px;
+}
