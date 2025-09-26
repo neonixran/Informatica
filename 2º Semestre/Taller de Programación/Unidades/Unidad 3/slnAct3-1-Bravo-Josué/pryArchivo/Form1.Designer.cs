@@ -122,7 +122,7 @@
             this.txtNúmero.Location = new System.Drawing.Point(93, 253);
             this.txtNúmero.Name = "txtNúmero";
             this.txtNúmero.Size = new System.Drawing.Size(41, 26);
-            this.txtNúmero.TabIndex = 1;
+            this.txtNúmero.TabIndex = 0;
             this.txtNúmero.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label4
