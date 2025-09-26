@@ -1,0 +1,11 @@
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-1-Bravo-Josué\pryArchivo\bin\Debug\pryArchivo.exe.config
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-1-Bravo-Josué\pryArchivo\bin\Debug\pryArchivo.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-1-Bravo-Josué\pryArchivo\bin\Debug\pryArchivo.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-1-Bravo-Josué\pryArchivo\obj\Debug\pryArchivo.csproj.AssemblyReference.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-1-Bravo-Josué\pryArchivo\obj\Debug\pryArchivo.frmArchivo.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-1-Bravo-Josué\pryArchivo\obj\Debug\pryArchivo.Properties.Resources.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-1-Bravo-Josué\pryArchivo\obj\Debug\pryArchivo.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-1-Bravo-Josué\pryArchivo\obj\Debug\pryArchivo.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-1-Bravo-Josué\pryArchivo\obj\Debug\pryArchivo.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-1-Bravo-Josué\pryArchivo\obj\Debug\pryArchivo.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-1-Bravo-Josué\pryArchivo\obj\Debug\pryArchivo.exe.config
