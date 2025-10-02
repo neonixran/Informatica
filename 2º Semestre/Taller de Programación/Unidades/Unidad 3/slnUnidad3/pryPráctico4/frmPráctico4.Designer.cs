@@ -63,6 +63,7 @@ namespace pryPráctico4
             this.cmbArchivo.Name = "cmbArchivo";
             this.cmbArchivo.Size = new System.Drawing.Size(210, 33);
             this.cmbArchivo.TabIndex = 1;
+            this.cmbArchivo.Text = "DatosProductos1.txt";
             this.cmbArchivo.SelectedValueChanged += new System.EventHandler(this.cmbArchivo_SelectedValueChanged);
             // 
             // btnLeer

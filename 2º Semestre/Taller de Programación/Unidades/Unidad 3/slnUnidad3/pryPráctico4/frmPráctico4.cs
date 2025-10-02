@@ -19,7 +19,7 @@ namespace pryPráctico4
         }
 
         int total = 0;
-        bool leido = false;
+        bool leído = false;
 
         private void btnLeer_Click(object sender, EventArgs e)
         {
@@ -27,9 +27,9 @@ namespace pryPráctico4
             {
                 if (cmbArchivo.SelectedItem != null)
                 {
-                    if (!leido)
+                    if (!leído)
                     {
-                        StreamReader ListaSuper = new StreamReader(cmbArchivo.SelectedItem.ToString());
+                        StreamReader ListaSuper = new StreamReader(String.Format("..//..//{0}", cmbArchivo.SelectedItem.ToString())); // ("..//..//"+cmbArchivo.SelectedItem.ToString())
                         string dato = ListaSuper.ReadLine();
 
                         while (dato != null)
@@ -40,13 +40,13 @@ namespace pryPráctico4
                             total += int.Parse(datos[1]);
                         }
                         ListaSuper.Close();
-                        txtTotal.Text = String.Format("${0}", total);
+                        txtTotal.Text = total.ToString("C");
 
-                        leido = true;
+                        leído = true;
                     }
                     else
                     {
-                        MessageBox.Show("Los datos ya fueron leidos", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Los datos ya fueron leídos", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
@@ -82,7 +82,7 @@ namespace pryPráctico4
                 total = 0;
                 txtTotal.Text = "$0";
 
-                leido = false;
+                leído = false;
             }
             else
             {
@@ -134,7 +134,7 @@ namespace pryPráctico4
                 }
 
                 total = newTotal;
-                txtTotal.Text = String.Format("${0}", total);
+                txtTotal.Text = total.ToString("C");
             }
         }
 
