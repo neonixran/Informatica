@@ -42,33 +42,33 @@ namespace pryContraseña
                 return;
             }
 
-            int numeros = 0;
-            int mayusculas_minisculas = 0;
+            int números = 0;
+            int mayúsculas_minúsculas = 0;
 
             foreach (char ch in txtContraseña.Text)
             {
                 if (Char.IsNumber(ch))
                 {
-                    numeros++;
+                    números++;
                 }
 
                 if (Char.IsUpper(ch) || Char.IsLower(ch))
                 {
-                    mayusculas_minisculas++;
+                    mayúsculas_minúsculas++;
                 }
             }
 
-            if (numeros <= 0)
+            if (números <= 0)
             {
                 MessageBox.Show("Debe contener números", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             
-            if (mayusculas_minisculas <= 0)
+            if (mayúsculas_minúsculas <= 0)
             {
                 MessageBox.Show("Debe contener mayúsculas o minúsculas", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-            if (numeros > 0 && mayusculas_minisculas > 0)
+            if (números > 0 && mayúsculas_minúsculas > 0)
             {
                 MessageBox.Show("Contraseña robusta", "MENSAJE", MessageBoxButtons.OK, MessageBoxIcon.Information);
             } else
