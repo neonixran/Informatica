@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D6D5CC0E-F1F6-4168-A72D-276B774AED65}</ProjectGuid>
+    <ProjectGuid>{BA49B377-EB7A-4ABA-93C5-C43E52025093}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>pryContraseña</RootNamespace>
     <AssemblyName>pryContraseña</AssemblyName>

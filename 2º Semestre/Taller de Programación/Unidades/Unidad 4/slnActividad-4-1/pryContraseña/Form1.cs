@@ -17,27 +17,28 @@ namespace pryContraseña
             InitializeComponent();
         }
 
-        private void btnVerificar_Click(object sender, EventArgs e)
+        private void btnValidar_Click(object sender, EventArgs e)
         {
             /*
                 Requisitos:
                 - Longitud desde 8 caracteres.
-                - Debe cumplir en tener números, mayúsculas o minúsculas
+                - Debe tener números.
+                - Debe tener mayúsculas o minúsculas.
              */
             if (txtContraseña.Text.Length < 8)
             {
                 MessageBox.Show("La longitud debe ser mayor a 8 caracteres", "Longitud", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtContraseña.Clear();
-                txtContraseñaR.Clear();
+                txtOtravez.Clear();
                 txtContraseña.Focus();
                 return;
             }
 
-            if (txtContraseña.Text != txtContraseñaR.Text)
+            if (txtContraseña.Text != txtOtravez.Text)
             {
                 MessageBox.Show("Las contraseñas no son las mismas", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtContraseña.Clear();
-                txtContraseñaR.Clear();
+                txtOtravez.Clear();
                 txtContraseña.Focus();
                 return;
             }
@@ -62,7 +63,7 @@ namespace pryContraseña
             {
                 MessageBox.Show("Debe contener números", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            
+
             if (mayúsculas_minúsculas <= 0)
             {
                 MessageBox.Show("Debe contener mayúsculas o minúsculas", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -71,10 +72,12 @@ namespace pryContraseña
             if (números > 0 && mayúsculas_minúsculas > 0)
             {
                 MessageBox.Show("Contraseña robusta", "MENSAJE", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            } else
+            }
+            else
             {
                 MessageBox.Show("Contraseña débil", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
         }
     }
 }

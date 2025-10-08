@@ -1,0 +1,11 @@
+C:\Users\iryde\Downloads\slnActividad-4-1\slnActividad-4-1\pryContraseña\bin\Debug\pryContraseña.exe.config
+C:\Users\iryde\Downloads\slnActividad-4-1\slnActividad-4-1\pryContraseña\bin\Debug\pryContraseña.exe
+C:\Users\iryde\Downloads\slnActividad-4-1\slnActividad-4-1\pryContraseña\bin\Debug\pryContraseña.pdb
+C:\Users\iryde\Downloads\slnActividad-4-1\slnActividad-4-1\pryContraseña\obj\Debug\pryContraseña.csproj.AssemblyReference.cache
+C:\Users\iryde\Downloads\slnActividad-4-1\slnActividad-4-1\pryContraseña\obj\Debug\pryContraseña.Form1.resources
+C:\Users\iryde\Downloads\slnActividad-4-1\slnActividad-4-1\pryContraseña\obj\Debug\pryContraseña.Properties.Resources.resources
+C:\Users\iryde\Downloads\slnActividad-4-1\slnActividad-4-1\pryContraseña\obj\Debug\pryContraseña.csproj.GenerateResource.cache
+C:\Users\iryde\Downloads\slnActividad-4-1\slnActividad-4-1\pryContraseña\obj\Debug\pryContraseña.csproj.CoreCompileInputs.cache
+C:\Users\iryde\Downloads\slnActividad-4-1\slnActividad-4-1\pryContraseña\obj\Debug\pryContraseña.exe
+C:\Users\iryde\Downloads\slnActividad-4-1\slnActividad-4-1\pryContraseña\obj\Debug\pryContraseña.pdb
+C:\Users\iryde\Downloads\slnActividad-4-1\slnActividad-4-1\pryContraseña\obj\Debug\pryContraseña.exe.config
