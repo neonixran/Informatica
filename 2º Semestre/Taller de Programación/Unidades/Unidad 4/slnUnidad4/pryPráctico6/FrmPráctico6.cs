@@ -61,6 +61,7 @@ namespace pryPráctico6
             
         }
 
+
         private void btnPromedios_Click(object sender, EventArgs e)
         {
             

@@ -1,0 +1,11 @@
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnUnidad4\pryPráctico5\bin\Debug\pryPráctico6.exe.config
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnUnidad4\pryPráctico5\bin\Debug\pryPráctico6.exe
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnUnidad4\pryPráctico5\bin\Debug\pryPráctico6.pdb
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnUnidad4\pryPráctico5\obj\Debug\pryPráctico5.csproj.AssemblyReference.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnUnidad4\pryPráctico5\obj\Debug\pryPráctico6.FrmPráctico5.resources
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnUnidad4\pryPráctico5\obj\Debug\pryPráctico6.Properties.Resources.resources
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnUnidad4\pryPráctico5\obj\Debug\pryPráctico5.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnUnidad4\pryPráctico5\obj\Debug\pryPráctico5.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnUnidad4\pryPráctico5\obj\Debug\pryPráctico6.exe
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnUnidad4\pryPráctico5\obj\Debug\pryPráctico6.pdb
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnUnidad4\pryPráctico5\obj\Debug\pryPráctico6.exe.config

@@ -1,0 +1,11 @@
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct2-2-Bravo-Josué\pryRectángulo\bin\Debug\pryRectángulo.exe.config
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct2-2-Bravo-Josué\pryRectángulo\bin\Debug\pryRectángulo.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct2-2-Bravo-Josué\pryRectángulo\bin\Debug\pryRectángulo.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct2-2-Bravo-Josué\pryRectángulo\obj\Debug\pryRectángulo.csproj.AssemblyReference.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct2-2-Bravo-Josué\pryRectángulo\obj\Debug\pryRectángulo.formRectángulo.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct2-2-Bravo-Josué\pryRectángulo\obj\Debug\pryRectángulo.Properties.Resources.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct2-2-Bravo-Josué\pryRectángulo\obj\Debug\pryRectángulo.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct2-2-Bravo-Josué\pryRectángulo\obj\Debug\pryRectángulo.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct2-2-Bravo-Josué\pryRectángulo\obj\Debug\pryRectángulo.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct2-2-Bravo-Josué\pryRectángulo\obj\Debug\pryRectángulo.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct2-2-Bravo-Josué\pryRectángulo\obj\Debug\pryRectángulo.exe.config

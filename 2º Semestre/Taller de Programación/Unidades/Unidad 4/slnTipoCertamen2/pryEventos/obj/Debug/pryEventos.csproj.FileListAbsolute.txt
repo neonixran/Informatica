@@ -1,0 +1,11 @@
+C:\Users\iryde\Downloads\slnEjercicioTipoCertamen2\slnEjercicioTipoCertamen2\pryEventos\bin\Debug\pryEventos.exe.config
+C:\Users\iryde\Downloads\slnEjercicioTipoCertamen2\slnEjercicioTipoCertamen2\pryEventos\bin\Debug\pryEventos.exe
+C:\Users\iryde\Downloads\slnEjercicioTipoCertamen2\slnEjercicioTipoCertamen2\pryEventos\bin\Debug\pryEventos.pdb
+C:\Users\iryde\Downloads\slnEjercicioTipoCertamen2\slnEjercicioTipoCertamen2\pryEventos\obj\Debug\pryEventos.csproj.AssemblyReference.cache
+C:\Users\iryde\Downloads\slnEjercicioTipoCertamen2\slnEjercicioTipoCertamen2\pryEventos\obj\Debug\pryEventos.Form1.resources
+C:\Users\iryde\Downloads\slnEjercicioTipoCertamen2\slnEjercicioTipoCertamen2\pryEventos\obj\Debug\pryEventos.Properties.Resources.resources
+C:\Users\iryde\Downloads\slnEjercicioTipoCertamen2\slnEjercicioTipoCertamen2\pryEventos\obj\Debug\pryEventos.csproj.GenerateResource.cache
+C:\Users\iryde\Downloads\slnEjercicioTipoCertamen2\slnEjercicioTipoCertamen2\pryEventos\obj\Debug\pryEventos.csproj.CoreCompileInputs.cache
+C:\Users\iryde\Downloads\slnEjercicioTipoCertamen2\slnEjercicioTipoCertamen2\pryEventos\obj\Debug\pryEventos.exe
+C:\Users\iryde\Downloads\slnEjercicioTipoCertamen2\slnEjercicioTipoCertamen2\pryEventos\obj\Debug\pryEventos.pdb
+C:\Users\iryde\Downloads\slnEjercicioTipoCertamen2\slnEjercicioTipoCertamen2\pryEventos\obj\Debug\pryEventos.exe.config

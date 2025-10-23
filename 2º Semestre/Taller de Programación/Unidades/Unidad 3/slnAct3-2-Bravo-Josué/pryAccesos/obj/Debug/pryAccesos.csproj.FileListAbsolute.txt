@@ -1,0 +1,10 @@
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-2-Bravo-Josué\pryAccesos\bin\Debug\pryAccesos.exe.config
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-2-Bravo-Josué\pryAccesos\bin\Debug\pryAccesos.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-2-Bravo-Josué\pryAccesos\bin\Debug\pryAccesos.pdb
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-2-Bravo-Josué\pryAccesos\obj\Debug\pryAccesos.csproj.AssemblyReference.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-2-Bravo-Josué\pryAccesos\obj\Debug\pryAccesos.Form1.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-2-Bravo-Josué\pryAccesos\obj\Debug\pryAccesos.Properties.Resources.resources
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-2-Bravo-Josué\pryAccesos\obj\Debug\pryAccesos.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-2-Bravo-Josué\pryAccesos\obj\Debug\pryAccesos.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-2-Bravo-Josué\pryAccesos\obj\Debug\pryAccesos.exe
+C:\Users\iryde\OneDrive\Desktop\Visual Studio uwu\slnAct3-2-Bravo-Josué\pryAccesos\obj\Debug\pryAccesos.pdb

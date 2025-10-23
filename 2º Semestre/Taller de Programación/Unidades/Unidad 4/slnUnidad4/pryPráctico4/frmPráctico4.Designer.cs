@@ -35,8 +35,13 @@
             this.lstSaldos = new System.Windows.Forms.ListBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbCuentas = new System.Windows.Forms.ComboBox();
             this.btnGirar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -51,7 +56,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 41);
+            this.label2.Location = new System.Drawing.Point(12, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 24);
             this.label2.TabIndex = 2;
@@ -60,7 +65,7 @@
             // txtMonto
             // 
             this.txtMonto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.txtMonto.Location = new System.Drawing.Point(101, 38);
+            this.txtMonto.Location = new System.Drawing.Point(101, 42);
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(80, 29);
             this.txtMonto.TabIndex = 1;
@@ -82,17 +87,17 @@
             this.lstSaldos.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.lstSaldos.FormattingEnabled = true;
             this.lstSaldos.ItemHeight = 24;
-            this.lstSaldos.Location = new System.Drawing.Point(86, 165);
+            this.lstSaldos.Location = new System.Drawing.Point(87, 156);
             this.lstSaldos.Name = "lstSaldos";
             this.lstSaldos.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lstSaldos.Size = new System.Drawing.Size(105, 76);
+            this.lstSaldos.Size = new System.Drawing.Size(105, 124);
             this.lstSaldos.TabIndex = 5;
             this.lstSaldos.TabStop = false;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(26, 144);
+            this.label8.Location = new System.Drawing.Point(27, 135);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(37, 24);
             this.label8.TabIndex = 7;
@@ -101,25 +106,25 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(114, 144);
+            this.label9.Location = new System.Drawing.Point(115, 135);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(67, 24);
             this.label9.TabIndex = 7;
             this.label9.Text = "Saldos";
             // 
-            // comboBox1
+            // cmbCuentas
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbCuentas.FormattingEnabled = true;
+            this.cmbCuentas.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4",
             "5"});
-            this.comboBox1.Location = new System.Drawing.Point(19, 171);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(48, 32);
-            this.comboBox1.TabIndex = 8;
+            this.cmbCuentas.Location = new System.Drawing.Point(116, 6);
+            this.cmbCuentas.Name = "cmbCuentas";
+            this.cmbCuentas.Size = new System.Drawing.Size(48, 32);
+            this.cmbCuentas.TabIndex = 8;
             // 
             // btnGirar
             // 
@@ -132,12 +137,62 @@
             this.btnGirar.UseVisualStyleBackColor = false;
             this.btnGirar.Click += new System.EventHandler(this.btnGirar_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(31, 163);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(20, 24);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "1";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(31, 187);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(20, 24);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "2";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(31, 211);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(20, 24);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "3";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(31, 235);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(20, 24);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "4";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(31, 259);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(20, 24);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "5";
+            // 
             // frmPráctico4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(198, 280);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(198, 289);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cmbCuentas);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lstSaldos);
@@ -166,8 +221,13 @@
         private System.Windows.Forms.ListBox lstSaldos;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbCuentas;
         private System.Windows.Forms.Button btnGirar;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 
