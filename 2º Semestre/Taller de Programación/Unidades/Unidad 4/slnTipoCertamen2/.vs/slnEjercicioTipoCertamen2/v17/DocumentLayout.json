@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\iryde\\Downloads\\slnEjercicioTipoCertamen2\\slnEjercicioTipoCertamen2\\",
+  "WorkspaceRootPath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 4\\slnTipoCertamen2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6967062D-6023-457B-A3B1-2CEA94D0C7B1}|pryEventos\\pryEventos.csproj|C:\\Users\\iryde\\Downloads\\slnEjercicioTipoCertamen2\\slnEjercicioTipoCertamen2\\pryeventos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6967062D-6023-457B-A3B1-2CEA94D0C7B1}|pryEventos\\pryEventos.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\2\u00BA semestre\\taller de programaci\u00F3n\\unidades\\unidad 4\\slntipocertamen2\\pryeventos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6967062D-6023-457B-A3B1-2CEA94D0C7B1}|pryEventos\\pryEventos.csproj|solutionrelative:pryeventos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6967062D-6023-457B-A3B1-2CEA94D0C7B1}|pryEventos\\pryEventos.csproj|c:\\users\\iryde\\downloads\\slnejerciciotipocertamen2\\slnejerciciotipocertamen2\\pryeventos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6967062D-6023-457B-A3B1-2CEA94D0C7B1}|pryEventos\\pryEventos.csproj|C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 4\\slnTipoCertamen2\\pryeventos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6967062D-6023-457B-A3B1-2CEA94D0C7B1}|pryEventos\\pryEventos.csproj|solutionrelative:pryeventos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\iryde\\Downloads\\slnEjercicioTipoCertamen2\\slnEjercicioTipoCertamen2\\pryEventos\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 4\\slnTipoCertamen2\\pryEventos\\Form1.cs",
               "RelativeDocumentMoniker": "pryEventos\\Form1.cs",
-              "ToolTip": "C:\\Users\\iryde\\Downloads\\slnEjercicioTipoCertamen2\\slnEjercicioTipoCertamen2\\pryEventos\\Form1.cs",
+              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 4\\slnTipoCertamen2\\pryEventos\\Form1.cs",
               "RelativeToolTip": "pryEventos\\Form1.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAAwwHUAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAswHUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T13:20:30.157Z",
               "EditorCaption": ""
@@ -45,13 +45,12 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\iryde\\Downloads\\slnEjercicioTipoCertamen2\\slnEjercicioTipoCertamen2\\pryEventos\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 4\\slnTipoCertamen2\\pryEventos\\Form1.cs",
               "RelativeDocumentMoniker": "pryEventos\\Form1.cs",
               "ToolTip": "C:\\Users\\iryde\\Downloads\\slnEjercicioTipoCertamen2\\slnEjercicioTipoCertamen2\\pryEventos\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "pryEventos\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Downloads\\slnEjercicioTipoCertamen2\\slnEjercicioTipoCertamen2\\pryEventos\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T13:16:41.022Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-10-14T13:16:41.022Z"
             }
           ]
         }
