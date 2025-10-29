@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="CL" data-bs-theme="auto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neonixran</title>
+
+    <!-- Icono -->
+    <link rel="shortcut icon" href="Images/icono.png" type="image/x-icon">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap 5.3.8 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar bg-body-secondary">
+            <div class="container-fluid mx-1">
+                <a class="navbar-brand">
+                    <img src="Images/logo.jpg" id="logo" class="d-inline-block align-text-top rounded-circle me-3"
+                        width="30" height="30" alt="">Josué Bravo
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+                    <ul class="navbar-nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#carpetas">Carpetas</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i id="theme-icon" class="d-none d-lg-inline-block fa-solid fa-moon me-2"></i>
+                                <span class="d-lg-none">Cambiar tema</span>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li><a class="dropdown-item" data-bs-theme-value="dark"><i
+                                            class="fa-solid fa-moon me-2"></i>Oscuro</a></li>
+                                <li><a class="dropdown-item" data-bs-theme-value="light"><i
+                                            class="fa-solid fa-sun me-2"></i>Claro</a></li>
+                                <li><a class="dropdown-item" data-bs-theme-value="auto"><i
+                                            class="fa-solid fa-circle-half-stroke me-2"></i>Dispositivo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
+        <section class="container-fluid py-3 px-5 bg-body-tertiary" id="presentación">
+            <div class="row">
+                <div class="col-12 col-lg-2">
+                    <img class="img-fluid rounded-circle shadow-lg d-block mx-auto" src="Images/perfil.jpg"
+                        alt="Imagen de perfil" width="250">
+                </div>
+
+                <div class="col col-lg-10">
+                    <p class="h2 text-primary pt-lg-3 pb-lg-2">Wena po' 👋🏻</p>
+                    <p class="h6">
+                        Soy Josué Bravo, estudiante de Ingeniería Informática.
+                    </p>
+                    <p class="h6 mt-4">Te doy la bienvenida a mi repositorio. Aquí encontrarás una colección de
+                        proyectos académicos, incluyendo soluciones a evaluaciones, trabajos prácticos de clase y
+                        diversos desarrollos personales.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-4" id="carpetas">
+            <p class="h2 text-primary pt-lg-3 pb-lg-2">Carpetas</p>
+            <nav id="breadcrumbs" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-3"></nav>
+
+            <div class="list-group" id="file-list-container">
+                <div class="list-group-item">
+                    <p class="h5 text-center p-5">
+                        <i class="fa-solid fa-spinner fa-spin me-2"></i>
+                        Cargando archivos...
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid mt-auto pt-1 bg-body-secondary">
+        <div class="row text-center text-lg-start">
+            <!-- Derechos de autor -->
+            <div class="col-12 col-lg-6 mt-lg-0 pt-2">
+                <p>© 2025 Josué Bravo - Todos los derechos reservados</p>
+            </div>
+            <!-- Redes sociales -->
+            <div class="col-12 col-lg-6 mt-lg-0 pt-2">
+                <!-- LinkedIn -->
+                <a class="text-body link-underline link-underline-opacity-0 float-end"
+                    href="https://www.linkedin.com/in/josu%C3%A9-b-848690348/"><i id="icon"
+                        class="fa-brands fa-linkedin me-2"></i>
+                </a>
+                <!-- Instagram -->
+                <a class="text-body link-underline link-underline-opacity-0 float-end"
+                    href="https://www.instagram.com/n_n.aleesh/"><i id="icon" class="fa-brands fa-instagram me-2"></i>
+                </a>
+                <!-- Github -->
+                <a class="text-body link-underline link-underline-opacity-0 float-end"
+                    href="https://github.com/neonixran/"><i id="icon" class="fa-brands fa-github me-2"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous">
+        </script>
+
+    <script src="./theme.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const username = "neonixran";
+            const repo = "Informatica";
+
+            // ¡EL TOKEN SE HA ELIMINADO! Ya no es necesario.
+
+            const fileListContainer = document.getElementById("file-list-container");
+            const breadcrumbsContainer = document.getElementById("breadcrumbs");
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const currentPath = urlParams.get("path") || "";
+
+            function renderBreadcrumbs(path) {
+                let breadcrumbsHtml = '<ol class="breadcrumb">';
+
+                // Corregido: El enlace "Raíz" debe apuntar a la sección #proyectos
+                breadcrumbsHtml += `<li class="breadcrumb-item"><a href="index.html?path=#proyectos">Raíz</a></li>`;
+
+                const parts = path.split("/").filter(p => p);
+                let pathSoFar = "";
+
+                parts.forEach((part, index) => {
+                    pathSoFar += part;
+                    if (index < parts.length - 1) {
+                        breadcrumbsHtml += `<li class="breadcrumb-item"><a href="index.html?path=${encodeURIComponent(pathSoFar)}#proyectos">${part}</a></li>`;
+                        pathSoFar += "/";
+                    } else {
+                        breadcrumbsHtml += `<li class="breadcrumb-item active" aria-current="page">${part}</li>`;
+                    }
+                });
+
+                breadcrumbsHtml += "</ol>";
+                breadcrumbsContainer.innerHTML = breadcrumbsHtml;
+            }
+
+            async function loadContents(path) {
+                renderBreadcrumbs(path);
+
+                const apiUrl = `repo-api-cache/${path ? path + '/' : ''}contents.json`;
+
+                try {
+                    const response = await fetch(apiUrl);
+
+                    if (!response.ok) throw new Error(`Error: ${response.status}`);
+
+                    const data = await response.json();
+
+                    const itemsToHide = ["neonixran"];
+                    const filteredData = data.filter(item => {
+                        const isHiddenByName = itemsToHide.includes(item.name);
+                        const isDotfile = item.name.startsWith('.');
+                        return !isHiddenByName && !isDotfile;
+                    });
+
+                    filteredData.sort((a, b) => {
+                        if (a.type === "dir" && b.type !== "dir") return -1;
+                        if (a.type !== "dir" && b.type === "dir") return 1;
+                        if (a.name === "index.html") return -1;
+                        return a.name.localeCompare(b.name);
+                    });
+
+                    fileListContainer.innerHTML = "";
+
+                    filteredData.forEach(item => {
+                        let itemHtml = "";
+
+                        if (item.type === "dir") {
+                            itemHtml = `
+                            <a href="index.html?path=${encodeURIComponent(item.path)}#proyectos" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                <div>
+                                    <i class="fa-solid fa-folder me-3" style="color: #6c757d;"></i>
+                                    <strong>${item.name}</strong>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-muted"></i>
+                            </a>
+                        `;
+                        }
+
+                        else if (item.type === "file") {
+                            if (item.name === "index.html") {
+                                const demoUrl = `https://${username}.github.io/${repo}/${currentPath ? currentPath + "/" : ""}`;
+
+                                itemHtml = `
+                                <div class="list-group-item d-flex justify-content-between align-items-center bg-body-tertiary">
+                                    <div>
+                                        <i class="fa-solid fa-file-invoice me-3" style="color: #0d6efd;"></i>
+                                        <strong>${item.name}</strong> (Página principal)
+                                    </div>
+                                    <div>
+                                        <a href="${demoUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm me-2">
+                                            <i class="fa-solid fa-link me-1"></i> Ver Página
+                                        </a>
+                                        <a href="${item.html_url}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                            <i class="fa-solid fa-code me-1"></i> Ver Código
+                                        </a>
+                                    </div>
+                                </div>
+                            `;
+                            } else {
+                                itemHtml = `
+                                <div class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <i class="fa-solid fa-file-code me-3 text-muted"></i>
+                                        ${item.name}
+                                    </div>
+                                    <a href="${item.html_url}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                        <i class="fa-solid fa-code me-1"></i> Ver Código
+                                    </a>
+                                </div>
+                            `;
+                            }
+                        }
+
+                        fileListContainer.innerHTML += itemHtml;
+                    });
+
+                } catch (error) {
+                    console.error("Error al cargar contenidos:", error);
+                    fileListContainer.innerHTML = `<div class="list-group-item text-danger">Error al cargar archivos. (¿Corrió la GitHub Action?)</div>`;
+                }
+            }
+
+            loadContents(currentPath);
+        });
+    </script>
+</body>
+
+</html>

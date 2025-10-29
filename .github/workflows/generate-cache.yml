@@ -1,0 +1,122 @@
+name: Generar Caché de la API
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1. Obtener el código del repositorio
+        uses: actions/checkout@v4
+
+      - name: 2. Configurar Node.js (para correr el script)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 3. Generar el script de escaneo
+        run: |
+          # Creamos la carpeta para el script
+          mkdir -p ./.github/scripts
+          
+          # Escribimos el script de Node.js en el runner
+          # Este script imita la API de GitHub, pero localmente
+          cat << 'EOF' > ./.github/scripts/generate-cache.js
+          const fs = require('fs');
+          const path = require('path');
+
+          const rootDir = '.';
+          const outputDir = 'repo-api-cache'; 
+          // Excluimos carpetas y archivos que no quieres mostrar
+          const exclude = ['.git', '.github', 'Images', 'node_modules', 'repo-api-cache', 'package.json', 'package-lock.json', 'theme.js', 'style.css', 'index.html', 'README.md'];
+
+          async function scanAndSave(dirPath) {
+            const currentDir = path.join(rootDir, dirPath);
+            if (!fs.existsSync(currentDir) || !fs.lstatSync(currentDir).isDirectory()) {
+              return; // Ignora si no es un directorio
+            }
+            
+            const items = await fs.promises.readdir(currentDir, { withFileTypes: true });
+            const output = [];
+
+            for (const item of items) {
+              const itemName = item.name;
+              // Filtra los archivos y carpetas excluidas o dotfiles
+              if (itemName.startsWith('.') || exclude.includes(itemName)) {
+                continue;
+              }
+              
+              const relativePath = path.join(dirPath, itemName).replace(/\\/g, '/');
+              
+              if (item.isDirectory()) {
+                output.push({
+                  name: itemName,
+                  type: 'dir',
+                  path: relativePath,
+                  html_url: `https://github.com/neonixran/Informatica/tree/main/${relativePath}`
+                });
+                await scanAndSave(relativePath); // Escaneo recursivo
+                
+              } else if (item.isFile()) {
+                output.push({
+                  name: itemName,
+                  type: 'file',
+                  path: relativePath,
+                  html_url: `https://github.com/neonixran/Informatica/blob/main/${relativePath}`,
+                  download_url: `https://raw.githubusercontent.com/neonixran/Informatica/main/${relativePath}`
+                });
+              }
+            }
+            
+            // Ordena igual que tu código
+            output.sort((a, b) => {
+              if (a.type === 'dir' && b.type !== 'dir') return -1;
+              if (a.type !== 'dir' && b.type === 'dir') return 1;
+              if (a.name === 'index.html') return -1;
+              return a.name.localeCompare(b.name);
+            });
+
+            // Guarda el archivo JSON para este directorio
+            const savePathDir = path.join(rootDir, outputDir, dirPath);
+            if (!fs.existsSync(savePathDir)) {
+              fs.mkdirSync(savePathDir, { recursive: true });
+            }
+            
+            const savePath = path.join(savePathDir, 'contents.json');
+            fs.writeFileSync(savePath, JSON.stringify(output, null, 2));
+            console.log(`Cache generado para: ${dirPath || '/'}`);
+          }
+
+          (async () => {
+            console.log('Generando caché del repositorio...');
+            // Limpia el caché viejo antes de empezar
+            if (fs.existsSync(outputDir)) {
+              fs.rmSync(outputDir, { recursive: true, force: true });
+            }
+            await scanAndSave(''); // Empieza en la raíz
+            console.log('Generación de caché completa.');
+          })();
+          EOF
+
+      - name: 4. Ejecutar el script de escaneo
+        run: node ./.github/scripts/generate-cache.js
+
+      - name: 5. Guardar el caché en el repositorio
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'github-actions-bot@github.com'
+          git add repo-api-cache/
+          # Solo hace commit si hay cambios
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: Actualización automática del caché de la API"
+            git push
+          else
+            echo "Sin cambios en el caché."
+          fi
