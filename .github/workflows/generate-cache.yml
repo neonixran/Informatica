@@ -68,7 +68,7 @@ jobs:
                   name: itemName,
                   type: 'dir',
                   path: relativePath,
-                  html_url: `https://github.com/neonixran/Informatica/tree/main/${relativePath}`
+                  html_url: `https://github.com/neonixran/Informatica/tree/master/${relativePath}`
                 });
                 await scanAndSave(relativePath); // Escaneo recursivo
                 
@@ -77,8 +77,8 @@ jobs:
                   name: itemName,
                   type: 'file',
                   path: relativePath,
-                  html_url: `https://github.com/neonixran/Informatica/blob/main/${relativePath}`,
-                  download_url: `https://raw.githubusercontent.com/neonixran/Informatica/main/${relativePath}`
+                  html_url: `https://github.com/neonixran/Informatica/blob/master/${relativePath}`,
+                  download_url: `https://raw.githubusercontent.com/neonixran/Informatica/master/${relativePath}`
                 });
               }
             }
