@@ -3,7 +3,7 @@ name: Generar Caché de la API
 on:
   push:
     branches:
-      - master  # (Asegúrate que esta sea tu rama principal)
+      - master  # 1. Corregido a 'master'
   workflow_dispatch:
 
 permissions:
@@ -32,13 +32,15 @@ jobs:
           const rootDir = '.';
           const outputDir = 'repo-api-cache'; 
           
+          // 2. Corregido: Excluir solo archivos en la RAÍZ
           const excludeFromRoot = [
               '.git', 
               '.github', 
               'repo-api-cache', 
-              'Neonixran',
-              'index.html',
+              'Neonixran',  // Carpeta de assets de tu portafolio
+              'index.html', // El portafolio mismo
               'README.md'
+              // Agrega aquí otros archivos de la raíz que quieras ocultar
           ];
 
           async function scanAndSave(dirPath) {
@@ -52,11 +54,11 @@ jobs:
 
             for (const item of items) {
               const itemName = item.name;
-
+              
+              // 2. Corregido: Lógica de filtrado
               if (itemName.startsWith('.')) {
                 continue;
               }
-              
               if (dirPath === '' && excludeFromRoot.includes(itemName)) {
                 continue;
               }
@@ -68,17 +70,21 @@ jobs:
                   name: itemName,
                   type: 'dir',
                   path: relativePath,
-                  html_url: `https://github.com/neonixran/Informatica/tree/master/${relativePath}`
+                  html_url: `https://github.com/neonixran/Informatica/tree/master/${relativePath}` // 1. Corregido a 'master'
                 });
-                await scanAndSave(relativePath); // Escaneo recursivo
+                await scanAndSave(relativePath); 
                 
               } else if (item.isFile()) {
+                
+                // 3. Corregido: URL relativa para imágenes
+                const relativeUrl = relativePath.split('/').map(encodeURIComponent).join('/');
+
                 output.push({
                   name: itemName,
                   type: 'file',
                   path: relativePath,
-                  html_url: `https://github.com/neonixran/Informatica/blob/master/${relativePath}`,
-                  download_url: `https://raw.githubusercontent.com/neonixran/Informatica/master/${relativePath}`
+                  html_url: `https://github.com/neonixran/Informatica/blob/master/${relativePath}`, // 1. Corregido a 'master'
+                  download_url: relativeUrl // 3. Corregido para imágenes
                 });
               }
             }
@@ -105,7 +111,7 @@ jobs:
             if (fs.existsSync(outputDir)) {
               fs.rmSync(outputDir, { recursive: true, force: true });
             }
-            await scanAndSave(''); // Empieza en la raíz
+            await scanAndSave(''); 
             console.log('Generación de caché completa.');
           })();
           EOF
