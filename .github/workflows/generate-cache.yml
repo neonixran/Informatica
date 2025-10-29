@@ -3,7 +3,7 @@ name: Generar Caché de la API
 on:
   push:
     branches:
-      - main
+      - master  # (Asegúrate que esta sea tu rama principal)
   workflow_dispatch:
 
 permissions:
@@ -21,26 +21,32 @@ jobs:
         with:
           node-version: '20'
 
-      - name: 3. Generar el script de escaneo
+      - name: 3. Generar el script de escaneo (Versión Corregida)
         run: |
-          # Creamos la carpeta para el script
           mkdir -p ./.github/scripts
           
-          # Escribimos el script de Node.js en el runner
-          # Este script imita la API de GitHub, pero localmente
           cat << 'EOF' > ./.github/scripts/generate-cache.js
           const fs = require('fs');
           const path = require('path');
 
           const rootDir = '.';
           const outputDir = 'repo-api-cache'; 
-          // Excluimos carpetas y archivos que no quieres mostrar
-          const exclude = ['.git', '.github', 'Images', 'node_modules', 'repo-api-cache', 'package.json', 'package-lock.json', 'theme.js', 'style.css', 'index.html', 'README.md'];
+          
+          // Excluimos solo carpetas y archivos EN LA RAÍZ
+          const excludeFromRoot = [
+              '.git', 
+              '.github', 
+              'repo-api-cache', 
+              'Neonixran',
+              'index.html',
+              'README.md'
+              // Agrega aquí otros archivos de la raíz que quieras ocultar
+          ];
 
           async function scanAndSave(dirPath) {
             const currentDir = path.join(rootDir, dirPath);
             if (!fs.existsSync(currentDir) || !fs.lstatSync(currentDir).isDirectory()) {
-              return; // Ignora si no es un directorio
+              return; 
             }
             
             const items = await fs.promises.readdir(currentDir, { withFileTypes: true });
@@ -48,11 +54,17 @@ jobs:
 
             for (const item of items) {
               const itemName = item.name;
-              // Filtra los archivos y carpetas excluidas o dotfiles
-              if (itemName.startsWith('.') || exclude.includes(itemName)) {
+
+              // 1. Siempre excluir dotfiles (archivos que empiezan con .)
+              if (itemName.startsWith('.')) {
                 continue;
               }
               
+              // 2. Si estamos en la raíz (dirPath === ''), chequear la lista de exclusión
+              if (dirPath === '' && excludeFromRoot.includes(itemName)) {
+                continue;
+              }
+
               const relativePath = path.join(dirPath, itemName).replace(/\\/g, '/');
               
               if (item.isDirectory()) {
@@ -75,7 +87,6 @@ jobs:
               }
             }
             
-            // Ordena igual que tu código
             output.sort((a, b) => {
               if (a.type === 'dir' && b.type !== 'dir') return -1;
               if (a.type !== 'dir' && b.type === 'dir') return 1;
@@ -83,7 +94,6 @@ jobs:
               return a.name.localeCompare(b.name);
             });
 
-            // Guarda el archivo JSON para este directorio
             const savePathDir = path.join(rootDir, outputDir, dirPath);
             if (!fs.existsSync(savePathDir)) {
               fs.mkdirSync(savePathDir, { recursive: true });
@@ -96,7 +106,6 @@ jobs:
 
           (async () => {
             console.log('Generando caché del repositorio...');
-            // Limpia el caché viejo antes de empezar
             if (fs.existsSync(outputDir)) {
               fs.rmSync(outputDir, { recursive: true, force: true });
             }
@@ -113,7 +122,6 @@ jobs:
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'github-actions-bot@github.com'
           git add repo-api-cache/
-          # Solo hace commit si hay cambios
           if ! git diff --staged --quiet; then
             git commit -m "chore: Actualización automática del caché de la API"
             git push

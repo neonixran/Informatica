@@ -137,8 +137,6 @@
             const username = "neonixran";
             const repo = "Informatica";
 
-            // ¡EL TOKEN SE HA ELIMINADO! Ya no es necesario.
-
             const fileListContainer = document.getElementById("file-list-container");
             const breadcrumbsContainer = document.getElementById("breadcrumbs");
 
@@ -148,7 +146,6 @@
             function renderBreadcrumbs(path) {
                 let breadcrumbsHtml = '<ol class="breadcrumb">';
 
-                // Corregido: El enlace "Raíz" debe apuntar a la sección #proyectos
                 breadcrumbsHtml += `<li class="breadcrumb-item"><a href="index.html?path=#proyectos">Raíz</a></li>`;
 
                 const parts = path.split("/").filter(p => p);
