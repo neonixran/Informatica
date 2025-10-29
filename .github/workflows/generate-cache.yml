@@ -32,7 +32,6 @@ jobs:
           const rootDir = '.';
           const outputDir = 'repo-api-cache'; 
           
-          // Excluimos solo carpetas y archivos EN LA RAÍZ
           const excludeFromRoot = [
               '.git', 
               '.github', 
@@ -40,7 +39,6 @@ jobs:
               'Neonixran',
               'index.html',
               'README.md'
-              // Agrega aquí otros archivos de la raíz que quieras ocultar
           ];
 
           async function scanAndSave(dirPath) {
@@ -55,12 +53,10 @@ jobs:
             for (const item of items) {
               const itemName = item.name;
 
-              // 1. Siempre excluir dotfiles (archivos que empiezan con .)
               if (itemName.startsWith('.')) {
                 continue;
               }
               
-              // 2. Si estamos en la raíz (dirPath === ''), chequear la lista de exclusión
               if (dirPath === '' && excludeFromRoot.includes(itemName)) {
                 continue;
               }
