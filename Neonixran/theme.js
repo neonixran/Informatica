@@ -74,9 +74,9 @@
 
 const logo = document.getElementById("logo")
 logo.addEventListener("mouseover", () => {
-    logo.src = "Images/logo.gif";
+    logo.src = "./Neonixran/images/logo.gif";
 });
 
 logo.addEventListener("mouseout", () => {
-    logo.src = "Images/logo.jpg";
+    logo.src = "./Neonixran/images/logo.jpg";
 });
