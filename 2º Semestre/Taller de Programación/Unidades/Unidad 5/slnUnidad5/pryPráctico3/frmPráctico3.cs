@@ -20,6 +20,7 @@ namespace pryPráctico3
         static int calcularMCD(int a, int b)
         {
             int resto;
+
             do
             {
                 resto = a % b;

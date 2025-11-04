@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Alumnos\\Downloads\\slnCertamen2-2025\\slnCertamen2-2025\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ECCDDF3E-EFA8-48CD-BD55-B02F1DAD853C}|pryCertamen2-2025\\pryCertamen2-2025.csproj|c:\\users\\alumnos\\downloads\\slncertamen2-2025\\slncertamen2-2025\\prycertamen2-2025\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECCDDF3E-EFA8-48CD-BD55-B02F1DAD853C}|pryCertamen2-2025\\pryCertamen2-2025.csproj|solutionrelative:prycertamen2-2025\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECCDDF3E-EFA8-48CD-BD55-B02F1DAD853C}|pryCertamen2-2025\\pryCertamen2-2025.csproj|c:\\users\\alumnos\\downloads\\slncertamen2-2025\\slncertamen2-2025\\prycertamen2-2025\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ECCDDF3E-EFA8-48CD-BD55-B02F1DAD853C}|pryCertamen2-2025\\pryCertamen2-2025.csproj|solutionrelative:prycertamen2-2025\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Alumnos\\Downloads\\slnCertamen2-2025\\slnCertamen2-2025\\pryCertamen2-2025\\Form1.cs",
+              "RelativeDocumentMoniker": "pryCertamen2-2025\\Form1.cs",
+              "ToolTip": "C:\\Users\\Alumnos\\Downloads\\slnCertamen2-2025\\slnCertamen2-2025\\pryCertamen2-2025\\Form1.cs*",
+              "RelativeToolTip": "pryCertamen2-2025\\Form1.cs*",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAmwGMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T16:05:28.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Alumnos\\Downloads\\slnCertamen2-2025\\slnCertamen2-2025\\pryCertamen2-2025\\Form1.cs",
+              "RelativeDocumentMoniker": "pryCertamen2-2025\\Form1.cs",
+              "ToolTip": "C:\\Users\\Alumnos\\Downloads\\slnCertamen2-2025\\slnCertamen2-2025\\pryCertamen2-2025\\Form1.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "pryCertamen2-2025\\Form1.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T19:12:53.623Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 650,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 219,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

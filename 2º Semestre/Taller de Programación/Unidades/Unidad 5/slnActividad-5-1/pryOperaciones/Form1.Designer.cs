@@ -60,9 +60,8 @@
             this.rdbArreglo3.Location = new System.Drawing.Point(44, 124);
             this.rdbArreglo3.Margin = new System.Windows.Forms.Padding(4);
             this.rdbArreglo3.Name = "rdbArreglo3";
-            this.rdbArreglo3.Size = new System.Drawing.Size(88, 20);
+            this.rdbArreglo3.Size = new System.Drawing.Size(107, 24);
             this.rdbArreglo3.TabIndex = 3;
-            this.rdbArreglo3.TabStop = true;
             this.rdbArreglo3.Text = "Arreglo 3";
             this.rdbArreglo3.UseVisualStyleBackColor = true;
             // 
@@ -73,9 +72,8 @@
             this.rdbArreglo2.Location = new System.Drawing.Point(44, 82);
             this.rdbArreglo2.Margin = new System.Windows.Forms.Padding(4);
             this.rdbArreglo2.Name = "rdbArreglo2";
-            this.rdbArreglo2.Size = new System.Drawing.Size(88, 20);
+            this.rdbArreglo2.Size = new System.Drawing.Size(107, 24);
             this.rdbArreglo2.TabIndex = 2;
-            this.rdbArreglo2.TabStop = true;
             this.rdbArreglo2.Text = "Arreglo 2";
             this.rdbArreglo2.UseVisualStyleBackColor = true;
             // 
@@ -86,9 +84,8 @@
             this.rdbArreglo1.Location = new System.Drawing.Point(44, 37);
             this.rdbArreglo1.Margin = new System.Windows.Forms.Padding(4);
             this.rdbArreglo1.Name = "rdbArreglo1";
-            this.rdbArreglo1.Size = new System.Drawing.Size(88, 20);
+            this.rdbArreglo1.Size = new System.Drawing.Size(107, 24);
             this.rdbArreglo1.TabIndex = 1;
-            this.rdbArreglo1.TabStop = true;
             this.rdbArreglo1.Text = "Arreglo 1";
             this.rdbArreglo1.UseVisualStyleBackColor = true;
             // 
@@ -112,7 +109,7 @@
             this.label1.Location = new System.Drawing.Point(38, 288);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 16);
+            this.label1.Size = new System.Drawing.Size(128, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ancho de Valor:";
             // 
@@ -121,12 +118,12 @@
             this.txtAncho.Location = new System.Drawing.Point(148, 285);
             this.txtAncho.Margin = new System.Windows.Forms.Padding(4);
             this.txtAncho.Name = "txtAncho";
-            this.txtAncho.Size = new System.Drawing.Size(53, 22);
+            this.txtAncho.Size = new System.Drawing.Size(53, 26);
             this.txtAncho.TabIndex = 3;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(252, 339);
             this.Controls.Add(this.txtAncho);

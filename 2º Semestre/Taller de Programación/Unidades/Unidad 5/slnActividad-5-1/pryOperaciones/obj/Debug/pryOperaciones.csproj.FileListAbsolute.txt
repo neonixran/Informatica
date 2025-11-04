@@ -1,0 +1,11 @@
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 5\slnActividad-5-1\pryOperaciones\bin\Debug\pryOperaciones.exe.config
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 5\slnActividad-5-1\pryOperaciones\bin\Debug\pryOperaciones.exe
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 5\slnActividad-5-1\pryOperaciones\bin\Debug\pryOperaciones.pdb
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 5\slnActividad-5-1\pryOperaciones\obj\Debug\pryOperaciones.csproj.AssemblyReference.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 5\slnActividad-5-1\pryOperaciones\obj\Debug\pryOperaciones.Form1.resources
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 5\slnActividad-5-1\pryOperaciones\obj\Debug\pryOperaciones.Properties.Resources.resources
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 5\slnActividad-5-1\pryOperaciones\obj\Debug\pryOperaciones.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 5\slnActividad-5-1\pryOperaciones\obj\Debug\pryOperaciones.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 5\slnActividad-5-1\pryOperaciones\obj\Debug\pryOperaciones.exe
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 5\slnActividad-5-1\pryOperaciones\obj\Debug\pryOperaciones.pdb
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 5\slnActividad-5-1\pryOperaciones\obj\Debug\pryOperaciones.exe.config

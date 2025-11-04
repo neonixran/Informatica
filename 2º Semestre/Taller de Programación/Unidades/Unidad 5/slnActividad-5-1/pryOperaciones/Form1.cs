@@ -30,7 +30,7 @@ namespace pryOperaciones
         }
 
         //AQUI CREAR MÉTODO QUE OBTIENE EL ANCHO DE UN ARREGLO
-        static int obtenerAncho(int[] arreglo)
+            static int obtenerAncho(int[] arreglo)
         {
             int menor = arreglo[0];
             int mayor = arreglo[0];
@@ -39,11 +39,13 @@ namespace pryOperaciones
 
             for (int i=1; i < arreglo.Length; i++)
             {
+                // Obtener el número menor del arreglo
                 if (menor > arreglo[i])
                 {
                     menor = arreglo[i];
                 }
 
+                // Obtener el número mayor del arreglo
                 if (mayor < arreglo[i])
                 {
                     mayor = arreglo[i];
@@ -78,6 +80,9 @@ namespace pryOperaciones
             } else if (rdbArreglo3.Checked)
             {
                 txtAncho.Text = obtenerAncho(v3).ToString();
+            } else
+            {
+                MessageBox.Show("No ha seleccionado ningun arreglo", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

@@ -35,30 +35,36 @@ namespace pryPráctico4
             return menor;
         }
 
-        static int ObtenerPromedio(int[] v)
+        static double ObtenerPromedio(int[] v)
         {
-            int suma = v[0];
+            double suma = v[0];
 
             for (int i = 1; i < v.Length; i++)
             {
                 suma += v[i];
             }
 
-            int promedio = suma / v.Length;
+            double promedio = suma / v.Length;
             return promedio;
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            string[] ValoresTexto = txtValores.Text.Split();
-            int[] valores = new int[ValoresTexto.Length];
-            for (int i = 0; i < ValoresTexto.Length; i++)
+            try
             {
-                valores[i] = int.Parse(ValoresTexto[i]);
+                string[] ValoresTexto = txtValores.Text.Split();
+                int[] valores = new int[ValoresTexto.Length];
+                for (int i = 0; i < ValoresTexto.Length; i++)
+                {
+                    valores[i] = int.Parse(ValoresTexto[i]);
+                }
+                txtMayor.Text = ObtenerMayor(valores).ToString();
+                txtMenor.Text = ObtenerMenor(valores).ToString();
+                txtPromedio.Text = ObtenerPromedio(valores).ToString("N2");
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            txtMayor.Text = ObtenerMayor(valores).ToString();
-            txtMenor.Text = ObtenerMenor(valores).ToString();
-            txtPromedio.Text = ObtenerPromedio(valores).ToString();
         }
     }
 }
