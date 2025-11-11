@@ -1,0 +1,76 @@
+[
+  {
+    "name": "bin",
+    "type": "dir",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/bin",
+    "html_url": "https://github.com/neonixran/Informatica/tree/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/bin"
+  },
+  {
+    "name": "obj",
+    "type": "dir",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/obj",
+    "html_url": "https://github.com/neonixran/Informatica/tree/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/obj"
+  },
+  {
+    "name": "Properties",
+    "type": "dir",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/Properties",
+    "html_url": "https://github.com/neonixran/Informatica/tree/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/Properties"
+  },
+  {
+    "name": "App.config",
+    "type": "file",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/App.config",
+    "html_url": "https://github.com/neonixran/Informatica/blob/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/App.config",
+    "download_url": "2%C2%BA%20Semestre/Taller%20de%20Programaci%C3%B3n/Unidades/Unidad%206/slnUnidad6/pryPr%C3%A1ctico3/App.config"
+  },
+  {
+    "name": "CuentaBancaria.cs",
+    "type": "file",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/CuentaBancaria.cs",
+    "html_url": "https://github.com/neonixran/Informatica/blob/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/CuentaBancaria.cs",
+    "download_url": "2%C2%BA%20Semestre/Taller%20de%20Programaci%C3%B3n/Unidades/Unidad%206/slnUnidad6/pryPr%C3%A1ctico3/CuentaBancaria.cs"
+  },
+  {
+    "name": "desktop.ini",
+    "type": "file",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/desktop.ini",
+    "html_url": "https://github.com/neonixran/Informatica/blob/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/desktop.ini",
+    "download_url": "2%C2%BA%20Semestre/Taller%20de%20Programaci%C3%B3n/Unidades/Unidad%206/slnUnidad6/pryPr%C3%A1ctico3/desktop.ini"
+  },
+  {
+    "name": "frmPráctico3.cs",
+    "type": "file",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/frmPráctico3.cs",
+    "html_url": "https://github.com/neonixran/Informatica/blob/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/frmPráctico3.cs",
+    "download_url": "2%C2%BA%20Semestre/Taller%20de%20Programaci%C3%B3n/Unidades/Unidad%206/slnUnidad6/pryPr%C3%A1ctico3/frmPr%C3%A1ctico3.cs"
+  },
+  {
+    "name": "frmPráctico3.Designer.cs",
+    "type": "file",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/frmPráctico3.Designer.cs",
+    "html_url": "https://github.com/neonixran/Informatica/blob/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/frmPráctico3.Designer.cs",
+    "download_url": "2%C2%BA%20Semestre/Taller%20de%20Programaci%C3%B3n/Unidades/Unidad%206/slnUnidad6/pryPr%C3%A1ctico3/frmPr%C3%A1ctico3.Designer.cs"
+  },
+  {
+    "name": "frmPráctico3.resx",
+    "type": "file",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/frmPráctico3.resx",
+    "html_url": "https://github.com/neonixran/Informatica/blob/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/frmPráctico3.resx",
+    "download_url": "2%C2%BA%20Semestre/Taller%20de%20Programaci%C3%B3n/Unidades/Unidad%206/slnUnidad6/pryPr%C3%A1ctico3/frmPr%C3%A1ctico3.resx"
+  },
+  {
+    "name": "Program.cs",
+    "type": "file",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/Program.cs",
+    "html_url": "https://github.com/neonixran/Informatica/blob/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/Program.cs",
+    "download_url": "2%C2%BA%20Semestre/Taller%20de%20Programaci%C3%B3n/Unidades/Unidad%206/slnUnidad6/pryPr%C3%A1ctico3/Program.cs"
+  },
+  {
+    "name": "pryPráctico3.csproj",
+    "type": "file",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/pryPráctico3.csproj",
+    "html_url": "https://github.com/neonixran/Informatica/blob/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnUnidad6/pryPráctico3/pryPráctico3.csproj",
+    "download_url": "2%C2%BA%20Semestre/Taller%20de%20Programaci%C3%B3n/Unidades/Unidad%206/slnUnidad6/pryPr%C3%A1ctico3/pryPr%C3%A1ctico3.csproj"
+  }
+]

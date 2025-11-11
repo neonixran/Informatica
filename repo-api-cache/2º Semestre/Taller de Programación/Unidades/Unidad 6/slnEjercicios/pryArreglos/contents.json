@@ -1,0 +1,62 @@
+[
+  {
+    "name": "bin",
+    "type": "dir",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/bin",
+    "html_url": "https://github.com/neonixran/Informatica/tree/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/bin"
+  },
+  {
+    "name": "obj",
+    "type": "dir",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/obj",
+    "html_url": "https://github.com/neonixran/Informatica/tree/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/obj"
+  },
+  {
+    "name": "Properties",
+    "type": "dir",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/Properties",
+    "html_url": "https://github.com/neonixran/Informatica/tree/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/Properties"
+  },
+  {
+    "name": "App.config",
+    "type": "file",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/App.config",
+    "html_url": "https://github.com/neonixran/Informatica/blob/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/App.config",
+    "download_url": "2%C2%BA%20Semestre/Taller%20de%20Programaci%C3%B3n/Unidades/Unidad%206/slnEjercicios/pryArreglos/App.config"
+  },
+  {
+    "name": "Form1.cs",
+    "type": "file",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/Form1.cs",
+    "html_url": "https://github.com/neonixran/Informatica/blob/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/Form1.cs",
+    "download_url": "2%C2%BA%20Semestre/Taller%20de%20Programaci%C3%B3n/Unidades/Unidad%206/slnEjercicios/pryArreglos/Form1.cs"
+  },
+  {
+    "name": "Form1.Designer.cs",
+    "type": "file",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/Form1.Designer.cs",
+    "html_url": "https://github.com/neonixran/Informatica/blob/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/Form1.Designer.cs",
+    "download_url": "2%C2%BA%20Semestre/Taller%20de%20Programaci%C3%B3n/Unidades/Unidad%206/slnEjercicios/pryArreglos/Form1.Designer.cs"
+  },
+  {
+    "name": "Form1.resx",
+    "type": "file",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/Form1.resx",
+    "html_url": "https://github.com/neonixran/Informatica/blob/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/Form1.resx",
+    "download_url": "2%C2%BA%20Semestre/Taller%20de%20Programaci%C3%B3n/Unidades/Unidad%206/slnEjercicios/pryArreglos/Form1.resx"
+  },
+  {
+    "name": "Program.cs",
+    "type": "file",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/Program.cs",
+    "html_url": "https://github.com/neonixran/Informatica/blob/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/Program.cs",
+    "download_url": "2%C2%BA%20Semestre/Taller%20de%20Programaci%C3%B3n/Unidades/Unidad%206/slnEjercicios/pryArreglos/Program.cs"
+  },
+  {
+    "name": "pryArreglos.csproj",
+    "type": "file",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/pryArreglos.csproj",
+    "html_url": "https://github.com/neonixran/Informatica/blob/master/2º Semestre/Taller de Programación/Unidades/Unidad 6/slnEjercicios/pryArreglos/pryArreglos.csproj",
+    "download_url": "2%C2%BA%20Semestre/Taller%20de%20Programaci%C3%B3n/Unidades/Unidad%206/slnEjercicios/pryArreglos/pryArreglos.csproj"
+  }
+]
