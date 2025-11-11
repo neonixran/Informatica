@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{ECCDDF3E-EFA8-48CD-BD55-B02F1DAD853C}|pryCertamen2-2025\\pryCertamen2-2025.csproj|solutionrelative:prycertamen2-2025\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECCDDF3E-EFA8-48CD-BD55-B02F1DAD853C}|pryCertamen2-2025\\pryCertamen2-2025.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\2\u00BA semestre\\taller de programaci\u00F3n\\unidades\\unidad 4\\slncertamen2 (profesor)\\prycertamen2-2025\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{ECCDDF3E-EFA8-48CD-BD55-B02F1DAD853C}|pryCertamen2-2025\\pryCertamen2-2025.csproj|C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 4\\slnCertamen2 (Profesor)\\prycertamen2-2025\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{ECCDDF3E-EFA8-48CD-BD55-B02F1DAD853C}|pryCertamen2-2025\\pryCertamen2-2025.csproj|solutionrelative:prycertamen2-2025\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -34,9 +34,9 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 4\\slnCertamen2 (Profesor)\\pryCertamen2-2025\\Form1.cs",
               "RelativeDocumentMoniker": "pryCertamen2-2025\\Form1.cs",
-              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 4\\slnCertamen2 (Profesor)\\pryCertamen2-2025\\Form1.cs*",
-              "RelativeToolTip": "pryCertamen2-2025\\Form1.cs*",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAkwG0AAAAqAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 4\\slnCertamen2 (Profesor)\\pryCertamen2-2025\\Form1.cs",
+              "RelativeToolTip": "pryCertamen2-2025\\Form1.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwDoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T23:46:09.859Z",
               "EditorCaption": ""
@@ -47,11 +47,10 @@
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 4\\slnCertamen2 (Profesor)\\pryCertamen2-2025\\Form1.cs",
               "RelativeDocumentMoniker": "pryCertamen2-2025\\Form1.cs",
-              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 4\\slnCertamen2 (Profesor)\\pryCertamen2-2025\\Form1.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "pryCertamen2-2025\\Form1.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\2\u00BA Semestre\\Taller de Programaci\u00F3n\\Unidades\\Unidad 4\\slnCertamen2 (Profesor)\\pryCertamen2-2025\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "pryCertamen2-2025\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T19:12:53.623Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-10-14T19:12:53.623Z"
             }
           ]
         }

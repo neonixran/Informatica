@@ -111,9 +111,12 @@ namespace pryCertamen2_2025
                 if (cantidato1 > cantidato2)
                 {
                     MessageBox.Show("Ganó el candidato 1");
-                } else
+                } else if (cantidato2 > cantidato1)
                 {
                     MessageBox.Show("Ganó el candidato 2");
+                } else
+                {
+                    MessageBox.Show("Hubo un empate");
                 }
             } catch (Exception ex)
             {

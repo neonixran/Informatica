@@ -18,22 +18,43 @@ namespace pryPráctico5
         }
         static bool ValidaCorreo(string email)
         {
-            if (email.Contains("@") && email.Contains(".") && !String.IsNullOrWhiteSpace(email) && !email.Contains("ñ")) 
-            {
-                foreach (char c in email)
-                {
-                    if (!char.IsUpper(c))
-                    {
-                        return true;
-                    } else
-                    {
-                        return false;
-                    }
-                }
+            int arroba = 0;
+            int punto = 0;
+            int espacioBlanco = 0;
+            int eñe = 0;
+            int mayúsculas = 0;
+            int simboloPuntuación = 0;
 
-                return true;
+            foreach (char Char in email)
+            {
+                if (Char == '@')
+                {
+                    arroba++;
+                } else if (Char == '.')
+                {
+                    punto++;
+                } else if (char.IsWhiteSpace(Char))
+                {
+                    espacioBlanco++;
+                } else if (Char == 'ñ')
+                {
+                    eñe++;
+                } else if (char.IsUpper(Char))
+                {
+                    mayúsculas++;
+                } else if (Char == '-' )
+                {
+
+                }
             }
-            return false;
+
+            if (email.Length > 5 && arroba == 1 && punto > 0 && espacioBlanco == 0 && eñe == 0 && mayúsculas == 0 && simboloPuntuación == 0 && char.IsLetter(email[0]))
+            {
+                return true;
+            } else
+            {
+                return false;
+            }
         }
 
         private void btnValidar_Click(object sender, EventArgs e)

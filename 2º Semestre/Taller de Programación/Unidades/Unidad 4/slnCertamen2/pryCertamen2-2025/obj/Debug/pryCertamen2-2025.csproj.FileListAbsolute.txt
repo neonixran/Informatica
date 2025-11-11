@@ -1,0 +1,10 @@
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnCertamen2\pryCertamen2-2025\bin\Debug\pryCertamen2-2024.exe.config
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnCertamen2\pryCertamen2-2025\bin\Debug\pryCertamen2-2024.exe
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnCertamen2\pryCertamen2-2025\bin\Debug\pryCertamen2-2024.pdb
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnCertamen2\pryCertamen2-2025\obj\Debug\pryCertamen2-2025.csproj.AssemblyReference.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnCertamen2\pryCertamen2-2025\obj\Debug\pryCertamen2_2025.Form1.resources
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnCertamen2\pryCertamen2-2025\obj\Debug\pryCertamen2_2024.Properties.Resources.resources
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnCertamen2\pryCertamen2-2025\obj\Debug\pryCertamen2-2025.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnCertamen2\pryCertamen2-2025\obj\Debug\pryCertamen2-2025.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnCertamen2\pryCertamen2-2025\obj\Debug\pryCertamen2-2024.exe
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 4\slnCertamen2\pryCertamen2-2025\obj\Debug\pryCertamen2-2024.pdb
