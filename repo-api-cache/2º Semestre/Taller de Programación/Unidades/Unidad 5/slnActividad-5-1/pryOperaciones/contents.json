@@ -1,5 +1,17 @@
 [
   {
+    "name": "bin",
+    "type": "dir",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 5/slnActividad-5-1/pryOperaciones/bin",
+    "html_url": "https://github.com/neonixran/Informatica/tree/master/2º Semestre/Taller de Programación/Unidades/Unidad 5/slnActividad-5-1/pryOperaciones/bin"
+  },
+  {
+    "name": "obj",
+    "type": "dir",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 5/slnActividad-5-1/pryOperaciones/obj",
+    "html_url": "https://github.com/neonixran/Informatica/tree/master/2º Semestre/Taller de Programación/Unidades/Unidad 5/slnActividad-5-1/pryOperaciones/obj"
+  },
+  {
     "name": "Properties",
     "type": "dir",
     "path": "2º Semestre/Taller de Programación/Unidades/Unidad 5/slnActividad-5-1/pryOperaciones/Properties",
