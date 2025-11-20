@@ -1,5 +1,17 @@
 [
   {
+    "name": "bin",
+    "type": "dir",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 4/slnCertamen2/pryCertamen2-2025/bin",
+    "html_url": "https://github.com/neonixran/Informatica/tree/master/2º Semestre/Taller de Programación/Unidades/Unidad 4/slnCertamen2/pryCertamen2-2025/bin"
+  },
+  {
+    "name": "obj",
+    "type": "dir",
+    "path": "2º Semestre/Taller de Programación/Unidades/Unidad 4/slnCertamen2/pryCertamen2-2025/obj",
+    "html_url": "https://github.com/neonixran/Informatica/tree/master/2º Semestre/Taller de Programación/Unidades/Unidad 4/slnCertamen2/pryCertamen2-2025/obj"
+  },
+  {
     "name": "Properties",
     "type": "dir",
     "path": "2º Semestre/Taller de Programación/Unidades/Unidad 4/slnCertamen2/pryCertamen2-2025/Properties",
