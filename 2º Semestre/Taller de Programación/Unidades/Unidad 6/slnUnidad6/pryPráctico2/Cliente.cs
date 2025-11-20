@@ -13,9 +13,7 @@ namespace pryPráctico2
         public string Nombre
         {
             get
-            {
-                return _nombre;
-            }
+            { return _nombre; }
             set
             {
                 if (value.Length < 1)
@@ -47,18 +45,14 @@ namespace pryPráctico2
         }
 
         public string Calle { get; set; }
-        private int _número;
 
+        private int _número;
         public int Número
         {
             get
-            {
-                return _número;
-            }
+            { return _número; }
             set
-            {
-                _número = value;
-            }
+            { _número = value; }
         }
     }
 }

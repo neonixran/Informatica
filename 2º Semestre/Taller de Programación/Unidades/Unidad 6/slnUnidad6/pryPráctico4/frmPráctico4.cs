@@ -16,10 +16,57 @@ namespace pryPráctico4
         {
             InitializeComponent();
         }
-        
+
+        static Fracción Sumar(Fracción f1, Fracción f2)
+        {
+            Fracción resultado = new Fracción();
+            resultado.Numerador = f1.Numerador * f2.Denominador + f2.Numerador * f1.Denominador;
+            resultado.Denominador = f1.Denominador * f2.Denominador;
+
+            resultado.Simplificar();
+
+            return resultado;
+        }
+
+        static Fracción Multiplicar(Fracción f1, Fracción f2)
+        {
+            Fracción resultado = new Fracción();
+            resultado.Numerador = f1.Numerador * f2.Numerador;
+            resultado.Denominador = f1.Denominador * f2.Denominador;
+
+            resultado.Simplificar();
+
+            return resultado;
+        }
+
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-           
+            try
+            {
+                int n1 = int.Parse(txtNumA.Text);
+                int d1 = int.Parse(txtDenA.Text);
+
+                int n2 = int.Parse(txtNumB.Text);
+                int d2 = int.Parse(txtDenB.Text);
+
+                Fracción f1 = new Fracción(n1, d1);
+                Fracción f2 = new Fracción(n2, d2);
+
+                Fracción adición = Sumar(f1, f2);
+                Fracción multiplicación = Multiplicar(f1, f2);
+
+                f1.Simplificar();
+                f2.Simplificar();
+
+                txtNumSuma.Text = adición.Numerador.ToString();
+                txtDenSuma.Text = adición.Denominador.ToString();
+
+                txtNumMult.Text = multiplicación.Numerador.ToString();
+                txtDenMult.Text = multiplicación.Denominador.ToString();
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void txtNumA_TextChanged(object sender, EventArgs e)

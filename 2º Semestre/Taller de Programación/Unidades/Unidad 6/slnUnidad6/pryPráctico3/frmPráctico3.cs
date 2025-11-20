@@ -12,13 +12,13 @@ namespace pryPráctico3
 {
     public partial class frmPráctico3 : Form
     {
-        
+        CuentaBancaria cuenta = new CuentaBancaria();
+
         public frmPráctico3()
         {
             InitializeComponent();
+            txtSaldo.Text = cuenta.Saldo.ToString(); // duda aquí ¿debe ir esto aquí y se debe llamar a la clase arriba?
         }
-
-        CuentaBancaria cuenta = new CuentaBancaria();
 
         private void btnCargo_Click(object sender, EventArgs e)
         {

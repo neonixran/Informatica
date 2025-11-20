@@ -19,29 +19,43 @@ namespace pryPráctico4
             {
                 if (value == 0)
                 {
-                    throw new ArgumentException("El denominador no puede ser cero");
+                    throw new ArgumentException("El denominador no puede ser cero.");
                 }
 
                 _denominador = value;
             }
         }
 
-        static Fracción Sumar(Fracción f1, Fracción f2)
+        private int calcularMCD(int a, int b)
         {
-            Fracción resultado = new Fracción();
-            resultado.Numerador = f1.Numerador * f2.Denominador + f2.Numerador * f1.Denominador;
-            resultado.Denominador = f1.Denominador * f2.Denominador;
+            int resto;
 
-            return resultado;
+            do
+            {
+                resto = a % b;
+
+                if (resto != 0)
+                {
+                    a = b;
+                    b = resto;
+                }
+            } while (resto > 0);
+
+            return b;
         }
 
-        static Fracción Multiplicar(Fracción f1, Fracción f2)
+        public void Simplificar()
         {
-            Fracción resultado = new Fracción();
-            resultado.Numerador = f1.Numerador * f2.Denominador;
-            resultado.Denominador = f1.Denominador * f2.Denominador;
+            int mcd = calcularMCD(Numerador, Denominador);
+            Numerador /= mcd;
+            Denominador /= mcd;
+        }
 
-            return resultado;
+        public Fracción() { }
+        public Fracción(int a, int b)
+        {
+            Numerador = a;
+            Denominador = b;
         }
     }
 }

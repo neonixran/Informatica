@@ -12,15 +12,14 @@ namespace pryPráctico3
         public long Saldo
         {
             get
-            {
-                return _saldo;
-            }
+            { return _saldo; }
             set
             {
                 if (value < 0)
                 {
                     throw new ArgumentException("El SALDO es menor al monto a retirar.");
                 }
+
                 _saldo = value;
             }
         }
