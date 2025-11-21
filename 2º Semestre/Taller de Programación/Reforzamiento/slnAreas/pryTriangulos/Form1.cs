@@ -19,7 +19,7 @@ namespace pryTriangulos
         }
 
         // Método para validar si los tres valores de a, b y c forman un triángulo.
-        static bool comprobarTriángulo(double a, double b, double c)
+        static bool esTriángulo(double a, double b, double c)
         {
             return (a + b > c && a + c > b && b + c > a);
         }
@@ -34,54 +34,24 @@ namespace pryTriangulos
         }
 
         // Método para determinar el tipo de triángulo.
-        static string determinarTriángulo(double a, double b, double c)
+        static string tipoTriángulo(double a, double b, double c)
         {
-            string tipoTriángulo = "";
-
             if (a == b && b == c)
             {
-                tipoTriángulo = "Equilátero";
+                return "Equilátero";
             }
             else if (a == b || a == c || b == c)
             {
-                tipoTriángulo = "Isósceles";
+                return "Isósceles";
             }
             else
             {
-                tipoTriángulo = "Escaleno";
-            }
-
-            return tipoTriángulo;
-        }
-
-
-        private void btnCalcularArea_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                double ladoA = double.Parse(txtLadoA.Text);
-                double ladoB = double.Parse(txtLadoB.Text);
-                double ladoC = double.Parse(txtLadoC.Text);
-                bool esTriángulo = comprobarTriángulo(ladoA, ladoB, ladoC);
-
-                if (esTriángulo)
-                {
-                    double area = calcularArea(ladoA, ladoB, ladoC);
-                    txtResultado.Text = area.ToString("N1");
-                } else
-                {
-                    txtResultado.Text = "NO ES VÁLIDO";
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               return "Escaleno";
             }
         }
 
-        private void btnProcesar_Click(object sender, EventArgs e)
+        static int cantidadEscalenos()
         {
-            // Leer datos del archivo "triángulo.txt"
             StreamReader triángulos = new StreamReader("../../Triángulos.txt");
             string registros = triángulos.ReadLine();
 
@@ -100,13 +70,9 @@ namespace pryTriangulos
                 double ladoB = double.Parse(lados[1]);
                 double ladoC = double.Parse(lados[2]);
 
-                bool esTriángulo = comprobarTriángulo(ladoA, ladoB, ladoC);
-
-                if (esTriángulo)
+                if (esTriángulo(ladoA, ladoB, ladoC))
                 {
-                    string tipoTriángulo = determinarTriángulo(ladoA, ladoB, ladoC);
-
-                    if (tipoTriángulo == "Escaleno")
+                    if (tipoTriángulo(ladoA, ladoB, ladoC) == "Escaleno")
                     {
 
                         triángulosEscalenos++;
@@ -118,13 +84,47 @@ namespace pryTriangulos
 
             triángulos.Close();
 
-            triángulos = new StreamReader("../../Triángulos.txt");
-            registros = triángulos.ReadLine();
+            return triángulosEscalenos;
+        }
 
-            // Calcular el área de los triángulos escalenos y guardarlos en el arreglo
+
+        private void btnCalcularArea_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double ladoA = double.Parse(txtLadoA.Text);
+                double ladoB = double.Parse(txtLadoB.Text);
+                double ladoC = double.Parse(txtLadoC.Text);
+
+                if (esTriángulo(ladoA, ladoB, ladoC))
+                {
+                    double area = calcularArea(ladoA, ladoB, ladoC);
+                    txtResultado.Text = area.ToString("N1");
+
+                    MessageBox.Show(tipoTriángulo(ladoA, ladoB, ladoC), "TIPO TRIÁNGULO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                } else
+                {
+                    txtResultado.Text = "NO ES VÁLIDO";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnProcesar_Click(object sender, EventArgs e)
+        {
+            // Leer el archivo de triángulos
+            StreamReader triángulos = new StreamReader("../../Triángulos.txt");
+            string registros = triángulos.ReadLine();
+
+            // Crear un arreglo para almacenar las áreas de los triángulos escalenos
+            int triángulosEscalenos = cantidadEscalenos();
             double[] áreas = new double[triángulosEscalenos];
             int contador = 0;
 
+            // Leer los triángulos y calcular las áreas de los escalenos
             while (registros != null)
             {
                 /*
@@ -138,13 +138,10 @@ namespace pryTriangulos
                 double ladoB = double.Parse(lados[1]);
                 double ladoC = double.Parse(lados[2]);
 
-                bool esTriángulo = comprobarTriángulo(ladoA, ladoB, ladoC);
 
-                if (esTriángulo)
+                if (esTriángulo(ladoA, ladoB, ladoC))
                 {
-                    string tipoTriángulo = determinarTriángulo(ladoA, ladoB, ladoC);
-
-                    if (tipoTriángulo == "Escaleno")
+                    if (tipoTriángulo(ladoA, ladoB, ladoC) == "Escaleno")
                     {
                         double área = calcularArea(ladoA, ladoB, ladoC);
                         áreas[contador] = área;
@@ -161,10 +158,11 @@ namespace pryTriangulos
             // Imprimir cantidad de triángulos escalenos
             txtCantEscalenos.Text = triángulosEscalenos.ToString();
 
-            // Guardar las áreas de mayor a menor de los triángulos escalenos
+            // Ordenar las áreas de los triángulos escalenos de mayor a menor
             Array.Sort(áreas);
             Array.Reverse(áreas); // Se hace un reverse, ya que sort ordena de menor a mayor
 
+            // Guardar las áreas almacenadas en el arreglo en un archivo
             StreamWriter escalenos = new StreamWriter("..//..//escalenos.txt");
 
             for (int i = 0; i < áreas.Length; i++)
