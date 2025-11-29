@@ -1,0 +1,20 @@
+C:\Users\iryde\Downloads\slnGimnasioCorposano\slnGimnasioCorposano\prySalud\bin\Debug\prySalud.exe.config
+C:\Users\iryde\Downloads\slnGimnasioCorposano\slnGimnasioCorposano\prySalud\bin\Debug\prySalud.exe
+C:\Users\iryde\Downloads\slnGimnasioCorposano\slnGimnasioCorposano\prySalud\bin\Debug\prySalud.pdb
+C:\Users\iryde\Downloads\slnGimnasioCorposano\slnGimnasioCorposano\prySalud\obj\Debug\prySalud.csproj.AssemblyReference.cache
+C:\Users\iryde\Downloads\slnGimnasioCorposano\slnGimnasioCorposano\prySalud\obj\Debug\prySalud.Form1.resources
+C:\Users\iryde\Downloads\slnGimnasioCorposano\slnGimnasioCorposano\prySalud\obj\Debug\prySalud.Properties.Resources.resources
+C:\Users\iryde\Downloads\slnGimnasioCorposano\slnGimnasioCorposano\prySalud\obj\Debug\prySalud.csproj.GenerateResource.cache
+C:\Users\iryde\Downloads\slnGimnasioCorposano\slnGimnasioCorposano\prySalud\obj\Debug\prySalud.csproj.CoreCompileInputs.cache
+C:\Users\iryde\Downloads\slnGimnasioCorposano\slnGimnasioCorposano\prySalud\obj\Debug\prySalud.exe
+C:\Users\iryde\Downloads\slnGimnasioCorposano\slnGimnasioCorposano\prySalud\obj\Debug\prySalud.pdb
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Evaluaciones\Certamen 3\slnGimnasioCorposano\prySalud\bin\Debug\prySalud.exe.config
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Evaluaciones\Certamen 3\slnGimnasioCorposano\prySalud\bin\Debug\prySalud.exe
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Evaluaciones\Certamen 3\slnGimnasioCorposano\prySalud\bin\Debug\prySalud.pdb
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Evaluaciones\Certamen 3\slnGimnasioCorposano\prySalud\obj\Debug\prySalud.csproj.AssemblyReference.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Evaluaciones\Certamen 3\slnGimnasioCorposano\prySalud\obj\Debug\prySalud.Form1.resources
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Evaluaciones\Certamen 3\slnGimnasioCorposano\prySalud\obj\Debug\prySalud.Properties.Resources.resources
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Evaluaciones\Certamen 3\slnGimnasioCorposano\prySalud\obj\Debug\prySalud.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Evaluaciones\Certamen 3\slnGimnasioCorposano\prySalud\obj\Debug\prySalud.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Evaluaciones\Certamen 3\slnGimnasioCorposano\prySalud\obj\Debug\prySalud.exe
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Evaluaciones\Certamen 3\slnGimnasioCorposano\prySalud\obj\Debug\prySalud.pdb

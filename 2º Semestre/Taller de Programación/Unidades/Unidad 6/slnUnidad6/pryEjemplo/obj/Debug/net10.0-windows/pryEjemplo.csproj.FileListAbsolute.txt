@@ -1,0 +1,17 @@
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\bin\Debug\net10.0-windows\pryEjemplo.exe
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\bin\Debug\net10.0-windows\pryEjemplo.deps.json
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\bin\Debug\net10.0-windows\pryEjemplo.runtimeconfig.json
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\bin\Debug\net10.0-windows\pryEjemplo.dll
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\bin\Debug\net10.0-windows\pryEjemplo.pdb
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\obj\Debug\net10.0-windows\pryEjemplo.Form1.resources
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\obj\Debug\net10.0-windows\pryEjemplo.csproj.GenerateResource.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\obj\Debug\net10.0-windows\pryEjemplo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\obj\Debug\net10.0-windows\pryEjemplo.AssemblyInfoInputs.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\obj\Debug\net10.0-windows\pryEjemplo.AssemblyInfo.cs
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\obj\Debug\net10.0-windows\pryEjemplo.csproj.CoreCompileInputs.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\obj\Debug\net10.0-windows\pryEjemplo.sourcelink.json
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\obj\Debug\net10.0-windows\pryEjemplo.dll
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\obj\Debug\net10.0-windows\refint\pryEjemplo.dll
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\obj\Debug\net10.0-windows\pryEjemplo.pdb
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\obj\Debug\net10.0-windows\pryEjemplo.genruntimeconfig.cache
+C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryEjemplo\obj\Debug\net10.0-windows\ref\pryEjemplo.dll

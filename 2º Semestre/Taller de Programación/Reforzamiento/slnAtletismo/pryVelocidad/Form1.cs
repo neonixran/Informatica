@@ -31,7 +31,7 @@ namespace pryVelocidad
             return velocidad;
         }
 
-        static int cantidadRegistros()
+        static int cantidadRegistros(string distancia = null)
         {
             StreamReader datos = new StreamReader("../../../atletismo.txt");
 
@@ -40,7 +40,13 @@ namespace pryVelocidad
             int contador = -1;
             while (dato != null)
             {
-                contador++;
+                string[] campos = dato.Split(';');
+
+                if (distancia == campos[2])
+                {
+                    contador++;
+                }
+
                 dato = datos.ReadLine();
             }
 
@@ -49,74 +55,37 @@ namespace pryVelocidad
             return contador;
         }
 
-        static double[] obtenerVelocidades()
+        static string[] obtenerFinalistas(string distacia)
         {
+
             StreamReader datos = new StreamReader("../../../atletismo.txt");
 
             string dato = datos.ReadLine();
-            dato = datos.ReadLine();
 
-            /*
-             * campo[0]: Nombre
-             * campo[1]: País
-             * campo[2]: Distancia
-             * campo[3]: Tiempo
-             */
+            int contador = -1;
+            int cantidadFinalistas = cantidadRegistros(distacia);
+            string[] finalistas = new string[cantidadFinalistas];
 
-            int num_atletas = cantidadRegistros();
-            double[] velocidades = new double[num_atletas];
-
-            int i = 0;
             while (dato != null)
             {
-                string[] campo = dato.Split(';');
+                string[] campos = dato.Split(';');
 
-                int dist = int.Parse(campo[2]);
+                if (distacia == campos[2] && contador <= 5)
+                {
+                    finalistas[contador] = String.Format("{0}; {1}; {2}", campos[0], campos[1], calcularVelocidad(double.Parse(distacia), double.Parse(campos[3])));
+                }
 
-                double tiempo = double.Parse(campo[3]);
-                double velocidad = calcularVelocidad(dist, tiempo);
-                velocidades[i] = velocidad;
-
+                contador++;
                 dato = datos.ReadLine();
-                i++;
             }
-
+                
             datos.Close();
 
-            return velocidades;
+            Array.Sort(finalistas);
+
+            return finalistas;
         }
 
-        static int obtenerPosVeloz(double[] vs)
-        {
-            double mayor = vs[0];
-            int pos_mayor = 0;
-
-            for (int i = 1; i < vs.Length; i++)
-            {
-                if (mayor < vs[i])
-                {
-                    mayor = vs[i];
-                    pos_mayor = i;
-                }
-            }
-
-            return pos_mayor;
-        }
-
-        static string[] obtenerDatosVeloz(int pos)
-        {
-            StreamReader datos = new StreamReader("../../../atletismo.txt");
-
-            string dato = datos.ReadLine();
-
-            while (dato != null)
-            {
-                string[] campo = dato.Split(';');
-
-
-                dato = datos.ReadLine();
-            }
-        }
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
@@ -137,7 +106,10 @@ namespace pryVelocidad
         {
             try
             {
-
+                for (int i = 0; i < cantidadRegistros("200"); i++)
+                {
+                   lst200m.Items.Add(obtenerFinalistas("200")[i]);
+                }
             } catch(Exception ex)
             {
                 MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);

@@ -8,4 +8,3 @@ C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programaci
 C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryPráctico4\obj\Debug\pryPráctico4.csproj.CoreCompileInputs.cache
 C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryPráctico4\obj\Debug\pryPráctico4.exe
 C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryPráctico4\obj\Debug\pryPráctico4.pdb
-C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Unidades\Unidad 6\slnUnidad6\pryPráctico4\obj\Debug\pryPráctico4.exe.config

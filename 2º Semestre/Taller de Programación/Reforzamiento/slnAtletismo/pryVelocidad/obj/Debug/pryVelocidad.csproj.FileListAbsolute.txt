@@ -8,4 +8,3 @@ C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programaci
 C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Reforzamiento\slnAtletismo\pryVelocidad\obj\Debug\pryVelocidad.csproj.CoreCompileInputs.cache
 C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Reforzamiento\slnAtletismo\pryVelocidad\obj\Debug\pryVelocidad.exe
 C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Reforzamiento\slnAtletismo\pryVelocidad\obj\Debug\pryVelocidad.pdb
-C:\Users\iryde\OneDrive\Documentos\Repositorio\2º Semestre\Taller de Programación\Reforzamiento\slnAtletismo\pryVelocidad\obj\Debug\pryVelocidad.exe.config

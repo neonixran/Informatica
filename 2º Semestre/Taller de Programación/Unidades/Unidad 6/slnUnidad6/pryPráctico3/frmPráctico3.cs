@@ -17,7 +17,7 @@ namespace pryPráctico3
         public frmPráctico3()
         {
             InitializeComponent();
-            txtSaldo.Text = cuenta.Saldo.ToString(); // duda aquí ¿debe ir esto aquí y se debe llamar a la clase arriba?
+            txtSaldo.Text = cuenta.Saldo.ToString();
         }
 
         private void btnCargo_Click(object sender, EventArgs e)
