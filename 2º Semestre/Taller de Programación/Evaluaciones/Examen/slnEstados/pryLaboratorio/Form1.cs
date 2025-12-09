@@ -52,16 +52,6 @@ namespace pryLaboratorio
             }
         }
 
-        // Método para obtener el promedio de algo.
-        static int calcularPromedio(int dato, int total)
-        {
-            int suma = 0;
-
-            suma += dato;
-
-            return suma / total;
-        }
-
         // Botón "Calcular estado de una mezcla"
         private void btnAnalizarMezcla_Click(object sender, EventArgs e)
         {
