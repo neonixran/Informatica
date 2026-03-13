@@ -6,22 +6,24 @@ package prybombilla;
 
 /**
  *
- * @author iryde
+ * @author Josué Bravo
  */
 public class Bombilla {
+
     public boolean estado = false;
     public int tipo;
     public int serie;
-    
-    public void Encender() {
+
+    // Métodos
+    public void encender() {
         estado = true;
     }
-    
-    public void Apagar() {
+
+    public void apagar() {
         estado = false;
     }
-  
-    public void obtenerDetalles() {
-        System.out.println("La bombilla está " + (estado ? "encendida" : "apagada") + " y es de tipo " + tipo + " de la serie " + serie);
+    
+    public void getDetalles() {
+        System.out.printf("la bombilla esta %s, es de tipo \"%s\" y su numero de serie es %s.\n", estado ? "encendida" : "apagada", tipo, serie);
     }
 }

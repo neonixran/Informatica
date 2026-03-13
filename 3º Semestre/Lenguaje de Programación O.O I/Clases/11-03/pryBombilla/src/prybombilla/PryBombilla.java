@@ -15,12 +15,12 @@ public class PryBombilla {
      */
     public static void main(String[] args) {
         Bombilla a = new Bombilla();
-        a.Encender();
-        
+        a.encender();
+
         a.tipo = 1;
         a.serie = 03212;
-        
-        a.obtenerDetalles();
+
+        a.getDetalles();
     }
-    
+
 }
