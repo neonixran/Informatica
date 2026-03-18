@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Clases\\slnClases\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8EB8789-0781-3D61-565D-4F1CBB2551EE}|pryClase2\\pryClase2_11-03.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\clases\\slnclases\\pryclase2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8EB8789-0781-3D61-565D-4F1CBB2551EE}|pryClase2\\pryClase2_11-03.csproj|solutionrelative:pryclase2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA50E29A-D7B7-4BBA-B706-E5D717B0AFB6}|pryClase4_18-03\\pryClase4_18-03.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\clases\\slnclases\\pryclase4_18-03\\models\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA50E29A-D7B7-4BBA-B706-E5D717B0AFB6}|pryClase4_18-03\\pryClase4_18-03.csproj|solutionrelative:pryclase4_18-03\\models\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8EB8789-0781-3D61-565D-4F1CBB2551EE}|pryClase2\\pryClase2_11-03.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\clases\\slnclases\\pryclase2\\views\\home\\ejemplo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8EB8789-0781-3D61-565D-4F1CBB2551EE}|pryClase2\\pryClase2_11-03.csproj|solutionrelative:pryclase2\\views\\home\\ejemplo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AA50E29A-D7B7-4BBA-B706-E5D717B0AFB6}|pryClase4_18-03\\pryClase4_18-03.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\clases\\slnclases\\pryclase4_18-03\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA50E29A-D7B7-4BBA-B706-E5D717B0AFB6}|pryClase4_18-03\\pryClase4_18-03.csproj|solutionrelative:pryclase4_18-03\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8EB8789-0781-3D61-565D-4F1CBB2551EE}|pryClase2\\pryClase2_11-03.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\clases\\slnclases\\pryclase2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A8EB8789-0781-3D61-565D-4F1CBB2551EE}|pryClase2\\pryClase2_11-03.csproj|solutionrelative:pryclase2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{AA50E29A-D7B7-4BBA-B706-E5D717B0AFB6}|pryClase4_18-03\\pryClase4_18-03.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\clases\\slnclases\\pryclase4_18-03\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA50E29A-D7B7-4BBA-B706-E5D717B0AFB6}|pryClase4_18-03\\pryClase4_18-03.csproj|solutionrelative:pryclase4_18-03\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA50E29A-D7B7-4BBA-B706-E5D717B0AFB6}|pryClase4_18-03\\pryClase4_18-03.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\clases\\slnclases\\pryclase4_18-03\\views\\home\\agregar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AA50E29A-D7B7-4BBA-B706-E5D717B0AFB6}|pryClase4_18-03\\pryClase4_18-03.csproj|solutionrelative:pryclase4_18-03\\views\\home\\agregar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 13,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Clases\\slnClases\\pryClase4_18-03\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "pryClase4_18-03\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Clases\\slnClases\\pryClase4_18-03\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "pryClase4_18-03\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwDIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T14:30:53.861Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Clases\\slnClases\\pryClase4_18-03\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "pryClase4_18-03\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Clases\\slnClases\\pryClase4_18-03\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "pryClase4_18-03\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwB8AAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T14:10:09.772Z",
+              "IsPinned": true
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -70,40 +100,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Ejemplo.cshtml",
-              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Clases\\slnClases\\pryClase2\\Views\\Home\\Ejemplo.cshtml",
-              "RelativeDocumentMoniker": "pryClase2\\Views\\Home\\Ejemplo.cshtml",
-              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Clases\\slnClases\\pryClase2\\Views\\Home\\Ejemplo.cshtml",
-              "RelativeToolTip": "pryClase2\\Views\\Home\\Ejemplo.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-11T15:16:14.061Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Clases\\slnClases\\pryClase2\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "pryClase2\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Clases\\slnClases\\pryClase2\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "pryClase2\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBkAAAAkAAAAAAAAAA==",
+              "Title": "Datos.cs",
+              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Clases\\slnClases\\pryClase4_18-03\\Models\\Datos.cs",
+              "RelativeDocumentMoniker": "pryClase4_18-03\\Models\\Datos.cs",
+              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Clases\\slnClases\\pryClase4_18-03\\Models\\Datos.cs",
+              "RelativeToolTip": "pryClase4_18-03\\Models\\Datos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T15:00:01.679Z",
+              "WhenOpened": "2026-03-18T15:26:13.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Clases\\slnClases\\pryClase2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "pryClase2\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Clases\\slnClases\\pryClase2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "pryClase2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAB6AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Agregar.cshtml",
+              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Clases\\slnClases\\pryClase4_18-03\\Views\\Home\\Agregar.cshtml",
+              "RelativeDocumentMoniker": "pryClase4_18-03\\Views\\Home\\Agregar.cshtml",
+              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Clases\\slnClases\\pryClase4_18-03\\Views\\Home\\Agregar.cshtml",
+              "RelativeToolTip": "pryClase4_18-03\\Views\\Home\\Agregar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-11T14:59:13.963Z"
+              "WhenOpened": "2026-03-18T15:03:29.09Z"
             }
           ]
         },

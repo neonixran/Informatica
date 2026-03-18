@@ -23,9 +23,14 @@ namespace pryClase2.Controllers
             return View();
         }
 
-        public IActionResult Ejemplo()
+        public IActionResult x()
         {
-            return View();
+            return View("Ejemplo");
+        }
+
+        public string validardatos()
+        {
+            return "j";
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

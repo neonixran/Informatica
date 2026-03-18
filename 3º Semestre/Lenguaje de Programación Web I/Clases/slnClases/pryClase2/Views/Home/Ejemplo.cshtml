@@ -4,5 +4,13 @@
 }
 
 <h1>Este es un ejemplo</h1>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLu4ZE4JJ7hDdoG9KaH6iFcLHHUJBYEBR2KQ&s" />
-
+<br />
+<form asp-controller="Home" asp-action="validardatos" method="get">
+    <label>Usuario</label>
+    <input type="text" name="usuario" id="txtUsuario" />
+    <br />
+    <label>Contraseña</label>
+    <input type="password" name="contraseña" id="txtContraseña" />
+    <br />
+    <input type="submit" value="Aceptar" />
+</form>
