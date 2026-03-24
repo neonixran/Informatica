@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pryClase1_09-03")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5e308eae03e0874087309b8a418d6f4cb06134e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3bfaeea16479309e6faa46a58f998f5baa3aab6")]
 [assembly: System.Reflection.AssemblyProductAttribute("pryClase1_09-03")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pryClase1_09-03")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

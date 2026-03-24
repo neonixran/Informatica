@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "Agregar";
+}
+
+<h1>Agregar</h1>
+<br />
+<form asp-action="Nuevo" method="post">
+    <label>Añadir usuario</label>
+    <input type="text" name="nUsuario" placeholder="Usuario"/>
+    <br>
+    <label>Añadir Contraseña</label>
+    <input type="text" name="nContraseña" placeholder="Contraseña"/>
+    <br />
+    <label>Habilitado</label>
+    <input type="checkbox" name="nHabilitado" value="1"/>
+    <br />
+    <input type="submit" value="Añadir" />
+</form>
+
+<br />
+
+<!-- @ViewBag.usuarios -->
+<table border="1">
+    <tr>
+        <td style="background: red; color: white;">Usuario</td>
+        <td style="background: red; color: white;">Contraseña</td>
+        <td style="background: red; color: white;">Estado</td>
+        <td style="background: red; color: white;">Editar</td>
+    </tr>
+    @{
+        if (ViewBag.usuarios != null)
+        {
+            foreach (var usuario in ViewBag.usuarios)
+            {
+                <tr>
+                    <td>@usuario.usuario_</td>
+                    <td>@usuario.contraseña_</td>
+                    <td>
+                    @{if (usuario.habilitado_ == "1") {
+                        <label>habilitado</label>
+                    } else {
+                        <label>deshabilitado</label>
+                    }}
+                    </td>
+                    <td>
+                        <form asp-action="Editar" method="post">
+                            <input type="hidden" name="txtEditarUsuario" value="@usuario.usuario_" />
+                            <input type="hidden" name="txtEditarContraseña" value="@usuario.contraseña_" />
+                            <input type="hidden" name="chkEditarEstado" value="@usuario.habilitado_" />
+
+                            <input type="submit" value="editar" />
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+    }
+</table>
