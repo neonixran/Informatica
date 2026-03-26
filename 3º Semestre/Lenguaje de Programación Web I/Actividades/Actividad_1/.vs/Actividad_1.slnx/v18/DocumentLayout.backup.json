@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Actividad_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\actividades\\actividad_1\\actividad_1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|solutionrelative:actividad_1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\actividades\\actividad_1\\actividad_1\\models\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|solutionrelative:actividad_1\\models\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\actividades\\actividad_1\\actividad_1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|solutionrelative:actividad_1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\actividades\\actividad_1\\actividad_1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|solutionrelative:actividad_1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\actividades\\actividad_1\\actividad_1\\models\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|solutionrelative:actividad_1\\models\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Datos.cs",
               "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Actividad_1\\Actividad_1\\Models\\Datos.cs",
               "RelativeDocumentMoniker": "Actividad_1\\Models\\Datos.cs",
@@ -85,25 +85,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Actividad_1\\Actividad_1\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Actividad_1\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Actividad_1\\Actividad_1\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Actividad_1\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwBsAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T15:27:19.435Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Actividad_1\\Actividad_1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Actividad_1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Actividad_1\\Actividad_1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Actividad_1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-26T22:08:50.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Actividad_1\\Actividad_1\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Actividad_1\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Actividad_1\\Actividad_1\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Actividad_1\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAcwBIAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-25T15:15:44.867Z",
               "EditorCaption": ""

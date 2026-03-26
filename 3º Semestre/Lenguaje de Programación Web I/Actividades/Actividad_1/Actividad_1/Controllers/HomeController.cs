@@ -33,8 +33,13 @@ namespace Actividad_1.Controllers
             if (num1 == null && num2 == null && num3 == null)
             {
                 // Si los tres campos se encuentran vacíos, deberá enviar un mensaje que diga "Los tres campos no pueden estar vacíos"
-                
+
                 ViewBag.respuesta = "Los tres campos no pueden estar vacíos.";
+
+                // Si alguno de los campos no fue ingresado, el campo en la grilla se muestra vació.
+
+                datos.operacion_ = "";
+                datos.resultado_ = 0; // Relleno con estos para poder mostrar los campos de la tabla vacios.
             } else if (num1 != null && num2 == null && num3 == null)
             {
                 // Si solo el primer campo no está vacío, se deberá multiplicar ese valor por dos.
