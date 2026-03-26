@@ -35,8 +35,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-26T02:38:39.833Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -90,7 +89,7 @@
               "RelativeDocumentMoniker": "Actividad_1\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Actividad_1\\Actividad_1\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Actividad_1\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwBsAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-25T15:27:19.435Z",
               "EditorCaption": ""
@@ -105,8 +104,7 @@
               "RelativeToolTip": "Actividad_1\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAcwBIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T15:15:44.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T15:15:44.867Z"
             }
           ]
         },
