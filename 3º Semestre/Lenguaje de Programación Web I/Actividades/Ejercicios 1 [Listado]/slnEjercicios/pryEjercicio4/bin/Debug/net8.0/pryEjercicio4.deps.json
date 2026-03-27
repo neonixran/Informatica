@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "pryEjercicio4/1.0.0": {
+        "runtime": {
+          "pryEjercicio4.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "pryEjercicio4/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
