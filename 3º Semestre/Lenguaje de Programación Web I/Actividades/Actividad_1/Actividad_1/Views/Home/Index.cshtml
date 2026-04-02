@@ -18,8 +18,8 @@
         <br /><br />
         <input type="submit" value="Calcular" />
     </form>
-
-    <p>@ViewBag.respuesta</p>
+    <br /><br />
+    <h4 class="text-danger">@ViewBag.respuesta</h4>
 
     <br /><br />
 
@@ -53,33 +53,4 @@
             }
         </tbody>
     </table>
-
-    <!---<div class="table">
-        <table border="1" width="100%">
-            <tr>
-                <td style="background:red; color:white; width:20%">Número 1</td>
-                <td style="background:red; color:white; width:20%">Número 2</td>
-                <td style="background:red; color:white; width:20%">Número 3</td>
-                <td style="background:red; color:white; width:20%">Operación</td>
-                <td style="background:red; color:white; width:20%">Resultado</td>
-            </tr>
-            <tr>    
-                @{
-                    if (ViewBag.listado != null)
-                    {
-                        foreach (var item in ViewBag.listado)
-                        {
-                            <tr>
-                                <td>@item.num1_</td>
-                                <td>@item.num2_</td>
-                                <td>@item.num3_</td>
-                                <td>@item.operacion_</td>
-                                <td>@item.resultado_</td>
-                            </tr>
-                        }
-                    }
-                }
-            </tr>
-        </table>
-    </div>-->
 </div>
