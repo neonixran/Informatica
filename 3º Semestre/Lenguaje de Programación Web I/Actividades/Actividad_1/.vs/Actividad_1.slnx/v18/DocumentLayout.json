@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Actividad_1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\actividades\\actividad_1\\actividad_1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|solutionrelative:actividad_1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\actividades\\actividad_1\\actividad_1\\models\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|solutionrelative:actividad_1\\models\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\actividades\\actividad_1\\actividad_1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|solutionrelative:actividad_1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\actividades\\actividad_1\\actividad_1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16EF6CB5-AA5E-3B06-F4FD-670803EBD1BE}|Actividad_1\\Actividad_1.csproj|solutionrelative:actividad_1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Datos.cs",
               "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Actividad_1\\Actividad_1\\Models\\Datos.cs",
               "RelativeDocumentMoniker": "Actividad_1\\Models\\Datos.cs",
@@ -41,10 +41,6 @@
               "WhenOpened": "2026-03-26T02:38:39.833Z",
               "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
@@ -87,21 +83,25 @@
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Actividad_1\\Actividad_1\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Actividad_1\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Actividad_1\\Actividad_1\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Actividad_1\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA1wCAAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwCAAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-30T14:26:05.283Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Actividad_1\\Actividad_1\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Actividad_1\\Views\\Shared\\_Layout.cshtml",
@@ -109,12 +109,11 @@
               "RelativeToolTip": "Actividad_1\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAA4AAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-26T22:08:50.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-26T22:08:50.587Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Actividad_1\\Actividad_1\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Actividad_1\\Views\\Home\\Index.cshtml",
@@ -122,8 +121,7 @@
               "RelativeToolTip": "Actividad_1\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAACYAAAAAAAAAAAAQwDYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T15:15:44.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T15:15:44.867Z"
             }
           ]
         },
