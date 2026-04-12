@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{370CC674-4BEF-D62B-DDEC-5CEFDAF983F4}|pryTrabajo\\pryTrabajo.csproj|solutionrelative:prytrabajo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{370CC674-4BEF-D62B-DDEC-5CEFDAF983F4}|pryTrabajo\\pryTrabajo.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\actividades\\trabajo\\slntrabajo\\prytrabajo\\views\\home\\ejercicio3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{370CC674-4BEF-D62B-DDEC-5CEFDAF983F4}|pryTrabajo\\pryTrabajo.csproj|solutionrelative:prytrabajo\\views\\home\\ejercicio3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{370CC674-4BEF-D62B-DDEC-5CEFDAF983F4}|pryTrabajo\\pryTrabajo.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\actividades\\trabajo\\slntrabajo\\prytrabajo\\views\\home\\ejercicio1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{370CC674-4BEF-D62B-DDEC-5CEFDAF983F4}|pryTrabajo\\pryTrabajo.csproj|solutionrelative:prytrabajo\\views\\home\\ejercicio1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{370CC674-4BEF-D62B-DDEC-5CEFDAF983F4}|pryTrabajo\\pryTrabajo.csproj|c:\\users\\iryde\\onedrive\\documentos\\repositorio\\3\u00BA semestre\\lenguaje de programaci\u00F3n web i\\actividades\\trabajo\\slntrabajo\\prytrabajo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{370CC674-4BEF-D62B-DDEC-5CEFDAF983F4}|pryTrabajo\\pryTrabajo.csproj|solutionrelative:prytrabajo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,41 +66,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "pryTrabajo\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "pryTrabajo\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-01T23:35:02.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "pryTrabajo\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\Controllers\\HomeController.cs",
               "RelativeToolTip": "pryTrabajo\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAswF0AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAcwF0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-01T22:57:08.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Ejercicio3.cshtml",
-              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\Views\\Home\\Ejercicio3.cshtml",
-              "RelativeDocumentMoniker": "pryTrabajo\\Views\\Home\\Ejercicio3.cshtml",
-              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\Views\\Home\\Ejercicio3.cshtml",
-              "RelativeToolTip": "pryTrabajo\\Views\\Home\\Ejercicio3.cshtml",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-01T22:52:37.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Ejercicio1.cshtml",
-              "DocumentMoniker": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\Views\\Home\\Ejercicio1.cshtml",
-              "RelativeDocumentMoniker": "pryTrabajo\\Views\\Home\\Ejercicio1.cshtml",
-              "ToolTip": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3\u00BA Semestre\\Lenguaje de Programaci\u00F3n Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\Views\\Home\\Ejercicio1.cshtml",
-              "RelativeToolTip": "pryTrabajo\\Views\\Home\\Ejercicio1.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-01T22:52:31.969Z",
               "EditorCaption": ""
             }
           ]
