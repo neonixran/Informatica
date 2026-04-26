@@ -92,6 +92,8 @@ public class pryTrabajo {
             }
         } while (!validacion3);
 
+        entrada.close();
+
         Jumpin jumpin = new Jumpin(energiaInicial);
         Rio rio = new Rio(piedras);
 

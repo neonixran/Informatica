@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package prytrabajo;
-import java.util.Arrays;
 
 /**
  *
@@ -15,9 +14,7 @@ public class Rio {
 
     public Rio(int[] piedras) {
         this.piedras = piedras;
-        
-        Arrays.sort(this.piedras);
-        
+
         this.orillaFinal = this.piedras[this.piedras.length - 1];
     }
     
