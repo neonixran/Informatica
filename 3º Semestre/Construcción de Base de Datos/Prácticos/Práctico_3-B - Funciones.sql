@@ -13,7 +13,7 @@ SELECT
     apellido,
     fecha_ing,
     TO_CHAR(fecha_ing, 'day', 'NLS_DATE_LANGUAGE=SPANISH') AS DIA
-FROM empleados
+FROM empleados;
 
 /*
 3. Escriba una consulta SQL que despliegue el apellido, y comisión para todos los empleados, use alias para esta última columna.

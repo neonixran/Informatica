@@ -27,7 +27,7 @@ SELECT
 FROM
     empleados e JOIN departamentos d ON(e.departamento_id = d.departamento_id) -- departamento_id es FK de Empleados y PK de Departamentos
     JOIN cargos ca ON(ca.cargo_id = e.cargo_id) -- cargo_id es FK de Empleados y PK de Cargos
-WHERE e.departamento_id = 80 -- Filtro por ID del departamento
+WHERE e.departamento_id = 80; -- Filtro por ID del departamento
 
 /*
 3. Escriba una consulta SQL que despliegue apellido, nombre de departamento, lugar id y ciudad de todos los empleados que ganan comisión.
@@ -42,7 +42,7 @@ SELECT
 FROM
     empleados e JOIN departamentos d ON(e.departamento_id = d.departamento_id) -- departamento_id es FK de Empleados y PK de departamentos.
     JOIN lugares l ON(d.lugar_id = l.lugar_id) -- lugar_id es FK de Departamentos y PK de Lugares.
-WHERE comision_porc IS NOT NULL
+WHERE comision_porc IS NOT NULL;
 
 /*
 4. Escriba una consulta SQL que despliegue el apellido y nombre del departamento
@@ -58,7 +58,7 @@ FROM
     departamentos d
 WHERE
     e.departamento_id = d.departamento_id -- Unión de tablas, departamento_id es FK de Empleados y PK de Departamentos
-    AND apellido LIKE '%a%' -- Filtro por apellido con a minúscula
+    AND apellido LIKE '%a%'; -- Filtro por apellido con a minúscula
 
 /*
 5. Escriba una consulta SQL que despliegue el apellido, cargo, número de departamento y
@@ -90,7 +90,7 @@ SELECT
 FROM
     empleados t,
     empleados j
-WHERE t.jefe_id = j.empleado_id
+WHERE t.jefe_id = j.empleado_id;
 
 /*
 7. A partir de la consulta en 6, genere una consulta que despliegue a todos los empleados incluyendo a King que no tiene jefe. 
@@ -105,7 +105,7 @@ SELECT
 FROM
     empleados t, 
     empleados j -- Selft Join, une la tabla consigo misma.
-WHERE t.jefe_id = j.empleado_id(+) -- (+) Outer Join, muestra a los empleados que no tienen jefe.
+WHERE t.jefe_id = j.empleado_id(+); -- (+) Outer Join, muestra a los empleados que no tienen jefe.
 
 /*
 8. Escriba una consulta SQL que despliegue el apellido, cargo_id y nombre del cargo para todos los empleados (20 filas seleccionadas).
@@ -137,7 +137,7 @@ FROM
 WHERE
     e.departamento_id = d.departamento_id(+) -- departamento_id es FK de Empleados y PK de Departamentos. (+) Para mostrar todos los empleados, incluso los que no tienen departamento.
     AND e.cargo_id = c.cargo_id -- cargo_id es FK de Empleados y PK de Cargos.
-ORDER BY salario DESC -- Ordenar por salario de mayor a menor.
+ORDER BY salario DESC; -- Ordenar por salario de mayor a menor.
 
 /*
 10. Escriba una consulta SQL que despliegue el nombre, apellido y nombre del departamento en mayúscula de todos aquellos
@@ -151,4 +151,4 @@ SELECT
     UPPER(dept_nombre) AS "Departamento"
 FROM
     empleados JOIN departamentos USING(departamento_id) -- departamento_id es FK de Empleados y PK de departamentos
-WHERE salario > 4000 AND apellido LIKE '%a%' AND apellido LIKE '%e%' -- Filtro por salario y apellido
+WHERE salario > 4000 AND apellido LIKE '%a%' AND apellido LIKE '%e%'; -- Filtro por salario y apellido

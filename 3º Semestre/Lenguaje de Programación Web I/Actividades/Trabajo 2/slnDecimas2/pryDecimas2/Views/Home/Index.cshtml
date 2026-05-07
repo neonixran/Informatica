@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script>
+      $(document).ready(function (){
+          cargarDatos();
+      });
+
+    function guardarDatos() {
+        var costo = $("#txtCosto").val();
+        var porcentaje = $("#txtPorcentaje").val();
+
+        if (costo == "") {
+            alert("Debe ingresar el valor del vehiculo.");
+            return;
+        } else if (costo <= 0) {
+            alert("El valor del vehiculo no puede ser inferior a $0.");
+            return;
+        } else if (porcentaje == "") {
+            alert("Debe ingresar el porcentaje del pie.");
+            return;
+        } else if (porcentaje < 0 || porcentaje > 80) {
+            alert("El porcentaje del pie debe estar entre 0% y 80%.");
+            return;
+        }
+
+        $.ajax({
+            url: "../Home/guardarCotizacion",
+            method: "POST",
+            data: {VALORVEHICULO: costo, PORCENTAJEPIE: porcentaje},
+            async: false,
+            success: function(response){
+                cargarDatos();
+                limpiar();
+            }
+        })
+    }
+
+    function cargarDatos() {
+        $.ajax({
+            url: "../Home/cargarCotizaciones",
+            method: "POST",
+            async: false,
+            success: function(response){
+                var tablaHtml = "";
+                $.each(response, function(key, value){
+                    tablaHtml += "<tr>";
+                        tablaHtml += "<td>" + value.valorVehiculo_ + "</td>";
+                        tablaHtml += "<td>" + value.porcentajePie_ + "</td>";
+                        tablaHtml += "<td>" + value.simulacionPie_ + "</td>";
+                        tablaHtml += "<td>" + value.planAdquirido_ + "</td>";
+                        tablaHtml += "<td>" + value.simulacionPlan_ + "</td>";
+                        tablaHtml += "<td>" + value.cuota12_ + "</td>";
+                        tablaHtml += "<td>" + value.cuota24_ + "</td>";
+                        tablaHtml += "<td>" + value.cuota48_ + "</td>";
+                    tablaHtml += "</tr>";
+                });
+               
+                $("#tbDatos").html(tablaHtml);
+            }
+        });
+    }
+   
+    function limpiar(){
+        $("#txtCosto").val("");
+        $("#txtPorcentaje").val("");
+    }
+</script>
+
+<div class="text-center">
+    <div class="mb-3">
+        <label class="text-end">Costo total del vehiculo:</label>
+        <input id="txtCosto" type="number" />
+    </div>
+    <div class="mb-3">
+        <label class="text-end">Porcentaje del pie a pagar:</label>
+        <input id="txtPorcentaje" type="number" />
+    </div>
+
+    <div>
+        <button class="btn btn-primary" onclick="guardarDatos()">Guardar Cotización</button>
+    </div>
+
+    <table class="table caption-top">
+        <caption>Cotizaciones</caption>
+        <thead>
+            <tr>
+                <th scope="col">Valor vehiculo</th>
+                <th scope="col">Porcentaje del pie</th>
+                <th scope="col">Simulación pie</th>
+                <th scope="col">Plan adquirido</th>
+                <th scope="col">Simulación plan</th>
+                <th scope="col">12 meses (2%)</th>
+                <th scope="col">24 meses (5%)</th>
+                <th scope="col">48 meses (10%)</th>
+            </tr>
+        </thead>
+        <tbody id="tbDatos">
+        </tbody>
+    </table>
+</div>

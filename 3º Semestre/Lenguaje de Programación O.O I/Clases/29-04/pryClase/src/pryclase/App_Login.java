@@ -1,3 +1,4 @@
+package pryclase;
 
 import java.util.Arrays;
 import javax.swing.JOptionPane;
@@ -31,13 +32,13 @@ public class App_Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        JOptionPane = new javax.swing.JOptionPane();
         lblTitulo = new javax.swing.JLabel();
         lblUsuario = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
         lblPassword = new javax.swing.JLabel();
         txtPassword = new javax.swing.JPasswordField();
         btnIngresar = new javax.swing.JButton();
-        lblMensaje = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -46,12 +47,12 @@ public class App_Login extends javax.swing.JFrame {
 
         lblUsuario.setText("Usuario:");
 
-        lblPassword.setText("Password:");
+        lblPassword.setText("Contraseña:");
+
+        txtPassword.setEnabled(false);
 
         btnIngresar.setText("Ingresar");
         btnIngresar.addActionListener(this::btnIngresarActionPerformed);
-
-        lblMensaje.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -64,20 +65,17 @@ public class App_Login extends javax.swing.JFrame {
                         .addComponent(lblTitulo))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblPassword)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(lblUsuario)
-                                .addGap(18, 18, 18)
-                                .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(lblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblPassword, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblUsuario, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(109, 109, 109)
                         .addComponent(btnIngresar)))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(64, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -94,9 +92,7 @@ public class App_Login extends javax.swing.JFrame {
                     .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(btnIngresar)
-                .addGap(18, 18, 18)
-                .addComponent(lblMensaje)
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         pack();
@@ -107,15 +103,21 @@ public class App_Login extends javax.swing.JFrame {
         String contraseñaCorrecta = "12345";
         char[] password = txtPassword.getPassword();
         
-        if (!(txtUsuario.getText() == null ? usuarioCorrecto != null : !txtUsuario.getText().equals(usuarioCorrecto)) || Arrays.equals(password, contraseñaCorrecta.toCharArray())) {
-        } else {
-            JOptionPane.showMessageDialog(rootPane, "Datos del login incorrectos", "Alerta", JOptionPane.WARNING_MESSAGE);
+        if (!txtUsuario.getText().equals(usuarioCorrecto) || !String.valueOf(password).equals(contraseñaCorrecta)) {
+            JOptionPane.showMessageDialog(null, "Datos del login incorrectos", "Alerta", JOptionPane.WARNING_MESSAGE);
+            txtUsuario.setText("");
+            txtPassword.setText("");
             return;
-        }   
+        }
         
-        lblMensaje.setText("Bienvenido, " + txtUsuario.getText());
+        int respuesta = JOptionPane.showConfirmDialog(null, "¿Está seguro que quiere ingresar al sistema?");
         
-        java.util.Arrays.fill(password, ' ');
+        if (respuesta == 0) {
+            JOptionPane.showMessageDialog(null, "Bienvenido " + txtUsuario.getText(), "Login", JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(null, "Chao", "Alerta", JOptionPane.WARNING_MESSAGE);
+        }
+        
     }//GEN-LAST:event_btnIngresarActionPerformed
 
     /**
@@ -144,8 +146,8 @@ public class App_Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JOptionPane JOptionPane;
     private javax.swing.JButton btnIngresar;
-    private javax.swing.JLabel lblMensaje;
     private javax.swing.JLabel lblPassword;
     private javax.swing.JLabel lblTitulo;
     private javax.swing.JLabel lblUsuario;
