@@ -22,35 +22,35 @@ namespace pryDecimas2.Controllers
 
         public void guardarCotizacion(double VALORVEHICULO, double PORCENTAJEPIE)
         {
-            double simulacionPie = VALORVEHICULO * (1 - (PORCENTAJEPIE / 100));
+            double montoFinanciar = VALORVEHICULO * (1 - (PORCENTAJEPIE / 100)); // Valor_del_Vehiculo - Porcentaje_del_Pie | Valor_del_Vehiculo * (100% - Porcentaje_del_Pie)
             string tipoPlan = "Ninguno";
-            double simulacionPlan = 0;
+            double totalPlan = 0;
 
             if (PORCENTAJEPIE <= 20)
             {
                 tipoPlan = "Plan 1";
-                simulacionPlan = simulacionPie * 1.3; // simulacionPie (100%) + 30%
+                totalPlan = montoFinanciar * 1.3; // montoFinanciar (100%) + 30%
             } else if (PORCENTAJEPIE < 50)
             {
                 tipoPlan = "Plan 2";
-                simulacionPlan = simulacionPie * 1.2; // simulacionPie (100%) + 20%
+                totalPlan = montoFinanciar * 1.2; // montoFinanciar (100%) + 20%
             } else if (PORCENTAJEPIE < 80)
             {
                 tipoPlan = "Plan 3";
-                simulacionPlan = simulacionPie * 1.1; // simulacionPie (100%) + 10%
+                totalPlan = montoFinanciar * 1.1; // montoFinanciar (100%) + 10%
             }
 
-            double cuotas12 = Math.Round(simulacionPlan * 1.002);
-            double cuotas24 = Math.Round(simulacionPlan * 1.005);
-            double cuotas48 = Math.Round(simulacionPlan * 1.10);
+            double cuotas12 = Math.Round(totalPlan * 1.02); // totalPlan (100%) + 2%
+            double cuotas24 = Math.Round(totalPlan * 1.05); // totalPlan (100%) + 5%
+            double cuotas48 = Math.Round(totalPlan * 1.10); // totalPlan (100%) + 10%
 
             listaCotizaciones.Add(new cotizacionVehiculo
             {
                 valorVehiculo_ = VALORVEHICULO.ToString("C"),
                 porcentajePie_ = PORCENTAJEPIE.ToString() + "%",
-                simulacionPie_ = simulacionPie.ToString("C"),
+                montoFinanciar_ = montoFinanciar.ToString("C"),
                 planAdquirido_ = tipoPlan,
-                simulacionPlan_ = simulacionPlan.ToString("C"),
+                totalPlan_ = totalPlan.ToString("C"),
                 cuota12_ = cuotas12.ToString("C"),
                 cuota24_ = cuotas24.ToString("C"),
                 cuota48_ = cuotas48.ToString("C")
