@@ -143,12 +143,16 @@ public class AppAhorro extends javax.swing.JFrame {
                 
                 String res = JOptionPane.showInputDialog("¿Desea recalcular? Ingrese un nuevo número de meses:");
                 
-                System.out.println(res);
+                if (res != null) {
+                    double nuevoMonto = ahorro.obtenerNuevoMonto(Integer.parseInt(res));
+                    
+                    JOptionPane.showMessageDialog(null, "Deberías ahorrar $" + nuevoMonto + " mensuales para alcanzar tu meta en ese plazo", "Mensaje", JOptionPane.INFORMATION_MESSAGE);
+                }
             }
         } catch (ArithmeticException e) {
-            System.out.println(e.getMessage());
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Advertencia", JOptionPane.WARNING_MESSAGE);
         } catch(Exception e) {
-            System.out.println(e.getMessage());
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Advertencia", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_btnCalcularActionPerformed
 

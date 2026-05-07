@@ -41,4 +41,12 @@ public class Ahorro {
         double ahorro_estimado = this.montoMensual * this.numeroMeses;
         return ahorro_estimado - this.metaTotal;
     }
+    
+    public double obtenerNuevoMonto(int meses) {
+        if (meses < 0) {
+            throw new ArithmeticException("El número de meses no puede ser menor a 0"); 
+        }
+        
+        return this.metaTotal / meses;
+    }
 }
