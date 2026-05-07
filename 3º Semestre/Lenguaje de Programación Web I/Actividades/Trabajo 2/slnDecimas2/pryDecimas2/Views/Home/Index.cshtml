@@ -4,10 +4,10 @@
 
 <script>
       $(document).ready(function (){
-          cargarDatos();
+          cargarGrilla();
       });
 
-    function guardarDatos() {
+    function guardarCotizacion() {
         var costo = $("#txtCosto").val();
         var porcentaje = $("#txtPorcentaje").val();
 
@@ -31,13 +31,13 @@
             data: {VALORVEHICULO: costo, PORCENTAJEPIE: porcentaje},
             async: false,
             success: function(response){
-                cargarDatos();
+                cargarGrilla();
                 limpiar();
             }
         })
     }
 
-    function cargarDatos() {
+    function cargarGrilla() {
         $.ajax({
             url: "../Home/cargarCotizaciones",
             method: "POST",
@@ -63,7 +63,6 @@
     }
    
     function limpiar(){
-        $("#txtCosto").val("");
         $("#txtPorcentaje").val("");
     }
 </script>
@@ -78,12 +77,10 @@
         <input id="txtPorcentaje" type="number" />
     </div>
 
-    <div>
-        <button class="btn btn-primary" onclick="guardarDatos()">Guardar Cotización</button>
-    </div>
+    <button class="btn btn-primary mb-3" onclick="guardarCotizacion()">Realizar cotización</button>
 
+    <h5 class="text-start">Lista de cotizaciones</h5>
     <table class="table caption-top">
-        <caption>Cotizaciones</caption>
         <thead>
             <tr>
                 <th scope="col">Valor vehiculo</th>
