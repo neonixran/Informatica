@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using pryDecimas2.Models;
+using pryTrabajo_2.Models;
 using System.Diagnostics;
 
-namespace pryDecimas2.Controllers
+namespace pryTrabajo_2.Controllers
 {
     public class HomeController : Controller
     {
@@ -23,7 +23,7 @@ namespace pryDecimas2.Controllers
         public void guardarCotizacion(double VALORVEHICULO, double PORCENTAJEPIE)
         {
             double montoFinanciar = VALORVEHICULO * (1 - (PORCENTAJEPIE / 100)); // Valor_del_Vehiculo - Porcentaje_del_Pie ó Valor_del_Vehiculo * (100% - Porcentaje_del_Pie)
-            
+
             string tipoPlan = "Ninguno"; // Valor por defecto si no cumple las condiciones.
             double totalPagar = montoFinanciar; // Valor por defecto si no cumple las condiciones.
 
@@ -31,11 +31,13 @@ namespace pryDecimas2.Controllers
             {
                 tipoPlan = "Plan 1";
                 totalPagar = montoFinanciar * 1.3; // montoFinanciar (100%) + 30%
-            } else if (PORCENTAJEPIE < 50)
+            }
+            else if (PORCENTAJEPIE < 50)
             {
                 tipoPlan = "Plan 2";
                 totalPagar = montoFinanciar * 1.2; // montoFinanciar (100%) + 20%
-            } else if (PORCENTAJEPIE < 80)
+            }
+            else if (PORCENTAJEPIE < 80)
             {
                 tipoPlan = "Plan 3";
                 totalPagar = montoFinanciar * 1.1; // montoFinanciar (100%) + 10%

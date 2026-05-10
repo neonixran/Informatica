@@ -1,4 +1,4 @@
-namespace pryDecimas2.Models
+namespace pryTrabajo_2.Models
 {
     public class ErrorViewModel
     {

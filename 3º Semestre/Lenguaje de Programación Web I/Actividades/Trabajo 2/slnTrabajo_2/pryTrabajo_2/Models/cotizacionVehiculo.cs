@@ -1,8 +1,8 @@
-﻿namespace pryDecimas2.Models
+﻿namespace pryTrabajo_2.Models
 {
     public class cotizacionVehiculo
     {
-        public string? valorVehiculo_ {  get; set; }
+        public string? valorVehiculo_ { get; set; }
         public string? porcentajePie_ { get; set; }
         public string? montoFinanciar_ { get; set; }
         public string? planAsignado_ { get; set; }
