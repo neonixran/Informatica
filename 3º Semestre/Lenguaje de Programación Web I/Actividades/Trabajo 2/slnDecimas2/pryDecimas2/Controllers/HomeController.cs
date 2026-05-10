@@ -22,35 +22,36 @@ namespace pryDecimas2.Controllers
 
         public void guardarCotizacion(double VALORVEHICULO, double PORCENTAJEPIE)
         {
-            double montoFinanciar = VALORVEHICULO * (1 - (PORCENTAJEPIE / 100)); // Valor_del_Vehiculo - Porcentaje_del_Pie | Valor_del_Vehiculo * (100% - Porcentaje_del_Pie)
-            string tipoPlan = "Ninguno";
-            double totalPlan = 0;
+            double montoFinanciar = VALORVEHICULO * (1 - (PORCENTAJEPIE / 100)); // Valor_del_Vehiculo - Porcentaje_del_Pie ó Valor_del_Vehiculo * (100% - Porcentaje_del_Pie)
+            
+            string tipoPlan = "Ninguno"; // Valor por defecto si no cumple las condiciones.
+            double totalPagar = montoFinanciar; // Valor por defecto si no cumple las condiciones.
 
             if (PORCENTAJEPIE <= 20)
             {
                 tipoPlan = "Plan 1";
-                totalPlan = montoFinanciar * 1.3; // montoFinanciar (100%) + 30%
+                totalPagar = montoFinanciar * 1.3; // montoFinanciar (100%) + 30%
             } else if (PORCENTAJEPIE < 50)
             {
                 tipoPlan = "Plan 2";
-                totalPlan = montoFinanciar * 1.2; // montoFinanciar (100%) + 20%
+                totalPagar = montoFinanciar * 1.2; // montoFinanciar (100%) + 20%
             } else if (PORCENTAJEPIE < 80)
             {
                 tipoPlan = "Plan 3";
-                totalPlan = montoFinanciar * 1.1; // montoFinanciar (100%) + 10%
+                totalPagar = montoFinanciar * 1.1; // montoFinanciar (100%) + 10%
             }
 
-            double cuotas12 = Math.Round(totalPlan * 1.02); // totalPlan (100%) + 2%
-            double cuotas24 = Math.Round(totalPlan * 1.05); // totalPlan (100%) + 5%
-            double cuotas48 = Math.Round(totalPlan * 1.10); // totalPlan (100%) + 10%
+            double cuotas12 = Math.Round(totalPagar * 1.02); // totalPagar (100%) + 2%
+            double cuotas24 = Math.Round(totalPagar * 1.05); // totalPagar (100%) + 5%
+            double cuotas48 = Math.Round(totalPagar * 1.10); // totalPagar (100%) + 10%
 
             listaCotizaciones.Add(new cotizacionVehiculo
             {
                 valorVehiculo_ = VALORVEHICULO.ToString("C"),
                 porcentajePie_ = PORCENTAJEPIE.ToString() + "%",
                 montoFinanciar_ = montoFinanciar.ToString("C"),
-                planAdquirido_ = tipoPlan,
-                totalPlan_ = totalPlan.ToString("C"),
+                planAsignado_ = tipoPlan,
+                totalPagar_ = totalPagar.ToString("C"),
                 cuota12_ = cuotas12.ToString("C"),
                 cuota24_ = cuotas24.ToString("C"),
                 cuota48_ = cuotas48.ToString("C")
