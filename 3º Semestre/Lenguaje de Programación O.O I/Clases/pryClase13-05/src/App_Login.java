@@ -1,18 +1,18 @@
 
 import java.util.Arrays;
 import javax.swing.JOptionPane;
+import java.sql.*;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-
 /**
  *
  * @author iryde
  */
 public class App_Login extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(App_Login.class.getName());
 
     /**
@@ -103,19 +103,29 @@ public class App_Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
-        String usuarioCorrecto = "Martin";
-        String contraseñaCorrecta = "12345";
-        char[] password = txtPassword.getPassword();
-        
-        if (!(txtUsuario.getText() == null ? usuarioCorrecto != null : !txtUsuario.getText().equals(usuarioCorrecto)) || Arrays.equals(password, contraseñaCorrecta.toCharArray())) {
-        } else {
-            JOptionPane.showMessageDialog(rootPane, "Datos del login incorrectos", "Alerta", JOptionPane.WARNING_MESSAGE);
-            return;
-        }   
-        
-        lblMensaje.setText("Bienvenido, " + txtUsuario.getText());
-        
-        java.util.Arrays.fill(password, ' ');
+        try {
+            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto_test", "root", "");
+            
+            System.out.println(cn.getSchema());
+            
+            String usuario = "Hola";
+            String contraseña = "12345";
+
+            char[] password = txtPassword.getPassword();
+            
+            if (txtUsuario.getText().length() == 0) {
+                JOptionPane.showMessageDialog(rootPane, "Debe ingresar el usuario", "Alerta", JOptionPane.WARNING_MESSAGE);
+            } else if (txtPassword.getPassword().length == 0) {
+                JOptionPane.showMessageDialog(rootPane, "Debe ingresar la contraseña", "Alerta", JOptionPane.WARNING_MESSAGE);
+            } else if (txtUsuario.getText().equals(usuario) && Arrays.equals(password, contraseña.toCharArray())) {
+                lblMensaje.setText("Bienvenido, " + txtUsuario.getText());
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Datos del login incorrectos", "Alerta", JOptionPane.WARNING_MESSAGE);
+            }
+            java.util.Arrays.fill(password, ' ');
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e.getCause(), "Advertencia", JOptionPane.WARNING_MESSAGE);
+        }
     }//GEN-LAST:event_btnIngresarActionPerformed
 
     /**

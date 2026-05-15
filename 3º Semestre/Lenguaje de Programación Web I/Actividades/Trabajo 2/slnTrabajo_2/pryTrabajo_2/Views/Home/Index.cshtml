@@ -28,7 +28,7 @@
         $.ajax({
             url: "../Home/guardarCotizacion",
             method: "POST",
-            data: {VALORVEHICULO: costo, PORCENTAJEPIE: porcentaje},
+            data: {VALORVEHICULO: costo, PORCENTAJEPIE: porcentaje}, // Estos datos se van a la función C# "guardarCotización" que es la que está en la url
             async: false,
             success: function(response){
                 cargarGrilla();
@@ -39,7 +39,7 @@
 
     function cargarGrilla() {
         $.ajax({
-            url: "../Home/cargarCotizaciones",
+            url: "../Home/cargarCotizaciones", // Toma la función "guardarCotizaciones" de C# y trae la grilla de datos
             method: "POST",
             async: false,
             success: function(response){
@@ -55,7 +55,7 @@
                         tablaHtml += "<td>" + value.cuota24_ + "</td>";
                         tablaHtml += "<td>" + value.cuota48_ + "</td>";
                     tablaHtml += "</tr>";
-                });
+                }); // Guarda los datos en la grilla de html
                
                 $("#tbDatos").html(tablaHtml);
             }

@@ -48,8 +48,6 @@ namespace EjercicioCompleto.Controllers
         //Añade un usuario nuevo a la lista
         public IActionResult Nuevo(string txtUsuarioNuevo, string txtContraseñaNuevo, string chkHabilitado)
         {
-
-
             listado.Add(new Datos()
             {
                 usuario_ = txtUsuarioNuevo,

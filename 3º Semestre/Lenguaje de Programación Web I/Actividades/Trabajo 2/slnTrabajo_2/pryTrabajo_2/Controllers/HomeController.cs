@@ -20,7 +20,7 @@ namespace pryTrabajo_2.Controllers
             return View();
         }
 
-        public void guardarCotizacion(double VALORVEHICULO, double PORCENTAJEPIE)
+        public void guardarCotizacion(double VALORVEHICULO, double PORCENTAJEPIE) // Los parametros vienen de Javascript y HTML
         {
             double montoFinanciar = VALORVEHICULO * (1 - (PORCENTAJEPIE / 100)); // Valor_del_Vehiculo - Porcentaje_del_Pie ó Valor_del_Vehiculo * (100% - Porcentaje_del_Pie)
 
@@ -57,12 +57,12 @@ namespace pryTrabajo_2.Controllers
                 cuota12_ = cuotas12.ToString("C"),
                 cuota24_ = cuotas24.ToString("C"),
                 cuota48_ = cuotas48.ToString("C")
-            });
+            }); // guarda los datos calculados en la lista
 
             cargarCotizaciones();
         }
 
-        public List<cotizacionVehiculo> cargarCotizaciones()
+        public List<cotizacionVehiculo> cargarCotizaciones() // retorna la lista y esta funcion se usa en el javascript.
         {
             return listaCotizaciones;
         }
