@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "atTxG6+fd38=",
+  "dgSpecHash": "nWa6x5tEC8A=",
   "success": true,
   "projectFilePath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Clases\\Clases_09-25_marzo\\EjercicioCompleto\\ejercicioClases.csproj",
   "expectedPackageFiles": [
@@ -109,5 +109,30 @@
     "C:\\Users\\iryde\\.nuget\\packages\\system.security.cryptography.pkcs\\6.0.4\\system.security.cryptography.pkcs.6.0.4.nupkg.sha512",
     "C:\\Users\\iryde\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.6\\system.security.cryptography.protecteddata.9.0.6.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1901",
+      "level": "Warning",
+      "message": "El paquete \"NuGet.Packaging\" 6.12.1 tiene una vulnerabilidad de gravedad baja conocida, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
+      "projectPath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Clases\\Clases_09-25_marzo\\EjercicioCompleto\\ejercicioClases.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Clases\\Clases_09-25_marzo\\EjercicioCompleto\\ejercicioClases.csproj",
+      "libraryId": "NuGet.Packaging",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1901",
+      "level": "Warning",
+      "message": "El paquete \"NuGet.Protocol\" 6.12.1 tiene una vulnerabilidad de gravedad baja conocida, https://github.com/advisories/GHSA-g4vj-cjjj-v7hg",
+      "projectPath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Clases\\Clases_09-25_marzo\\EjercicioCompleto\\ejercicioClases.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Clases\\Clases_09-25_marzo\\EjercicioCompleto\\ejercicioClases.csproj",
+      "libraryId": "NuGet.Protocol",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

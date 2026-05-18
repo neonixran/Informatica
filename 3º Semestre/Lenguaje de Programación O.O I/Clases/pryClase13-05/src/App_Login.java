@@ -105,26 +105,36 @@ public class App_Login extends javax.swing.JFrame {
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
         try {
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto_test", "root", "");
-            
-            System.out.println(cn.getSchema());
-            
-            String usuario = "Hola";
-            String contraseña = "12345";
 
-            char[] password = txtPassword.getPassword();
-            
+            System.out.println("Conectado: " + !cn.isClosed());
+
             if (txtUsuario.getText().length() == 0) {
                 JOptionPane.showMessageDialog(rootPane, "Debe ingresar el usuario", "Alerta", JOptionPane.WARNING_MESSAGE);
+                return;
             } else if (txtPassword.getPassword().length == 0) {
                 JOptionPane.showMessageDialog(rootPane, "Debe ingresar la contraseña", "Alerta", JOptionPane.WARNING_MESSAGE);
-            } else if (txtUsuario.getText().equals(usuario) && Arrays.equals(password, contraseña.toCharArray())) {
-                lblMensaje.setText("Bienvenido, " + txtUsuario.getText());
-            } else {
-                JOptionPane.showMessageDialog(rootPane, "Datos del login incorrectos", "Alerta", JOptionPane.WARNING_MESSAGE);
+                return;
             }
-            java.util.Arrays.fill(password, ' ');
+
+            PreparedStatement ps = cn.prepareStatement("SELECT clave FROM usuarios WHERE usuario = ?");
+            ps.setString(1, txtUsuario.getText());
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                char[] clave = txtPassword.getPassword();
+                String claveBD = rs.getString("clave");
+
+                if (claveBD.equals(Arrays.toString(clave))) {
+                    JOptionPane.showMessageDialog(rootPane, "Bienvenido, " + txtUsuario.getText(), "", JOptionPane.INFORMATION_MESSAGE);
+                    return;
+                } else {
+                    JOptionPane.showMessageDialog(rootPane, "Datos de sesión incorrectos", "Alerta", JOptionPane.WARNING_MESSAGE);
+                    return;
+                }
+            }
         } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, e.getCause(), "Advertencia", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Advertencia", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_btnIngresarActionPerformed
 

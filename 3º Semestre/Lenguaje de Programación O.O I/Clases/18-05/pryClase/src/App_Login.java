@@ -38,6 +38,9 @@ public class App_Login extends javax.swing.JFrame {
         txtPassword = new javax.swing.JPasswordField();
         btnIngresar = new javax.swing.JButton();
         lblMensaje = new javax.swing.JLabel();
+        btnRegistrar = new javax.swing.JButton();
+        btnEliminar = new javax.swing.JButton();
+        btnModificar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,6 +56,15 @@ public class App_Login extends javax.swing.JFrame {
 
         lblMensaje.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        btnRegistrar.setText("Registrar");
+        btnRegistrar.addActionListener(this::btnRegistrarActionPerformed);
+
+        btnEliminar.setText("Eliminar");
+        btnEliminar.addActionListener(this::btnEliminarActionPerformed);
+
+        btnModificar.setText("Modificar");
+        btnModificar.addActionListener(this::btnModificarActionPerformed);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -60,31 +72,39 @@ public class App_Login extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(lblTitulo))
+                        .addGap(78, 78, 78)
+                        .addComponent(lblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblPassword)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(lblUsuario)
-                                .addGap(18, 18, 18)
-                                .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(lblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
-                        .addComponent(btnIngresar)))
-                .addContainerGap(50, Short.MAX_VALUE))
+                        .addContainerGap()
+                        .addComponent(btnIngresar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnRegistrar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnEliminar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnModificar)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblTitulo)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(lblPassword)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                            .addComponent(lblUsuario)
+                            .addGap(18, 18, 18)
+                            .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(53, 53, 53))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(18, 18, 18)
                 .addComponent(lblTitulo)
-                .addGap(18, 18, 18)
+                .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblUsuario)
                     .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -93,10 +113,14 @@ public class App_Login extends javax.swing.JFrame {
                     .addComponent(lblPassword)
                     .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(btnIngresar)
-                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnIngresar)
+                    .addComponent(btnRegistrar)
+                    .addComponent(btnEliminar)
+                    .addComponent(btnModificar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblMensaje)
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -105,28 +129,121 @@ public class App_Login extends javax.swing.JFrame {
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
         try {
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto_test", "root", "");
-            
-            System.out.println(cn.getSchema());
-            
-            String usuario = "Hola";
-            String contraseña = "12345";
 
-            char[] password = txtPassword.getPassword();
-            
+            System.out.println("Conectado: " + !cn.isClosed());
+
             if (txtUsuario.getText().length() == 0) {
                 JOptionPane.showMessageDialog(rootPane, "Debe ingresar el usuario", "Alerta", JOptionPane.WARNING_MESSAGE);
+                return;
             } else if (txtPassword.getPassword().length == 0) {
                 JOptionPane.showMessageDialog(rootPane, "Debe ingresar la contraseña", "Alerta", JOptionPane.WARNING_MESSAGE);
-            } else if (txtUsuario.getText().equals(usuario) && Arrays.equals(password, contraseña.toCharArray())) {
-                lblMensaje.setText("Bienvenido, " + txtUsuario.getText());
-            } else {
-                JOptionPane.showMessageDialog(rootPane, "Datos del login incorrectos", "Alerta", JOptionPane.WARNING_MESSAGE);
+                return;
             }
-            java.util.Arrays.fill(password, ' ');
+
+            PreparedStatement ps = cn.prepareStatement("SELECT clave FROM usuarios WHERE usuario = ?");
+            ps.setString(1, txtUsuario.getText());
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                String clave = String.valueOf(txtPassword.getPassword());
+                String claveBD = rs.getString("clave");
+
+                if (clave.equals(claveBD)) {
+                    JOptionPane.showMessageDialog(rootPane, "Bienvenido, " + txtUsuario.getText(), "", JOptionPane.INFORMATION_MESSAGE);
+                    return;
+                } else {
+                    JOptionPane.showMessageDialog(rootPane, "Datos de sesión incorrectos", "Alerta", JOptionPane.WARNING_MESSAGE);
+                    return;
+                }
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "Usuario no encontrado", "Alerta", JOptionPane.WARNING_MESSAGE);
+                return;
+            }
         } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, e.getCause(), "Advertencia", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Advertencia", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_btnIngresarActionPerformed
+
+    private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
+        try {
+            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto_test", "root", "");
+
+            System.out.println("Conectado: " + !cn.isClosed());
+
+            if (txtUsuario.getText().length() == 0) {
+                JOptionPane.showMessageDialog(rootPane, "Debe ingresar el usuario", "Alerta", JOptionPane.WARNING_MESSAGE);
+                return;
+            } else if (txtPassword.getPassword().length == 0) {
+                JOptionPane.showMessageDialog(rootPane, "Debe ingresar la contraseña", "Alerta", JOptionPane.WARNING_MESSAGE);
+                return;
+            }
+
+            String usuario = txtUsuario.getText();
+            String clave = String.valueOf(txtPassword.getPassword());
+
+            PreparedStatement ps = cn.prepareStatement("INSERT INTO usuarios (id, usuario, clave) values (?, ?, ?)");
+            ps.setInt(1, 3);
+            ps.setString(2, usuario);
+            ps.setString(3, clave);
+            ps.executeUpdate();
+
+            JOptionPane.showMessageDialog(rootPane, "Usuario ingresado correctamente", "", JOptionPane.INFORMATION_MESSAGE);
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Advertencia", JOptionPane.WARNING_MESSAGE);
+        }
+    }//GEN-LAST:event_btnRegistrarActionPerformed
+
+    private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
+        try {
+            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto_test", "root", "");
+
+            System.out.println("Conectado: " + !cn.isClosed());
+
+            if (txtUsuario.getText().length() == 0) {
+                JOptionPane.showMessageDialog(rootPane, "Debe ingresar el usuario", "Alerta", JOptionPane.WARNING_MESSAGE);
+                return;
+            }
+
+            String usuario = txtUsuario.getText();
+
+            PreparedStatement ps = cn.prepareStatement("DELETE FROM usuarios WHERE usuario = ?");
+            ps.setString(1, usuario);
+            ps.executeUpdate();
+
+            JOptionPane.showMessageDialog(rootPane, "Usuario eliminado correctamente", "", JOptionPane.INFORMATION_MESSAGE);
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Advertencia", JOptionPane.WARNING_MESSAGE);
+        }
+    }//GEN-LAST:event_btnEliminarActionPerformed
+
+    private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
+        try {
+            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto_test", "root", "");
+
+            System.out.println("Conectado: " + !cn.isClosed());
+
+            if (txtUsuario.getText().length() == 0) {
+                JOptionPane.showMessageDialog(rootPane, "Debe ingresar el usuario", "Alerta", JOptionPane.WARNING_MESSAGE);
+                return;
+            } else if (txtPassword.getPassword().length == 0) {
+                JOptionPane.showMessageDialog(rootPane, "Debe ingresar la contraseña", "Alerta", JOptionPane.WARNING_MESSAGE);
+                return;
+            }
+
+            String usuario = txtUsuario.getText();
+            String clave = String.valueOf(txtPassword.getPassword());
+
+            PreparedStatement ps = cn.prepareStatement("UPDATE usuarios SET clave = ? WHERE usuario = ?");
+            ps.setString(1, clave);
+            ps.setString(2, usuario);
+            ps.executeUpdate();
+
+            JOptionPane.showMessageDialog(rootPane, "Usuario modificado correctamente", "", JOptionPane.INFORMATION_MESSAGE);
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Advertencia", JOptionPane.WARNING_MESSAGE);
+        }
+    }//GEN-LAST:event_btnModificarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -154,7 +271,10 @@ public class App_Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnEliminar;
     private javax.swing.JButton btnIngresar;
+    private javax.swing.JButton btnModificar;
+    private javax.swing.JButton btnRegistrar;
     private javax.swing.JLabel lblMensaje;
     private javax.swing.JLabel lblPassword;
     private javax.swing.JLabel lblTitulo;

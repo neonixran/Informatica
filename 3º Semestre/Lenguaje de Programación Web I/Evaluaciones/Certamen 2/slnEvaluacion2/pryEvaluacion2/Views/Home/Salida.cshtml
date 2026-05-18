@@ -6,7 +6,7 @@
 <script>
     $(document).ready(function (){
         cargarCamiones()
-        filtrarConductor()
+        filtrarConductores()
         cargarDatos()
     });
 
@@ -25,6 +25,9 @@
         if (fechaHora == "") {
             alert("Debe ingresar la fecha y hora de la salida.")
             return
+        } else if (fechaHora < $("#dtFechaHora").attr("min") || fechaHora > $("#dtFechaHora").attr("max")) { // Validar que la fecha ingresada este dentro del rango establecido. (2000 hasta hoy)
+            alert("La fecha ingresada no está en el rango permitido.")
+            return
         }
 
         $.ajax({
@@ -39,8 +42,11 @@
                 FechaHora: fechaHora
             }, // Estos datos se van a la función C# "guardarConductor".
             success: function(response){
+                $("#cmbConductores option:selected").remove() // Eliminar al conductor del combobox tras agregarlo.
+
                 cargarDatos();
-                $("option[value='" + conductorId + "']").remove() // Eliminar al conductor tras agregarlo
+
+                alert("Salida ingresada con exito")
             }
         })
     }
@@ -59,8 +65,13 @@
                         tablaHtml += "<td>" + value.nombreConductor + "</td>"
                         tablaHtml += "<td>" + value.tipoCarga + "</td>"
                         tablaHtml += "<td>" + value.estado + "</td>"
-                        tablaHtml += "<td>" + value.fechaHora + "</td>" 
-                        tablaHtml += "<td> <form action='/Home/cambiarEstado' method='post'> <input type='hidden' name='txtId' value='" + value.id + "'/> <input class='btn btn-sm btn-light' type='submit' value='Retornar'/></form> </td>"
+                        tablaHtml += "<td>" + value.fechaHora + "</td>"
+
+                        if (value.estado == "Retorno") {
+                            tablaHtml += "<td> <form action='/Home/cambiarEstado' method='post'> <input type='hidden' name='txtId' value='" + value.id + "'/> <input class='btn btn-sm btn-warning' disabled type='submit' value='Retornar'/></form> </td>"
+                        } else {
+                            tablaHtml += "<td> <form action='/Home/cambiarEstado' method='post'> <input type='hidden' name='txtId' value='" + value.id + "'/> <input class='btn btn-sm btn-warning' type='submit' value='Retornar'/></form> </td>"
+                        }
                     tablaHtml += "</tr>"
                 });
 
@@ -69,7 +80,7 @@
         })
     }
 
-    function cargarCamiones() { // Función para cargar la lista de camiones
+    function cargarCamiones() { // Función para cargar la lista de camiones.
          $.ajax({
             url: "../Home/cargarCamiones",
             method: "POST",
@@ -86,7 +97,7 @@
         })
     }
     
-    function filtrarConductor() { // Función para filtrar la lista de conductores según su tipo de carga
+    function filtrarConductores() { // Función para filtrar la lista de conductores según su tipo de carga.
         var tipoCamion = $("#cmbCamiones").val()
 
         $.ajax({
@@ -116,7 +127,7 @@
                 <label class="col-3 text-end" for="cmbCamiones">Camión:</label>
 
                 <div class="col-7">
-                    <select class="form-select" id="cmbCamiones" onchange="filtrarConductor()">
+                    <select class="form-select" id="cmbCamiones" onchange="filtrarConductores()">
                     </select>
                 </div> <!-- Camiones (Patente) -->
             </div>
@@ -133,7 +144,7 @@
                 <label class="col-3 text-end" for="dtFechaHora">Fecha y hora:</label>
 
                 <div class="col-7">
-                    <input class="form-control" type="datetime-local" id="dtFechaHora" />
+                    <input class="form-control" type="datetime-local" min="2000-01-31T23:59" max="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")" format id="dtFechaHora" />
                 </div> <!-- Fecha y Hora -->
             </div>
 

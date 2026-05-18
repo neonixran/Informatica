@@ -106,7 +106,6 @@ namespace pryEvaluacion2.Controllers
                 estado = "En ruta",
             });
 
-
             cargarSalidas();
 
             contadorId++;
@@ -119,7 +118,7 @@ namespace pryEvaluacion2.Controllers
 
         public List<Conductor> cargarConductoresFiltrados(string TipoCamion) // Función para retornar los conductores filtrados, según su tipo de camión y los que no están en ruta.
         {
-            var conductoresEnRuta = listaSalidas.Where(s => s.estado == "En ruta").Select(s => s.idConductor); // Buscar y seleccionar solo los conductores que 
+            var conductoresEnRuta = listaSalidas.Where(s => s.estado == "En ruta").Select(s => s.idConductor); // Buscar y seleccionar solo los conductores que estén en ruta.
             var datos = listaConductores.Where(r => r.tipoCamion == TipoCamion && !conductoresEnRuta.Contains(r.id));
 
             foreach (var item in datos)
@@ -138,7 +137,11 @@ namespace pryEvaluacion2.Controllers
         public IActionResult cambiarEstado(string txtId) // Función para cambiar el estado del camión
         {
             var datos = listaSalidas.Find(s => s.id.ToString() == txtId);
-            datos.estado = "Retorno";
+
+            if (datos != null)
+            {
+                datos.estado = "Retorno";
+            }
 
             return View("Salida");
         }
