@@ -1,5 +1,5 @@
+package pryclase;
 
-import java.util.Arrays;
 import javax.swing.JOptionPane;
 import java.sql.*;
 
@@ -126,11 +126,10 @@ public class App_Login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    // Ingresar
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
         try {
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto_test", "root", "");
-
-            System.out.println("Conectado: " + !cn.isClosed());
 
             if (txtUsuario.getText().length() == 0) {
                 JOptionPane.showMessageDialog(rootPane, "Debe ingresar el usuario", "Alerta", JOptionPane.WARNING_MESSAGE);
@@ -165,12 +164,12 @@ public class App_Login extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnIngresarActionPerformed
 
+    // Agregar
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
         try {
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto_test", "root", "");
 
-            System.out.println("Conectado: " + !cn.isClosed());
-
+            
             if (txtUsuario.getText().length() == 0) {
                 JOptionPane.showMessageDialog(rootPane, "Debe ingresar el usuario", "Alerta", JOptionPane.WARNING_MESSAGE);
                 return;
@@ -186,14 +185,17 @@ public class App_Login extends javax.swing.JFrame {
             ps.setInt(1, 3);
             ps.setString(2, usuario);
             ps.setString(3, clave);
-            ps.executeUpdate();
+            int cantidad = ps.executeUpdate();
+            
+            System.out.println(cantidad);
 
-            JOptionPane.showMessageDialog(rootPane, "Usuario ingresado correctamente", "", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(rootPane, "Usuario registrado correctamente", "", JOptionPane.INFORMATION_MESSAGE);
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage(), "Advertencia", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
+    // Eliminar
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
         try {
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto_test", "root", "");
@@ -206,17 +208,24 @@ public class App_Login extends javax.swing.JFrame {
             }
 
             String usuario = txtUsuario.getText();
+            String contraseña = String.valueOf(txtPassword.getPassword());
 
-            PreparedStatement ps = cn.prepareStatement("DELETE FROM usuarios WHERE usuario = ?");
+            PreparedStatement ps = cn.prepareStatement("DELETE FROM usuarios WHERE usuario = ? AND clave = ?");
             ps.setString(1, usuario);
-            ps.executeUpdate();
-
-            JOptionPane.showMessageDialog(rootPane, "Usuario eliminado correctamente", "", JOptionPane.INFORMATION_MESSAGE);
+            ps.setString(2, contraseña);
+            int cantidad = ps.executeUpdate();
+            
+            if (cantidad > 0) {
+                JOptionPane.showMessageDialog(rootPane, "Usuario eliminado correctamente", "", JOptionPane.INFORMATION_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(null, "El usuario no pudo eliminarse", "Advertencia", JOptionPane.WARNING_MESSAGE);
+            }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage(), "Advertencia", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_btnEliminarActionPerformed
 
+    // Modificar
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
         try {
             Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto_test", "root", "");
@@ -237,9 +246,13 @@ public class App_Login extends javax.swing.JFrame {
             PreparedStatement ps = cn.prepareStatement("UPDATE usuarios SET clave = ? WHERE usuario = ?");
             ps.setString(1, clave);
             ps.setString(2, usuario);
-            ps.executeUpdate();
-
-            JOptionPane.showMessageDialog(rootPane, "Usuario modificado correctamente", "", JOptionPane.INFORMATION_MESSAGE);
+            int cantidad = ps.executeUpdate();
+            
+            if (cantidad > 0) {
+                JOptionPane.showMessageDialog(rootPane, "Usuario modificado correctamente", "", JOptionPane.INFORMATION_MESSAGE);
+            } else {
+                JOptionPane.showMessageDialog(null, "No pudo modificarse el usuario", "Advertencia", JOptionPane.WARNING_MESSAGE);
+            }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage(), "Advertencia", JOptionPane.WARNING_MESSAGE);
         }
