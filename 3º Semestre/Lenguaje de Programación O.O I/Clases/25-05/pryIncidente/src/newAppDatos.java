@@ -10,14 +10,14 @@
 import java.sql.*;
 import javax.swing.JOptionPane;
 
-public class AppDatos extends javax.swing.JFrame {
+public class newAppDatos extends javax.swing.JFrame {
 
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(AppDatos.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(AppIncidente.class.getName());
 
     /**
-     * Creates new form AppDatos
+     * Creates new form AppIncidente
      */
-    public AppDatos() {
+    public newAppDatos() {
         initComponents();
 
         cargarContinentes();
@@ -36,28 +36,20 @@ public class AppDatos extends javax.swing.JFrame {
         JOption = new javax.swing.JOptionPane();
         Panel = new javax.swing.JPanel();
         lblTitulo = new javax.swing.JLabel();
-        txtHeadOfState = new javax.swing.JTextField();
-        lblHeadOfState = new javax.swing.JLabel();
-        btnBuscar = new javax.swing.JButton();
         lblContinente = new javax.swing.JLabel();
         cmbContinente = new javax.swing.JComboBox<>();
         lblPais = new javax.swing.JLabel();
         cmbPais = new javax.swing.JComboBox<>();
-        lblPopulation = new javax.swing.JLabel();
-        txtPopulation = new javax.swing.JTextField();
-        lblLifeExpectancy = new javax.swing.JLabel();
-        txtLifeExpectancy = new javax.swing.JTextField();
         btnModificar = new javax.swing.JButton();
+        cmbColumna = new javax.swing.JComboBox<>();
+        lblColumna = new javax.swing.JLabel();
+        txtDato = new javax.swing.JTextField();
+        lblDato = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblTitulo.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblTitulo.setText("Datos Geográficos");
-
-        lblHeadOfState.setText("HeadOfState:");
-
-        btnBuscar.setText("Obtener datos");
-        btnBuscar.addActionListener(this::btnBuscarActionPerformed);
 
         lblContinente.setText("Continente");
 
@@ -65,49 +57,41 @@ public class AppDatos extends javax.swing.JFrame {
 
         lblPais.setText("País");
 
-        lblPopulation.setText("Population:");
-
-        txtPopulation.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-
-        lblLifeExpectancy.setText("LifeExpectancy:");
+        cmbPais.addActionListener(this::cmbPaisActionPerformed);
 
         btnModificar.setText("Modificar datos");
         btnModificar.addActionListener(this::btnModificarActionPerformed);
+
+        cmbColumna.addActionListener(this::cmbColumnaActionPerformed);
+
+        lblColumna.setText("Columna:");
+
+        lblDato.setText("Dato:");
 
         javax.swing.GroupLayout PanelLayout = new javax.swing.GroupLayout(Panel);
         Panel.setLayout(PanelLayout);
         PanelLayout.setHorizontalGroup(
             PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelLayout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(lblHeadOfState)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtHeadOfState, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(PanelLayout.createSequentialGroup()
-                        .addGroup(PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(PanelLayout.createSequentialGroup()
-                                .addComponent(lblLifeExpectancy)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtLifeExpectancy))
-                            .addGroup(PanelLayout.createSequentialGroup()
-                                .addGap(21, 21, 21)
-                                .addComponent(lblPopulation)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtPopulation, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(PanelLayout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(lblContinente, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cmbContinente, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblPais)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cmbPais, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(PanelLayout.createSequentialGroup()
+                        .addComponent(lblContinente, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cmbContinente, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblPais)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cmbPais, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(PanelLayout.createSequentialGroup()
+                        .addComponent(lblDato, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtDato, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(PanelLayout.createSequentialGroup()
+                        .addComponent(lblColumna)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(cmbColumna, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(88, 88, 88)))
                 .addGap(0, 36, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -116,10 +100,8 @@ public class AppDatos extends javax.swing.JFrame {
                         .addComponent(lblTitulo)
                         .addGap(112, 112, 112))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelLayout.createSequentialGroup()
-                        .addComponent(btnBuscar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnModificar)
-                        .addGap(79, 79, 79))))
+                        .addGap(129, 129, 129))))
         );
         PanelLayout.setVerticalGroup(
             PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -134,21 +116,15 @@ public class AppDatos extends javax.swing.JFrame {
                     .addComponent(cmbPais, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblPopulation)
-                    .addComponent(txtPopulation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cmbColumna, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblColumna))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblLifeExpectancy)
-                    .addComponent(txtLifeExpectancy, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblHeadOfState)
-                    .addComponent(txtHeadOfState, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnBuscar)
-                    .addComponent(btnModificar))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(txtDato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblDato))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnModificar)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -169,44 +145,18 @@ public class AppDatos extends javax.swing.JFrame {
         cargarPaises();
     }//GEN-LAST:event_cmbContinenteActionPerformed
 
-    private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
-        try {
-            ConectorBD world = new ConectorBD();
-
-            String Pais = cmbPais.getSelectedItem().toString();
-
-            ResultSet rs = world.consultar("SELECT Population, LifeExpectancy, HeadOfState FROM Country WHERE Name = ?", Pais);
-
-            if (rs.next()) {
-                txtPopulation.setText(rs.getString("Population"));
-                txtLifeExpectancy.setText(rs.getString("LifeExpectancy"));
-                txtHeadOfState.setText(rs.getString("HeadOfState"));
-            } else {
-                JOptionPane.showMessageDialog(null, "No se encontraron elementos");
-            }
-            
-            rs.close();
-        } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        }
-    }//GEN-LAST:event_btnBuscarActionPerformed
-
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
         try {
-            ConectorBD world = new ConectorBD();
-
-            String Population = txtPopulation.getText();
-            String LifeExpectancy = txtLifeExpectancy.getText();
-            String HeadOfState = txtHeadOfState.getText();
-
-            String Pais = cmbPais.getSelectedItem().toString();
-
-            if (Population.equals("") && LifeExpectancy.equals("") && HeadOfState.equals("")) {
-                JOptionPane.showMessageDialog(null, "Primero cargue los datos para modificarlos");
+            if (cmbPais.getSelectedItem() == null) {
                 return;
             }
-            
-            int cantidad = world.modificar("UPDATE Country SET Population = ?, LifeExpectancy = ?, HeadOfState = ?  WHERE Name = ?", Population, LifeExpectancy, HeadOfState, Pais);
+
+            String pais = cmbPais.getSelectedItem().toString();
+            String columna = cmbColumna.getSelectedItem().toString();
+            String dato = txtDato.getText();
+
+            ConectorBD world = new ConectorBD();
+            int cantidad = world.modificar("UPDATE Country SET " + columna + " = ? WHERE Name = ?", dato, pais);
 
             if (cantidad > 0) {
                 JOptionPane.showMessageDialog(null, "Los datos fueron actualizados exitosamente");
@@ -217,6 +167,61 @@ public class AppDatos extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
     }//GEN-LAST:event_btnModificarActionPerformed
+
+    private void cmbPaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbPaisActionPerformed
+        try {
+            cmbColumna.removeAllItems();
+
+            if (cmbPais.getSelectedItem() == null) {
+                return;
+            }
+
+            String pais = cmbPais.getSelectedItem().toString();
+
+            ConectorBD world = new ConectorBD();
+            ResultSet rs = world.consultar("SELECT * FROM Country WHERE name = ?;", pais);
+            ResultSetMetaData md = rs.getMetaData();
+
+            if (rs.next()) {
+                for (int i = 1; i <= md.getColumnCount(); i++) {
+                    String columna = md.getColumnName(i);
+
+                    if (!"name".equals(columna.toLowerCase()) && !"code".equals(columna.toLowerCase()) && !"continent".equals(columna.toLowerCase())) {
+                        cmbColumna.addItem(columna);
+                    }
+                }
+            }
+
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }//GEN-LAST:event_cmbPaisActionPerformed
+
+    private void cmbColumnaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbColumnaActionPerformed
+        try {
+            if (cmbPais.getSelectedItem() == null) {
+                return;
+            }
+            
+            if (cmbColumna.getSelectedItem() == null) {
+                return;
+            }
+
+            String pais = cmbPais.getSelectedItem().toString();
+            String columna = cmbColumna.getSelectedItem().toString();
+
+            ConectorBD world = new ConectorBD();
+
+            ResultSet rs = world.consultar("SELECT " + columna + " FROM Country WHERE name = ?;", pais);
+
+            if (rs.next()) {
+                lblDato.setText(columna);
+                txtDato.setText(rs.getString(cmbColumna.getSelectedItem().toString()));
+            }
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }//GEN-LAST:event_cmbColumnaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -240,7 +245,7 @@ public class AppDatos extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new AppDatos().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new newAppDatos().setVisible(true));
     }
 
     private void cargarContinentes() {
@@ -252,8 +257,6 @@ public class AppDatos extends javax.swing.JFrame {
             while (rs.next()) {
                 cmbContinente.addItem(rs.getString("Continent"));
             }
-            
-            rs.close();
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
@@ -271,8 +274,6 @@ public class AppDatos extends javax.swing.JFrame {
             while (rs.next()) {
                 cmbPais.addItem(rs.getString("Name"));
             }
-            
-            rs.close();
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
@@ -281,19 +282,16 @@ public class AppDatos extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JOptionPane JOption;
     private javax.swing.JPanel Panel;
-    private javax.swing.JButton btnBuscar;
     private javax.swing.JButton btnModificar;
+    private javax.swing.JComboBox<String> cmbColumna;
     private javax.swing.JComboBox<String> cmbContinente;
     private javax.swing.JComboBox<String> cmbPais;
+    private javax.swing.JLabel lblColumna;
     private javax.swing.JLabel lblContinente;
-    private javax.swing.JLabel lblHeadOfState;
-    private javax.swing.JLabel lblLifeExpectancy;
+    private javax.swing.JLabel lblDato;
     private javax.swing.JLabel lblPais;
-    private javax.swing.JLabel lblPopulation;
     private javax.swing.JLabel lblTitulo;
-    private javax.swing.JTextField txtHeadOfState;
-    private javax.swing.JTextField txtLifeExpectancy;
-    private javax.swing.JTextField txtPopulation;
+    private javax.swing.JTextField txtDato;
     // End of variables declaration//GEN-END:variables
 
 }

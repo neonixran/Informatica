@@ -11,9 +11,9 @@ import java.sql.*;
 
 public class ConectorBD {
 
-    private String baseDatos;
-    private String usuario;
-    private String contraseña;
+    private final String baseDatos;
+    private final String usuario;
+    private final String contraseña;
 
     public ConectorBD() {
         this.baseDatos = "world";
