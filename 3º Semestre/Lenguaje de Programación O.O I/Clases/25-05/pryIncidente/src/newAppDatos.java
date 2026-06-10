@@ -146,6 +146,8 @@ public class newAppDatos extends javax.swing.JFrame {
     }//GEN-LAST:event_cmbContinenteActionPerformed
 
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
+        ConectorBD conector = null;
+
         try {
             if (cmbPais.getSelectedItem() == null) {
                 return;
@@ -155,8 +157,8 @@ public class newAppDatos extends javax.swing.JFrame {
             String columna = cmbColumna.getSelectedItem().toString();
             String dato = txtDato.getText();
 
-            ConectorBD world = new ConectorBD();
-            int cantidad = world.modificar("UPDATE Country SET " + columna + " = ? WHERE Name = ?", dato, pais);
+            conector = new ConectorBD();
+            int cantidad = conector.modificar("UPDATE Country SET " + columna + " = ? WHERE Name = ?", dato, pais);
 
             if (cantidad > 0) {
                 JOptionPane.showMessageDialog(null, "Los datos fueron actualizados exitosamente");
@@ -165,10 +167,20 @@ public class newAppDatos extends javax.swing.JFrame {
             }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
+        } finally {
+            try {
+                if (conector != null) {
+                    conector.close();
+                }
+            } catch (SQLException e) {
+                JOptionPane.showMessageDialog(null, e.getMessage());
+            }
         }
     }//GEN-LAST:event_btnModificarActionPerformed
 
     private void cmbPaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbPaisActionPerformed
+        ConectorBD conector = null;
+
         try {
             cmbColumna.removeAllItems();
 
@@ -178,8 +190,8 @@ public class newAppDatos extends javax.swing.JFrame {
 
             String pais = cmbPais.getSelectedItem().toString();
 
-            ConectorBD world = new ConectorBD();
-            ResultSet rs = world.consultar("SELECT * FROM Country WHERE name = ?;", pais);
+            conector = new ConectorBD();
+            ResultSet rs = conector.consultar("SELECT * FROM Country WHERE name = ?;", pais);
             ResultSetMetaData md = rs.getMetaData();
 
             if (rs.next()) {
@@ -194,15 +206,25 @@ public class newAppDatos extends javax.swing.JFrame {
 
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
+        } finally {
+            try {
+                if (conector != null) {
+                    conector.close();
+                }
+            } catch (SQLException e) {
+                JOptionPane.showMessageDialog(null, e.getMessage());
+            }
         }
     }//GEN-LAST:event_cmbPaisActionPerformed
 
     private void cmbColumnaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbColumnaActionPerformed
+        ConectorBD conector = null;
+
         try {
             if (cmbPais.getSelectedItem() == null) {
                 return;
             }
-            
+
             if (cmbColumna.getSelectedItem() == null) {
                 return;
             }
@@ -210,9 +232,9 @@ public class newAppDatos extends javax.swing.JFrame {
             String pais = cmbPais.getSelectedItem().toString();
             String columna = cmbColumna.getSelectedItem().toString();
 
-            ConectorBD world = new ConectorBD();
+            conector = new ConectorBD();
 
-            ResultSet rs = world.consultar("SELECT " + columna + " FROM Country WHERE name = ?;", pais);
+            ResultSet rs = conector.consultar("SELECT " + columna + " FROM Country WHERE name = ?;", pais);
 
             if (rs.next()) {
                 lblDato.setText(columna);
@@ -220,6 +242,14 @@ public class newAppDatos extends javax.swing.JFrame {
             }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
+        } finally {
+            try {
+                if (conector != null) {
+                    conector.close();
+                }
+            } catch (SQLException e) {
+                JOptionPane.showMessageDialog(null, e.getMessage());
+            }
         }
     }//GEN-LAST:event_cmbColumnaActionPerformed
 
@@ -249,33 +279,53 @@ public class newAppDatos extends javax.swing.JFrame {
     }
 
     private void cargarContinentes() {
-        try {
-            ConectorBD world = new ConectorBD();
+        ConectorBD conector = null;
 
-            ResultSet rs = world.consultar("SELECT DISTINCT Continent FROM country ORDER BY Continent");
+        try {
+            conector = new ConectorBD();
+
+            ResultSet rs = conector.consultar("SELECT DISTINCT Continent FROM country ORDER BY Continent");
 
             while (rs.next()) {
                 cmbContinente.addItem(rs.getString("Continent"));
             }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
+        } finally {
+            try {
+                if (conector != null) {
+                    conector.close();
+                }
+            } catch (SQLException e) {
+                JOptionPane.showMessageDialog(null, e.getMessage());
+            }
         }
     }
 
     private void cargarPaises() {
+        ConectorBD conector = null;
+
         try {
-            ConectorBD world = new ConectorBD();
+            conector = new ConectorBD();
 
             cmbPais.removeAllItems();
             String Continent = cmbContinente.getSelectedItem().toString();
 
-            ResultSet rs = world.consultar("SELECT Name FROM country WHERE Continent = ? ORDER BY Name", Continent);
+            ResultSet rs = conector.consultar("SELECT Name FROM country WHERE Continent = ? ORDER BY Name", Continent);
 
             while (rs.next()) {
                 cmbPais.addItem(rs.getString("Name"));
             }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
+        } finally {
+            try {
+                if (conector != null) {
+                    conector.close();
+                }
+            } catch (SQLException e) {
+                JOptionPane.showMessageDialog(null, e.getMessage());
+            }
         }
     }
 

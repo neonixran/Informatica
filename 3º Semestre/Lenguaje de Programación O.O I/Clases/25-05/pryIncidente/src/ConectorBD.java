@@ -9,60 +9,73 @@
  */
 import java.sql.*;
 
-public class ConectorBD {
+public class ConectorBD implements AutoCloseable {
 
     private final String baseDatos;
     private final String usuario;
     private final String contraseña;
 
-    public ConectorBD() {
+    private Connection conexion;
+
+    public ConectorBD() throws SQLException {
         this.baseDatos = "world";
         this.usuario = "root";
         this.contraseña = "";
+
+        this.conectar();
     }
 
-    public ConectorBD(String baseDatos) {
+    public ConectorBD(String baseDatos) throws SQLException {
         this.baseDatos = baseDatos;
         this.usuario = "root";
         this.contraseña = "";
+
+        this.conectar();
     }
 
-    public ConectorBD(String baseDatos, String usuario, String contraseña) {
+    public ConectorBD(String baseDatos, String usuario, String contraseña) throws SQLException {
         this.baseDatos = baseDatos;
         this.usuario = usuario;
         this.contraseña = contraseña;
+
+        this.conectar();
     }
 
-    private Connection conectar() throws SQLException {
-        Connection cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + this.baseDatos, this.usuario, this.contraseña);
-        return cn;
+    private void conectar() throws SQLException {
+        this.conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + this.baseDatos, this.usuario, this.contraseña);
     }
 
-    public ResultSet consultar(String sql, Object... parametros) throws SQLException {
-        Connection conexion = this.conectar();
+    public ResultSet consultar(String sql, Object... parametro) throws SQLException {
+        PreparedStatement ps = this.conexion.prepareStatement(sql);
 
-        PreparedStatement ps = conexion.prepareStatement(sql);
-        
-        for (int i = 0; i < parametros.length; i++) {
-            ps.setObject(i+1, parametros[i]);
+        if (parametro.length > 0) {
+            for (int i = 0; i < parametro.length; i++) {
+                ps.setObject(i + 1, parametro[i]);
+            }
+        }
+
+        return ps.executeQuery();
+
+    }
+
+    public int modificar(String sql, Object... parametro) throws SQLException {
+        PreparedStatement ps = this.conexion.prepareStatement(sql);
+
+        if (parametro.length > 0) {
+            for (int i = 0; i < parametro.length; i++) {
+                ps.setObject(i + 1, parametro[i]);
+            }
         }
         
-        ResultSet rs = ps.executeQuery();
-        
-        return rs;
+        return ps.executeUpdate();
+
     }
-    
-    public int modificar(String sql, Object... parametros) throws SQLException {
-        Connection conexion = this.conectar();
-        
-        PreparedStatement ps = conexion.prepareStatement(sql);
-        
-        for (int i = 0; i < parametros.length; i++) {
-            ps.setObject(i+1, parametros[i]);
+
+    @Override
+    public void close() throws SQLException {
+        if (this.conexion != null) {
+            this.conexion.close();
+            this.conexion = null;
         }
-        
-        int cantidad = ps.executeUpdate();
-        
-        return cantidad;
     }
 }

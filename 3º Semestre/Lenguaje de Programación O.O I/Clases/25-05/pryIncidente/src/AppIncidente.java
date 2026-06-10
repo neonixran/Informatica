@@ -159,13 +159,16 @@ public class AppIncidente extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+
     private void cmbContinenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbContinenteActionPerformed
         cargarPaises();
     }//GEN-LAST:event_cmbContinenteActionPerformed
 
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
+        ConectorBD conector = null;
+
         try {
-            ConectorBD world = new ConectorBD();
+            conector = new ConectorBD();
 
             String Population = txtPopulation.getText();
             String LifeExpectancy = txtLifeExpectancy.getText();
@@ -177,8 +180,8 @@ public class AppIncidente extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Primero cargue los datos para modificarlos");
                 return;
             }
-            
-            int cantidad = world.modificar("UPDATE Country SET Population = ?, LifeExpectancy = ?, HeadOfState = ?  WHERE Name = ?", Population, LifeExpectancy, HeadOfState, Pais);
+
+            int cantidad = conector.modificar("UPDATE Country SET Population = ?, LifeExpectancy = ?, HeadOfState = ?  WHERE Name = ?", Population, LifeExpectancy, HeadOfState, Pais);
 
             if (cantidad > 0) {
                 JOptionPane.showMessageDialog(null, "Los datos fueron actualizados exitosamente");
@@ -187,20 +190,30 @@ public class AppIncidente extends javax.swing.JFrame {
             }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
+        } finally {
+            try {
+                if (conector != null) {
+                    conector.close();
+                }
+            } catch (SQLException e) {
+                JOptionPane.showMessageDialog(null, e.getMessage());
+            }
         }
     }//GEN-LAST:event_btnModificarActionPerformed
 
     private void cmbPaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbPaisActionPerformed
+        if (cmbPais.getSelectedItem() == null) {
+            return;
+        }
+
+        String pais = cmbPais.getSelectedItem().toString();
+
+        ConectorBD conector = null;
+
         try {
-            ConectorBD world = new ConectorBD();
-            
-            if (cmbPais.getSelectedItem() == null) {
-                return;
-            }
-            
-            String Pais = cmbPais.getSelectedItem().toString();
-            
-            ResultSet rs = world.consultar("SELECT Population, LifeExpectancy, HeadOfState FROM Country WHERE Name = ?", Pais);
+            conector = new ConectorBD();
+
+            ResultSet rs = conector.consultar("SELECT Population, LifeExpectancy, HeadOfState FROM Country WHERE Name = ?", pais);
 
             if (rs.next()) {
                 txtPopulation.setText(rs.getString("Population"));
@@ -211,6 +224,14 @@ public class AppIncidente extends javax.swing.JFrame {
             }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
+        } finally {
+            try {
+                if (conector != null) {
+                    conector.close();
+                }
+            } catch (SQLException e) {
+                JOptionPane.showMessageDialog(null, e.getMessage());
+            }
         }
     }//GEN-LAST:event_cmbPaisActionPerformed
 
@@ -240,33 +261,53 @@ public class AppIncidente extends javax.swing.JFrame {
     }
 
     private void cargarContinentes() {
-        try {
-            ConectorBD world = new ConectorBD();
+        ConectorBD conector = null;
 
-            ResultSet rs = world.consultar("SELECT DISTINCT Continent FROM country ORDER BY Continent");
+        try {
+            conector = new ConectorBD();
+
+            ResultSet rs = conector.consultar("SELECT DISTINCT Continent FROM country ORDER BY Continent");
 
             while (rs.next()) {
                 cmbContinente.addItem(rs.getString("Continent"));
             }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
+        } finally {
+            try {
+                if (conector != null) {
+                    conector.close();
+                }
+            } catch (SQLException e) {
+                JOptionPane.showMessageDialog(null, e.getMessage());
+            }
         }
     }
 
     private void cargarPaises() {
+        ConectorBD conector = null;
+
         try {
-            ConectorBD world = new ConectorBD();
+            conector = new ConectorBD();
 
             cmbPais.removeAllItems();
             String Continent = cmbContinente.getSelectedItem().toString();
 
-            ResultSet rs = world.consultar("SELECT Name FROM country WHERE Continent = ? ORDER BY Name", Continent);
+            ResultSet rs = conector.consultar("SELECT Name FROM country WHERE Continent = ? ORDER BY Name", Continent);
 
             while (rs.next()) {
                 cmbPais.addItem(rs.getString("Name"));
             }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
+        } finally {
+            try {
+                if (conector != null) {
+                    conector.close();
+                }
+            } catch (SQLException e) {
+                JOptionPane.showMessageDialog(null, e.getMessage());
+            }
         }
     }
 
