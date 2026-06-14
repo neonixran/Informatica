@@ -1,9 +1,15 @@
-import java.sql.SQLException;
+package InsertaCity_BravoJosue;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
+/**
+ *
+ * @author iryde
+ */
 public class Conector {
     private final String baseDatos;
     private final String usuario;
@@ -45,16 +51,16 @@ public class Conector {
      * @see SQLException
      * @see DriveManager
      * 
-     * Método para hacer la conexión a la base de datos.
+     * Método para establecer la conexión con    la base de datos.
      */
     private void conectar() throws SQLException {
         this.conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + this.baseDatos, this.usuario, this.contraseña);
     }
 
     /**
-     * @param sql
-     * @param parametro
-     * @return un ResultSet
+     * @param sql Consulta sql (query) a ejecutar.
+     * @param parametro Considera datos a filtrar, etc.
+     * @return ResultSet
      * @throws SQLException
      * @see PreparedStatement
      * 
@@ -73,8 +79,8 @@ public class Conector {
     }
 
     /**
-     * @param sql
-     * @param parametro
+     * @param sql Consulta sql (query) a ejecutar.
+     * @param parametro Considera datos a filtrar, etc.
      * @return Cantidad de filas modificadas
      * @throws java.sql.SQLException
      * @see PreparedStament
