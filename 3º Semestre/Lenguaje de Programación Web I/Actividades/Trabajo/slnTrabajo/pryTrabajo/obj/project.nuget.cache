@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KlFNKElzpTY=",
+  "dgSpecHash": "Cu7F7Z85cPA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\pryTrabajo.csproj",
+  "projectFilePath": "c:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\pryTrabajo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\iryde\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\iryde\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

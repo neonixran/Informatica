@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\pryTrabajo.csproj": {}
+    "c:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\pryTrabajo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\pryTrabajo.csproj": {
+    "c:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\pryTrabajo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\pryTrabajo.csproj",
+        "projectUniqueName": "c:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\pryTrabajo.csproj",
         "projectName": "pryTrabajo",
-        "projectPath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\pryTrabajo.csproj",
+        "projectPath": "c:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\pryTrabajo.csproj",
         "packagesPath": "C:\\Users\\iryde\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\obj\\",
+        "outputPath": "c:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Trabajo\\slnTrabajo\\pryTrabajo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

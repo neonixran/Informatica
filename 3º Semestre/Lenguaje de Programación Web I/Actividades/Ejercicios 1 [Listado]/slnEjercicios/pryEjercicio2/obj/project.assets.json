@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Ejercicios 1 [Listado]\\slnEjercicios\\pryEjercicio2\\pryEjercicio2.csproj",
+      "projectUniqueName": "c:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Ejercicios 1 [Listado]\\slnEjercicios\\pryEjercicio2\\pryEjercicio2.csproj",
       "projectName": "pryEjercicio2",
-      "projectPath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Ejercicios 1 [Listado]\\slnEjercicios\\pryEjercicio2\\pryEjercicio2.csproj",
+      "projectPath": "c:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Ejercicios 1 [Listado]\\slnEjercicios\\pryEjercicio2\\pryEjercicio2.csproj",
       "packagesPath": "C:\\Users\\iryde\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Ejercicios 1 [Listado]\\slnEjercicios\\pryEjercicio2\\obj\\",
+      "outputPath": "c:\\Users\\iryde\\OneDrive\\Documentos\\Repositorio\\3º Semestre\\Lenguaje de Programación Web I\\Actividades\\Ejercicios 1 [Listado]\\slnEjercicios\\pryEjercicio2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
