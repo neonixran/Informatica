@@ -25,7 +25,11 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="60dp"
         android:ems="10"
+<<<<<<< HEAD
         android:hint="Usuario"
+=======
+        android:hint="Ingrese su usuario..."
+>>>>>>> de5fe6a (sadas)
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblTitulo" />
@@ -47,7 +51,11 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="15dp"
         android:ems="10"
+<<<<<<< HEAD
         android:hint="Contraseña"
+=======
+        android:hint="Ingrese su contraseña..."
+>>>>>>> de5fe6a (sadas)
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />

@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">AppAlogin</string>
+=======
+    <string name="app_name">Banco estado</string>
+>>>>>>> de5fe6a (sadas)
 </resources>

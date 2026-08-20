@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppAlogin">
         <activity
+<<<<<<< HEAD
+=======
+            android:name=".usuarios"
+            android:exported="false" />
+        <activity
+            android:name=".Ejercicio2"
+            android:exported="false" />
+        <activity
+            android:name=".Ejercicio1"
+            android:exported="false" />
+        <activity
+>>>>>>> de5fe6a (sadas)
             android:name=".Menu"
             android:exported="false" />
         <activity

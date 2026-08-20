@@ -1,5 +1,9 @@
 package com.example.appalogin
 
+<<<<<<< HEAD
+=======
+import android.content.Intent
+>>>>>>> de5fe6a (sadas)
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -33,7 +37,13 @@ class MainActivity : AppCompatActivity() {
             } else if (!usuario.text.isEmpty() && contrasena.text.isEmpty()) {
                 Toast.makeText(this, "Debe ingresar su contraseña", Toast.LENGTH_SHORT).show()
             } else {
+<<<<<<< HEAD
                 
+=======
+                var menu = Intent(this, Menu::class.java);
+                startActivity(menu);
+                finish()
+>>>>>>> de5fe6a (sadas)
             }
         }
     }
